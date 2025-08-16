@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"turn.landingdev.xyz"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/056269da4097c2b20b3482cf3501469d859d"
+	}
+}

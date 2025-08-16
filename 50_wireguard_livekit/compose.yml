@@ -15,7 +15,7 @@ services:
       - TZ=Etc/UTC
       - SERVERURL=wireguard.landingdev.xyz
       - SERVERPORT=51820
-      - PEERS=proxy
+      - PEERS=proxy,livekit,whoami
       - PEERDNS=auto
       - INTERNAL_SUBNET=10.13.13.0
       - ALLOWEDIPS=10.13.13.0/24
