@@ -15,7 +15,7 @@ services:
       - TZ=Etc/UTC
       - SERVERURL=wireguard.landingdev.xyz
       - SERVERPORT=51820
-      - PEERS=webapp1,webapp2,proxy  # Corrected to include proxy-peer
+      - PEERS=webapp1,webapp2,webapp3,proxy  # Corrected to include proxy-peer
       - PEERDNS=auto
       - INTERNAL_SUBNET=10.13.13.0
       - ALLOWEDIPS=10.13.13.0/24
