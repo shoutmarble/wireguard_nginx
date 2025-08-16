@@ -1,0 +1,8 @@
+{
+	"sans": [
+		"livekit.landingdev.xyz"
+	],
+	"issuer_data": {
+		"url": "https://acme-v02.api.letsencrypt.org/acme/cert/0521bc43a5f46be55e2e0f9f3c0e0412b064"
+	}
+}

@@ -1,0 +1,10 @@
+<?php
+    $config['plugins'] = [];
+    $config['log_driver'] = 'stdout';
+    $config['zipdownload_selection'] = true;
+    $config['des_key'] = 'yNN4lrRLrbMMvg0Elbpy6sWD';
+    $config['enable_spellcheck'] = true;
+    $config['spellcheck_engine'] = 'pspell';
+	$config['mail_domain'] = 'landingdev.xyz';
+    include(__DIR__ . '/config.docker.inc.php');
+    

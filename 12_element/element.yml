@@ -1,0 +1,24 @@
+# https://github.com/element-hq
+
+networks:
+    traefik:
+        external: true
+
+services:
+    element:
+        image: vectorim/element-web
+        container_name: element
+        hostname: chat
+        domainname: landingdev.xyz
+        networks:
+            traefik:
+                ipv4_address: 172.20.12.10
+                ipv6_address: 2a02:4780:10:e8ad::12:10
+        volumes:
+            - ./element.config.json:/app/config.json                
+        labels:
+            - traefik.enable=true
+            - traefik.http.routers.elem.rule=Host(`chat.landingdev.xyz`)
+            - traefik.http.routers.elem.entrypoints=websecure
+            - traefik.http.routers.elem.tls=true
+            - traefik.http.services.elem.loadbalancer.server.port=80

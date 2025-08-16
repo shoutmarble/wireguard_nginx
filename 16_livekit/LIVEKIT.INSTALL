@@ -1,0 +1,40 @@
+
+
+#####################
+LIVEKIT LOGS
+#####################
+
+docker logs livekit
+
+#####################
+CREATE ROOM TO TEST
+#####################
+
+https://livekit.io/connection-test
+
+./lkit/lk create-token \
+  --api-key API4GWory2oKC2k \
+  --api-secret fXVw7VIlQWcn4TdXSoyVWZ9Wgm1Ce4aWHeXVtiYoESQA \
+  --identity user123 \
+  --room testroom \
+  --grant '{"roomJoin": true, "canPublish": true, "canSubscribe": true}' \
+  --url https://livekit.landingdev.xyz
+
+valid for (mins):  5
+Token grants:
+{
+  "roomJoin": true,
+  "room": "testroom",
+  "canPublish": true,
+  "canSubscribe": true
+}
+
+Project URL: https://livekit.landingdev.xyz
+Access token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUxOTQ0NjIsImlkZW50aXR5IjoidXNlcjEyMyIsImlzcyI6IkFQSTRHV29yeTJvS0MyayIsIm5hbWUiOiJ1c2VyMTIzIiwibmJmIjoxNzU1MTk0MTYyLCJzdWIiOiJ1c2VyMTIzIiwidmlkZW8iOnsiY2FuUHVibGlzaCI6dHJ1ZSwiY2FuU3Vic2NyaWJlIjp0cnVlLCJyb29tIjoidGVzdHJvb20iLCJyb29tSm9pbiI6dHJ1ZX19.VY7lqEsXIt_t_1sm1m5WC1UwteAazziVCKUiFM2mPkw
+
+#####################
+TEST WSS AUTHORISATION
+#####################
+wscat -c wss://livekit.landingdev.xyz/rtc -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTUxOTk0NDYsImlkZW50aXR5IjoidXNlcjEyMyIsImlzcyI6IkFQSTRHV29yeTJvS0MyayIsIm5hbWUiOiJ1c2VyMTIzIiwibmJmIjoxNzU1MTk5MTQ2LCJzdWIiOiJ1c2VyMTIzIiwidmlkZW8iOnsiY2FuUHVibGlzaCI6dHJ1ZSwiY2FuU3Vic2NyaWJlIjp0cnVlLCJyb29tIjoidGVzdHJvb20iLCJyb29tSm9pbiI6dHJ1ZX19.UnIeq4N2vZ1SJ3u2Z4AJnxB6hAoHeKjEGXjItydoCBc"
+
+
