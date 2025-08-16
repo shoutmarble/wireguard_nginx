@@ -1,7 +1,7 @@
 ORIG_SERVERURL="wireguard.landingdev.xyz"
 ORIG_SERVERPORT="51820"
 ORIG_PEERDNS="10.13.13.1"
-ORIG_PEERS="webapp1,webapp2,webapp3,proxy"
+ORIG_PEERS="webapp1,webapp2,webapp3,caddy,proxy"
 ORIG_INTERFACE="10.13.13"
 ORIG_ALLOWEDIPS="10.13.13.0/24"
 ORIG_PERSISTENTKEEPALIVE_PEERS=""

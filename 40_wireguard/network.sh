@@ -1,1 +1,1 @@
-docker network inspect wireguard_network
+docker network create wireguard_network

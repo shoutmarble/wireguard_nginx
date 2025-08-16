@@ -3,7 +3,7 @@ networks:
     external: true
 
 services:
-  wireguard_client3:  # Spoke 2 (VPN client for webapp2)
+  wireguard_client3:
     image: linuxserver/wireguard
     container_name: wireguard_client3
     cap_add:
@@ -13,7 +13,7 @@ services:
       - PGID=1000
       - TZ=UTC
     volumes:
-      - ./wg_client3_config:/config  # New config dir
+      - ./wg_client3_config:/config
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
     networks:

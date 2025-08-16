@@ -15,7 +15,7 @@ services:
       - TZ=Etc/UTC
       - SERVERURL=wireguard.landingdev.xyz
       - SERVERPORT=51820
-      - PEERS=webapp1,webapp2,webapp3,proxy  # Corrected to include proxy-peer
+      - PEERS=webapp1,webapp2,webapp3,caddy,proxy
       - PEERDNS=auto
       - INTERNAL_SUBNET=10.13.13.0
       - ALLOWEDIPS=10.13.13.0/24
@@ -73,6 +73,7 @@ services:
     network_mode: service:wireguard_proxy
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
     restart: unless-stopped
 
   wireguard_client1:  # Spoke 1 (VPN client for webapp1)
