@@ -1,0 +1,7 @@
+{
+    auto_https off
+}
+
+http://who.landingdev.xyz {
+    reverse_proxy whoami:80
+}
