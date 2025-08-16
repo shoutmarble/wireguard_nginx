@@ -1,0 +1,138 @@
+networks:
+  wireguard_network:
+    external: true
+
+services:
+  wireguard:  # Hub (WireGuard server)
+    image: lscr.io/linuxserver/wireguard:latest
+    container_name: wireguard
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SERVERURL=wireguard.landingdev.xyz
+      - SERVERPORT=51820
+      - PEERS=webapp1,webapp2,proxy  # Corrected to include proxy-peer
+      - PEERDNS=auto
+      - INTERNAL_SUBNET=10.13.13.0
+      - ALLOWEDIPS=10.13.13.0/24
+      - LOG_CONFS=true
+    volumes:
+      - ./config:/config
+      - /lib/modules:/lib/modules
+    ports:
+      - "51820:51820/udp"
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+      - net.ipv4.ip_forward=1
+      - net.ipv6.conf.all.disable_ipv6=1
+    networks:
+      - wireguard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wg", "show"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  wireguard_proxy:  # Proxy peer (VPN client for proxy)
+    image: linuxserver/wireguard
+    container_name: wireguard_proxy
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    volumes:
+      - ./wg_proxy_config:/config
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    networks:
+      - wireguard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wg", "show"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  proxy:  # Nginx reverse proxy (VPN IP 10.13.13.4)
+    image: nginx:latest
+    container_name: proxy
+    depends_on:
+      - wireguard_proxy
+    network_mode: service:wireguard_proxy
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: unless-stopped
+
+  wireguard_client1:  # Spoke 1 (VPN client for webapp1)
+    image: linuxserver/wireguard
+    container_name: wireguard_client1
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    volumes:
+      - ./wg_client1_config:/config
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    networks:
+      - wireguard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wg", "show"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  webapp1:  # App sharing spoke 1's network (VPN IP 10.13.13.2)
+    image: traefik/whoami:latest
+    container_name: webapp1
+    depends_on:
+      - wireguard_client1
+    network_mode: service:wireguard_client1  # Shares VPN tunnel
+    restart: unless-stopped
+
+  wireguard_client2:  # Spoke 2 (VPN client for webapp2)
+    image: linuxserver/wireguard
+    container_name: wireguard_client2
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    volumes:
+      - ./wg_client2_config:/config  # New config dir
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    networks:
+      - wireguard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wg", "show"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+
+  webapp2:  # App sharing spoke 2's network (VPN IP 10.13.13.3)
+    image: traefik/whoami:latest
+    container_name: webapp2
+    depends_on:
+      - wireguard_client2
+    network_mode: service:wireguard_client2
+    restart: unless-stopped

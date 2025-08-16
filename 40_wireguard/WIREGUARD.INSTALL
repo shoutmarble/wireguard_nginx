@@ -1,0 +1,18 @@
+##############
+DISABLE IPV6
+##############
+# TEMPORARILY DISABLE IPV6
+sysctl -w net.ipv6.conf.all.disable_ipv6=1
+
+# PERSIST NO IPV6
+micro /etc/sysctl.d/99-wireguard.conf
+net.ipv6.conf.all.disable_ipv6=1
+
+# ACTIVATE IPV6 DISABLE 
+sysctl -p /etc/sysctl.d/99-wireguard.conf
+
+
+##############
+HEALTH CHECKS
+##############
+docker ps -a --format "table {{.Names}}\t{{.Status}}"
