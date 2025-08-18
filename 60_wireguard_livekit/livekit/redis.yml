@@ -1,0 +1,44 @@
+networks:
+  wireguard_network:
+    external: true
+
+services:
+  wireguard_redis:
+    image: linuxserver/wireguard
+    container_name: wireguard_redis
+    cap_add:
+      - NET_ADMIN
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+    volumes:
+      - ./wg_redis_config:/config
+    sysctls:
+      - net.ipv4.conf.all.src_valid_mark=1
+    networks:
+      - wireguard_network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wg", "show"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+    network_mode: service:wireguard_redis
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis_conf/redis.conf:/usr/local/etc/redis/redis.conf:ro
+      - ./redis_conf/users.acl:/usr/local/etc/redis/users.acl:ro
+      - ./certs:/certs
+    depends_on:
+      - wireguard_redis
+    healthcheck:
+      test: ["CMD", "redis-cli", "-h", "10.13.13.4", "-p", "6379", "--user", "livekit-redis", "-a", "livekit-redis", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
