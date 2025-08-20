@@ -1,0 +1,22 @@
+tls:
+  certificates:
+    - certFile: /certs/landingdev.xyz.pem
+      keyFile: /certs/landingdev.xyz.key
+      stores:
+        - default
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /certs/landingdev.xyz.pem
+        keyFile: /certs/landingdev.xyz.key
+
+http:
+  middlewares:
+    websocket:
+      headers:
+        customRequestHeaders:
+          Upgrade: "websocket"
+    
+global:
+  checkNewVersion: true
+  sendAnonymousUsage: false
