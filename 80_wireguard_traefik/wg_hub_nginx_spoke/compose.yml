@@ -20,7 +20,6 @@ services:
     volumes:
       - ./wg_config:/config
       - /lib/modules:/lib/modules
-      - ./portal_wg/etc:/etc/wireguard
     ports:
       - "51820:51820/udp"
       - "80:80"

@@ -1,0 +1,46 @@
+###########
+# STATIC-AUTH GENERATE
+###########
+# apt install pwgen
+# pwgen -s 64 1
+# WK9z8fqsUXYcdNVtcvIHIIk4LPxexk0EVDz27cAhS4hTWVcYarpzHSaMUzqu8CA2
+
+###########
+# ADMIN
+###########
+cli-password=JL99aIDgJ08eomzmo8Go
+cli-ip=127.0.0.1
+cli-port=5766
+
+listening-ip=10.13.13.3
+listening-port=3478
+
+relay-ip=10.13.13.3
+
+external-ip=185.28.22.166
+tls-listening-port=5349
+
+min-port=49152
+max-port=50100
+
+cert=/coturn/certs/landingdev.xyz.pem
+pkey=/coturn/certs/landingdev.xyz.key
+
+realm=turn.landingdev.xyz
+server-name=turn.landingdev.xyz
+
+#############
+# LONG TERM CREDENTIALS
+#############
+lt-cred-mech
+user=turn:turn
+
+#############
+# USE TIME CODED CREDENTIALS
+#############
+# use-auth-secret
+# static-auth-secret=0c8c199a7f9fb4e8c915968e9e8c4e5a
+    
+no-multicast-peers
+verbose
+syslog
