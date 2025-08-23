@@ -1,0 +1,47 @@
+wordpressUsername: admin
+wordpressPassword: admin
+wordpressEmail: terry.walsworth@outlook.com
+wordpressFirstName: Admin
+wordpressLastName: User
+wordpressBlogName: "landingdev.xyz wordpress"
+
+service:
+  type: ClusterIP
+
+ingress:
+  enabled: true
+  hostname: wp.landingdev.xyz
+  ingressClassName: traefik
+  secrets[0]:
+    - name: wordpress-tls
+
+persistence:
+  enabled: true
+  accessMode: ReadWriteMany
+  size: 8Gi
+
+resourcesPreset: none
+resources:
+  requests:
+    cpu: "200m"
+    memory: "256Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"
+
+mariadb:
+  enabled: true
+  auth:
+    rootPassword: wp
+    database: bitnami_wordpress
+    username: wp
+    password: wp
+  primary:
+    resources:
+      requests:
+        cpu: "150m"
+        memory: "256Mi"
+      limits:
+        cpu: "300m"
+        memory: "512Mi"
+

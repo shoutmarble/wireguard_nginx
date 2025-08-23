@@ -1,0 +1,5 @@
+{
+	"domain": "landingdev.xyz",
+	"certUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/06ae8c385c859e455361a8581773a8394e1c",
+	"certStableUrl": "https://acme-v02.api.letsencrypt.org/acme/cert/06ae8c385c859e455361a8581773a8394e1c"
+}
