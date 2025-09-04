@@ -1,0 +1,33 @@
+networks:
+    hap_net:
+        external: true
+        name: hap_net
+
+services:
+  haproxy:
+    image: byjg/easy-haproxy:4.6.0
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./certs/certbot:/certs/certbot
+    environment:
+      EASYHAPROXY_DISCOVER: docker
+      EASYHAPROXY_CERTBOT_EMAIL: terry.walsworth.88@gmail.com
+
+      HAPROXY_CUSTOMERRORS: "true"
+      HAPROXY_USERNAME: admin
+      HAPROXY_PASSWORD: password
+      HAPROXY_STATS_PORT: 1936
+
+    ports:
+      - "80:80/tcp"
+      - "443:443/tcp"
+      - "1936:1936/tcp"
+
+  whoami:
+    image: traefik/whoami:latest
+    labels:
+      easyhaproxy.http.host: who.landingdev.xyz
+      easyhaproxy.http.redirect_ssl: true
+      easyhaproxy.http.localport: 80
+      easyhaproxy.http.certbot: true
+

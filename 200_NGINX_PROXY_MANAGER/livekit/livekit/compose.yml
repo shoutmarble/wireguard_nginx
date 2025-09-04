@@ -1,0 +1,32 @@
+networks:
+  npm_net:
+    external: true
+
+services:
+  livekit:
+    image: livekit/livekit-server:latest
+    container_name: livekit
+    hostname: livekit
+    command: --config /etc/livekit.yaml
+    restart: unless-stopped
+    networks:
+      npm_net:
+        ipv4_address: 10.10.20.30
+        ipv6_address: fd12:3456:789a::20:30
+    volumes:
+      - ./livekit.yaml:/etc/livekit.yaml
+      - ./acme_lego/certificates/:/opt/certs
+    environment:
+      - LIVEKIT_API_KEY="Nm7MFqEdn7dEkLW"
+      - LIVEKIT_API_SECRET="cpCc17rcrz9TpfG7b0xD2ImsPAMF2P8GP3aqBqlsNLNG"
+      - LIVEKIT_PORT=7880
+      - LIVEKIT_RTC_TCP_PORT=7881
+      - LIVEKIT_REDIS_ADDRESS=redis:6379
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--spider", "http://localhost:7880/"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
+    
+

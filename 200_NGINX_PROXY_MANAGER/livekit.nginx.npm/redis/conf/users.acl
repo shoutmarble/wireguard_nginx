@@ -1,0 +1,2 @@
+user livekit on >livekit ~* +@all &*
+user default off

@@ -1,0 +1,49 @@
+port: 7880
+log_level: debug
+bind_addresses:
+  - "0.0.0.0"
+
+rtc:
+  tcp_port: 7881
+  node_ip: 185.28.22.166
+  use_external_ip: true
+  
+  stun_servers:
+    - stun2.l.google.com:19302
+    - stun3.l.google.com:19302
+    - stun4.l.google.com:19302
+
+  port_range_start: 49500
+  port_range_end: 49800
+
+  turn_servers:
+    - host: eturnal
+      username: TERRY
+      credential: TERRY
+      protocol: tls
+      port: 5349
+
+    - host: eturnal
+      username: TERRY
+      credential: TERRY
+      protocol: tcp
+      port: 5348
+
+    - host: eturnal
+      username: TERRY
+      credential: TERRY
+      protocol: udp
+      port: 3478
+
+      
+redis:
+  address: redis:6379
+  username: livekit
+  password: livekit
+  db: 0
+
+turn:
+  enabled: false
+
+keys:
+  Nm7MFqEdn7dEkLW: cpCc17rcrz9TpfG7b0xD2ImsPAMF2P8GP3aqBqlsNLNG

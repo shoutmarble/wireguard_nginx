@@ -1,0 +1,28 @@
+alias ports="ss -tulnp | grep -E ':3478|:5349|:443|:80'"
+alias twss='wscat -c wss://livekit.landingdev.xyz/rtc -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTY5NjEyMDMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1Njg3NDgwMywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.SGvDP8k1fGeHGmbHdX39Rm3MEiLCBbkz-zArFWFzvF0"'
+
+alias net="/root/200_NGINX_PROXY_MANAGER/network.sh"
+
+alias live="cd /root/200_NGINX_PROXY_MANAGER/livekit/livekit"
+alias redis="cd /root/200_NGINX_PROXY_MANAGER/livekit/redis"
+alias eturn="cd /root/200_NGINX_PROXY_MANAGER/livekit/eturnal"
+alias hom="cd /root/200_NGINX_PROXY_MANAGER/"
+alias conf="cd /root/200_NGINX_PROXY_MANAGER/data/nginx/custom"
+
+alias dps='docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Names}}\t{{.Status}}"'
+
+alias up='docker compose up --build -d'
+alias upb='docker compose up --build'
+
+alias down="/root/200_NGINX_PROXY_MANAGER/down.sh"
+
+alias stop='docker compose stop'
+
+alias rmal="/root/200_NGINX_PROXY_MANAGER/rm-all.sh"
+
+alias reload="docker exec npm nginx -s reload"
+alias test="docker exec npm nginx -t"
+
+alias elogs="cat /root/200_NGINX_PROXY_MANAGER/livekit/eturnal/eturnal_logs/eturnal.log | tail -n 80"
+alias npmb="docker exec -it npm bash"
+
