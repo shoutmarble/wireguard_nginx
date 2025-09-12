@@ -1,0 +1,11 @@
+
+    server {
+        listen turn.landingdev.xyz:5349 ssl;
+
+        ssl_certificate /opt/certs/landingdev.xyz.pem;
+        ssl_certificate_key /opt/certs/landingdev.xyz.key;
+        
+        proxy_pass 127.0.0.1:5349;
+        proxy_timeout 10s;
+        proxy_connect_timeout 5s;
+    }

@@ -1,0 +1,274 @@
+2025-08-27 22:47:08.508497+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 22:47:08.508592+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 22:47:08.508653+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 22:47:08.508698+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 22:47:08.508749+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 22:47:08.510358+00:00 [info] Listening on 0.0.0.0:3478 (auto) (STUN/TURN)
+2025-08-27 22:47:08.510739+00:00 [error] CRASH REPORT:
+  crasher:
+    initial call: stun_acceptor:init/4
+    pid: <0.613.0>
+    registered_name: []
+    exception exit: eaddrinuse
+      in function  stun_acceptor:init/4 (stun_acceptor.erl, line 92)
+    ancestors: [stun_acceptor_sup,stun_listener_sup,stun_sup,<0.592.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.595.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 2002
+  neighbours:
+
+2025-08-27 22:47:08.511024+00:00 [critical] Aborting: Cannot start listening on [::]:3478 (auto): address already in use
+2025-08-27 23:08:25.012569+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:08:25.012659+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:08:25.012711+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:08:25.012757+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 23:08:25.012796+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:08:25.014423+00:00 [info] Listening on 0.0.0.0:3478 (auto) (STUN/TURN)
+2025-08-27 23:08:25.015210+00:00 [error] CRASH REPORT:
+  crasher:
+    initial call: stun_acceptor:init/4
+    pid: <0.613.0>
+    registered_name: []
+    exception exit: eaddrinuse
+      in function  stun_acceptor:init/4 (stun_acceptor.erl, line 92)
+    ancestors: [stun_acceptor_sup,stun_listener_sup,stun_sup,<0.592.0>]
+    message_queue_len: 0
+    messages: []
+    links: [<0.595.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 1598
+    stack_size: 29
+    reductions: 2003
+  neighbours:
+
+2025-08-27 23:08:25.015817+00:00 [critical] Aborting: Cannot start listening on [::]:3478 (auto): address already in use
+2025-08-27 23:21:22.750523+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:21:22.750596+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:21:22.750640+00:00 [info] Relay IPv4 address: 10.10.20.10 (port range: 49500-50100)
+2025-08-27 23:21:22.750666+00:00 [info] Relay IPv6 address: fd12:3456:789a::20:10 (port range: 49500-50100)
+2025-08-27 23:21:22.750698+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:21:22.751603+00:00 [info] Listening on 0.0.0.0:3478 (auto) (STUN/TURN)
+2025-08-27 23:21:22.751826+00:00 [info] Listening on 0.0.0.0:5349 (tls) (STUN/TURN)
+2025-08-27 23:23:58.922840+00:00 [info] Accepting connection: 47.26.234.89:45110 -> 10.10.20.10:5349 [TLS, session yovtv76tvjg4]
+2025-08-27 23:24:04.579191+00:00 [info] Connection reset by peer [TLS, session yovtv76tvjg4, anonymous, client 47.26.234.89:45110]
+2025-08-27 23:24:08.357573+00:00 [info] Accepting connection: 47.26.234.89:48122 -> 10.10.20.10:3478 [TCP|TLS, session 7wit761iqyn9]
+2025-08-27 23:25:35.957985+00:00 [info] Accepting connection: 47.26.234.89:46430 -> 10.10.20.10:3478 [TCP|TLS, session 2ubw7wle2ld0]
+2025-08-27 23:25:38.670023+00:00 [info] Cannot determine transport protocol: closed
+2025-08-27 23:25:44.462496+00:00 [info] Accepting connection: 47.26.234.89:45822 -> 10.10.20.10:5349 [TLS, session nqwmmxh9a6cc]
+2025-08-27 23:25:47.502358+00:00 [info] Connection reset by peer [TLS, session nqwmmxh9a6cc, anonymous, client 47.26.234.89:45822]
+2025-08-27 23:26:38.670556+00:00 [info] Connection timed out [TCP, session 2ubw7wle2ld0, anonymous, client 47.26.234.89:46430]
+2025-08-27 23:30:36.918266+00:00 [notice] SIGTERM received - shutting down
+
+2025-08-27 23:30:36.921749+00:00 [info] Stopped listening on 0.0.0.0:3478 (auto)
+2025-08-27 23:30:36.921924+00:00 [info] Stopped listening on 0.0.0.0:5349 (tls)
+2025-08-27 23:30:36.922186+00:00 [notice] Stopping eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:32:59.120399+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:32:59.120545+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:32:59.120610+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:32:59.120659+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 23:32:59.120715+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:32:59.121755+00:00 [info] Listening on 0.0.0.0:3478 (auto) (STUN/TURN)
+2025-08-27 23:32:59.122050+00:00 [info] Listening on 0.0.0.0:5349 (tls) (STUN/TURN)
+2025-08-27 23:33:34.364695+00:00 [notice] SIGTERM received - shutting down
+
+2025-08-27 23:33:34.370018+00:00 [info] Stopped listening on 0.0.0.0:3478 (auto)
+2025-08-27 23:33:34.370186+00:00 [info] Stopped listening on 0.0.0.0:5349 (tls)
+2025-08-27 23:33:34.370597+00:00 [notice] Stopping eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:36:23.674328+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:36:23.674468+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:36:23.674521+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:36:23.674550+00:00 [info] Relay IPv6 address: fd12:3456:789a::20:10 (port range: 49500-50100)
+2025-08-27 23:36:23.674603+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:36:23.675905+00:00 [info] Listening on 0.0.0.0:3478 (auto) (STUN/TURN)
+2025-08-27 23:36:23.676177+00:00 [info] Listening on 0.0.0.0:5349 (tls) (STUN/TURN)
+2025-08-27 23:37:12.283487+00:00 [info] Accepting connection: 47.26.234.89:47360 -> 10.10.20.10:5349 [TLS, session wargyvqtmxj9]
+2025-08-27 23:37:13.548706+00:00 [info] Connection failure: closed [TLS, session wargyvqtmxj9, anonymous, client 47.26.234.89:47360]
+2025-08-27 23:37:19.369502+00:00 [info] Accepting connection: 47.26.234.89:46576 -> 10.10.20.10:3478 [TCP|TLS, session ptu1hu6wfh2u]
+2025-08-27 23:39:43.752750+00:00 [notice] SIGTERM received - shutting down
+
+2025-08-27 23:39:43.759346+00:00 [info] Stopped listening on 0.0.0.0:3478 (auto)
+2025-08-27 23:39:43.759595+00:00 [info] Stopped listening on 0.0.0.0:5349 (tls)
+2025-08-27 23:39:43.759921+00:00 [notice] Stopping eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:42:06.505216+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:42:06.505324+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:42:06.505374+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:42:06.505402+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 23:42:06.505436+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:42:06.506946+00:00 [info] Listening on [::]:3478 (auto) (STUN/TURN)
+2025-08-27 23:42:06.507258+00:00 [info] Listening on [::]:5349 (tls) (STUN/TURN)
+2025-08-27 23:42:06.707629+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:46054 -> [fd12:3456:789a::20:10]:5349 [TLS, session 7l4s4b649xwh]
+2025-08-27 23:42:09.652023+00:00 [info] Connection failure: closed [TLS, session 7l4s4b649xwh, anonymous, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:46054]
+2025-08-27 23:42:11.980570+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:44774 -> [fd12:3456:789a::20:10]:3478 [TCP|TLS, session 41xic79yl841]
+2025-08-27 23:42:42.269107+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267 -> [fd12:3456:789a::20:10]:5349 [TLS, session gis08cmffddx]
+2025-08-27 23:42:42.270028+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268 -> [fd12:3456:789a::20:10]:5349 [TLS, session xdvw9x4af7p4]
+2025-08-27 23:42:42.430634+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267]
+2025-08-27 23:42:42.430874+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268]
+2025-08-27 23:42:42.431780+00:00 [notice] Creating TURN allocation (lifetime: 599 seconds) [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267, relay 185.28.22.166:49919]
+2025-08-27 23:42:42.432160+00:00 [notice] Creating TURN allocation (lifetime: 599 seconds) [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268, relay 185.28.22.166:49894]
+2025-08-27 23:42:42.511602+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267]
+2025-08-27 23:42:42.511840+00:00 [info] Client requested closing the TURN session [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267, relay 185.28.22.166:49919]
+2025-08-27 23:42:42.511944+00:00 [info] Cannot respond to client: Connection closed [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267, relay 185.28.22.166:49919]
+2025-08-27 23:42:42.511958+00:00 [info] Connection reset by peer [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267]
+2025-08-27 23:42:42.512074+00:00 [info] Deleting TURN allocation [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267, relay 185.28.22.166:49919]
+2025-08-27 23:42:42.512201+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session gis08cmffddx, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54267, relay 185.28.22.166:49919]
+2025-08-27 23:42:42.513253+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268]
+2025-08-27 23:42:42.513377+00:00 [info] Client requested closing the TURN session [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268, relay 185.28.22.166:49894]
+2025-08-27 23:42:42.513487+00:00 [info] Cannot respond to client: Connection closed [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268, relay 185.28.22.166:49894]
+2025-08-27 23:42:42.513494+00:00 [info] Connection reset by peer [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268]
+2025-08-27 23:42:42.513545+00:00 [info] Deleting TURN allocation [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268, relay 185.28.22.166:49894]
+2025-08-27 23:42:42.513609+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session xdvw9x4af7p4, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54268, relay 185.28.22.166:49894]
+2025-08-27 23:42:49.116671+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54270 -> [fd12:3456:789a::20:10]:5349 [TLS, session mywe3savww5z]
+2025-08-27 23:42:49.117421+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54269 -> [fd12:3456:789a::20:10]:5349 [TLS, session 58f52m6uqcv9]
+2025-08-27 23:42:49.242973+00:00 [notice] Failed long-term STUN/TURN authentication [TLS, session 58f52m6uqcv9, user 1756415893:terrya, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54269]
+2025-08-27 23:42:49.246513+00:00 [notice] Failed long-term STUN/TURN authentication [TLS, session mywe3savww5z, user 1756415893:terrya, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54270]
+2025-08-27 23:42:49.308589+00:00 [info] Connection reset by peer [TLS, session 58f52m6uqcv9, user 1756415893:terrya, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54269]
+2025-08-27 23:42:49.310085+00:00 [info] Connection reset by peer [TLS, session mywe3savww5z, user 1756415893:terrya, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54270]
+2025-08-27 23:43:02.044741+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275 -> [fd12:3456:789a::20:10]:5349 [TLS, session 8hcymiclttrr]
+2025-08-27 23:43:02.046126+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274 -> [fd12:3456:789a::20:10]:5349 [TLS, session 5tsfdj7h08d2]
+2025-08-27 23:43:02.207613+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275]
+2025-08-27 23:43:02.208276+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275, relay 185.28.22.166:49625]
+2025-08-27 23:43:02.311949+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274]
+2025-08-27 23:43:02.312394+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274, relay 185.28.22.166:49930]
+2025-08-27 23:43:02.392938+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274]
+2025-08-27 23:43:02.393066+00:00 [info] Client requested closing the TURN session [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274, relay 185.28.22.166:49930]
+2025-08-27 23:43:02.393321+00:00 [info] Deleting TURN allocation [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274, relay 185.28.22.166:49930]
+2025-08-27 23:43:02.393367+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session 5tsfdj7h08d2, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54274, relay 185.28.22.166:49930]
+2025-08-27 23:43:02.394246+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275]
+2025-08-27 23:43:02.394552+00:00 [info] Client requested closing the TURN session [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275, relay 185.28.22.166:49625]
+2025-08-27 23:43:02.394664+00:00 [info] Cannot respond to client: Connection closed [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275, relay 185.28.22.166:49625]
+2025-08-27 23:43:02.394676+00:00 [info] Connection reset by peer [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275]
+2025-08-27 23:43:02.394751+00:00 [info] Deleting TURN allocation [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275, relay 185.28.22.166:49625]
+2025-08-27 23:43:02.394894+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session 8hcymiclttrr, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54275, relay 185.28.22.166:49625]
+2025-08-27 23:44:26.423737+00:00 [notice] SIGTERM received - shutting down
+
+2025-08-27 23:44:26.431606+00:00 [info] Stopped listening on [::]:3478 (auto)
+2025-08-27 23:44:26.431838+00:00 [info] Stopped listening on [::]:5349 (tls)
+2025-08-27 23:44:26.432226+00:00 [notice] Stopping eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:46:49.901677+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:46:49.901778+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:46:49.901831+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:46:49.901897+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 23:46:49.901936+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:46:49.902740+00:00 [info] Listening on [::]:3478 (udp) (STUN/TURN)
+2025-08-27 23:46:49.903093+00:00 [info] Listening on [::]:5349 (tls) (STUN/TURN)
+2025-08-27 23:48:28.864114+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:48642 -> [fd12:3456:789a::20:10]:5349 [TLS, session 88f2vsg73aca]
+2025-08-27 23:48:29.435910+00:00 [info] Connection failure: closed [TLS, session 88f2vsg73aca, anonymous, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:48642]
+2025-08-27 23:48:30.965737+00:00 [notice] SIGTERM received - shutting down
+
+2025-08-27 23:48:30.968417+00:00 [info] Stopped listening on [::]:3478 (udp)
+2025-08-27 23:48:30.968601+00:00 [info] Stopped listening on [::]:5349 (tls)
+2025-08-27 23:48:30.968983+00:00 [notice] Stopping eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:50:57.213626+00:00 [notice] Starting eturnal 1.12.2 on Erlang/OTP 27 (ERTS 15.2.6)
+2025-08-27 23:50:57.213727+00:00 [info] Got no NOTIFY_SOCKET, notifications disabled
+2025-08-27 23:50:57.213786+00:00 [info] Relay IPv4 address: 185.28.22.166 (port range: 49500-50100)
+2025-08-27 23:50:57.213823+00:00 [info] Relay IPv6 address: 2a02:4780:10:e8ad::1 (port range: 49500-50100)
+2025-08-27 23:50:57.213878+00:00 [info] Listening on 127.0.0.1:3470 (tcp) (Erlang protocol version 5)
+2025-08-27 23:50:57.214744+00:00 [info] Listening on [::]:3478 (udp) (STUN/TURN)
+2025-08-27 23:50:57.214991+00:00 [info] Listening on [::]:3478 (tcp) (STUN/TURN)
+2025-08-27 23:50:57.215285+00:00 [info] Listening on [::]:5349 (tls) (STUN/TURN)
+2025-08-27 23:50:57.887543+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:47812 -> [fd12:3456:789a::20:10]:5349 [TLS, session hzjk99wusnhq]
+2025-08-27 23:51:01.605071+00:00 [info] Connection reset by peer [TLS, session hzjk99wusnhq, anonymous, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:47812]
+2025-08-27 23:51:05.408685+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:47006 -> [fd12:3456:789a::20:10]:3478 [TCP, session l96rwoati45a]
+2025-08-27 23:51:07.903230+00:00 [info] Connection reset by peer [TCP, session l96rwoati45a, anonymous, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:47006]
+2025-08-27 23:51:14.430536+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session 71zgp2si3rbs, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499]
+2025-08-27 23:51:14.431278+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session 71zgp2si3rbs, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499, relay 185.28.22.166:49971]
+2025-08-27 23:51:14.433255+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session lpcba5xlqz4i, user 1756415893:terry, client 47.26.234.89:49498]
+2025-08-27 23:51:14.433564+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session lpcba5xlqz4i, user 1756415893:terry, client 47.26.234.89:49498, relay 185.28.22.166:49548]
+2025-08-27 23:51:14.506680+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session s3rlpkaialtl, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499]
+2025-08-27 23:51:14.506867+00:00 [info] Client requested closing the TURN session [UDP, session 71zgp2si3rbs, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499, relay 185.28.22.166:49971]
+2025-08-27 23:51:14.507102+00:00 [info] Deleting TURN allocation [UDP, session 71zgp2si3rbs, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499, relay 185.28.22.166:49971]
+2025-08-27 23:51:14.507153+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session 71zgp2si3rbs, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:49499, relay 185.28.22.166:49971]
+2025-08-27 23:51:14.509597+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session xl00uxebwmns, user 1756415893:terry, client 47.26.234.89:49498]
+2025-08-27 23:51:14.509664+00:00 [info] Client requested closing the TURN session [UDP, session lpcba5xlqz4i, user 1756415893:terry, client 47.26.234.89:49498, relay 185.28.22.166:49548]
+2025-08-27 23:51:14.509793+00:00 [info] Deleting TURN allocation [UDP, session lpcba5xlqz4i, user 1756415893:terry, client 47.26.234.89:49498, relay 185.28.22.166:49548]
+2025-08-27 23:51:14.509875+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session lpcba5xlqz4i, user 1756415893:terry, client 47.26.234.89:49498, relay 185.28.22.166:49548]
+2025-08-27 23:51:21.508883+00:00 [notice] Failed long-term STUN/TURN authentication [UDP, session kfqdmryhfpou, user 1756415893:terry5, client 47.26.234.89:51659]
+2025-08-27 23:51:21.527157+00:00 [notice] Failed long-term STUN/TURN authentication [UDP, session tbvyz5ke9hml, user 1756415893:terry5, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:51660]
+2025-08-27 23:51:30.718827+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session s1wd0ggvbdm1, user 1756415893:terry, client 47.26.234.89:64102]
+2025-08-27 23:51:30.719235+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session s1wd0ggvbdm1, user 1756415893:terry, client 47.26.234.89:64102, relay 185.28.22.166:49542]
+2025-08-27 23:51:30.719796+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session 18xux6mi3qn5, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103]
+2025-08-27 23:51:30.720074+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session 18xux6mi3qn5, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103, relay 185.28.22.166:49926]
+2025-08-27 23:51:30.796491+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session xmy9xmc3q2af, user 1756415893:terry, client 47.26.234.89:64102]
+2025-08-27 23:51:30.796690+00:00 [info] Client requested closing the TURN session [UDP, session s1wd0ggvbdm1, user 1756415893:terry, client 47.26.234.89:64102, relay 185.28.22.166:49542]
+2025-08-27 23:51:30.796915+00:00 [info] Deleting TURN allocation [UDP, session s1wd0ggvbdm1, user 1756415893:terry, client 47.26.234.89:64102, relay 185.28.22.166:49542]
+2025-08-27 23:51:30.796963+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session s1wd0ggvbdm1, user 1756415893:terry, client 47.26.234.89:64102, relay 185.28.22.166:49542]
+2025-08-27 23:51:30.797947+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session 7o024fadl0nu, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103]
+2025-08-27 23:51:30.798035+00:00 [info] Client requested closing the TURN session [UDP, session 18xux6mi3qn5, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103, relay 185.28.22.166:49926]
+2025-08-27 23:51:30.798190+00:00 [info] Deleting TURN allocation [UDP, session 18xux6mi3qn5, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103, relay 185.28.22.166:49926]
+2025-08-27 23:51:30.798243+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session 18xux6mi3qn5, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:64103, relay 185.28.22.166:49926]
+2025-08-27 23:51:48.843247+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382 -> [fd12:3456:789a::20:10]:5349 [TLS, session c1nfll0t3r1l]
+2025-08-27 23:51:48.850051+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383 -> [fd12:3456:789a::20:10]:5349 [TLS, session 0clk3a8gt7xy]
+2025-08-27 23:51:48.973013+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382]
+2025-08-27 23:51:48.973635+00:00 [notice] Creating TURN allocation (lifetime: 599 seconds) [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382, relay 185.28.22.166:49641]
+2025-08-27 23:51:49.004091+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383]
+2025-08-27 23:51:49.004590+00:00 [notice] Creating TURN allocation (lifetime: 599 seconds) [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383, relay 185.28.22.166:49811]
+2025-08-27 23:51:49.079159+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383]
+2025-08-27 23:51:49.079298+00:00 [info] Client requested closing the TURN session [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383, relay 185.28.22.166:49811]
+2025-08-27 23:51:49.079632+00:00 [info] Deleting TURN allocation [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383, relay 185.28.22.166:49811]
+2025-08-27 23:51:49.079715+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session 0clk3a8gt7xy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54383, relay 185.28.22.166:49811]
+2025-08-27 23:51:49.080819+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382]
+2025-08-27 23:51:49.080958+00:00 [info] Client requested closing the TURN session [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382, relay 185.28.22.166:49641]
+2025-08-27 23:51:49.081043+00:00 [info] Cannot respond to client: Connection closed [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382, relay 185.28.22.166:49641]
+2025-08-27 23:51:49.081054+00:00 [info] Connection reset by peer [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382]
+2025-08-27 23:51:49.081181+00:00 [info] Deleting TURN allocation [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382, relay 185.28.22.166:49641]
+2025-08-27 23:51:49.081306+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session c1nfll0t3r1l, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54382, relay 185.28.22.166:49641]
+2025-08-27 23:52:00.065026+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54390 -> [fd12:3456:789a::20:10]:5349 [TLS, session 9p3yxsjfmpi6]
+2025-08-27 23:52:00.078673+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54391 -> [fd12:3456:789a::20:10]:5349 [TLS, session 0umrwp6v5j7e]
+2025-08-27 23:52:00.220088+00:00 [notice] Failed long-term STUN/TURN authentication [TLS, session 9p3yxsjfmpi6, user 1756415893:terry5, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54390]
+2025-08-27 23:52:00.237072+00:00 [notice] Failed long-term STUN/TURN authentication [TLS, session 0umrwp6v5j7e, user 1756415893:terry5, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54391]
+2025-08-27 23:52:00.315580+00:00 [info] Connection reset by peer [TLS, session 0umrwp6v5j7e, user 1756415893:terry5, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54391]
+2025-08-27 23:52:00.317335+00:00 [info] Connection reset by peer [TLS, session 9p3yxsjfmpi6, user 1756415893:terry5, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54390]
+2025-08-27 23:52:08.088163+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393 -> [fd12:3456:789a::20:10]:5349 [TLS, session i6u5n6vw627w]
+2025-08-27 23:52:08.107342+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392 -> [fd12:3456:789a::20:10]:5349 [TLS, session aa69cofna212]
+2025-08-27 23:52:08.221755+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393]
+2025-08-27 23:52:08.222262+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393, relay 185.28.22.166:50018]
+2025-08-27 23:52:08.445858+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392]
+2025-08-27 23:52:08.446361+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392, relay 185.28.22.166:49840]
+2025-08-27 23:52:08.524800+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393]
+2025-08-27 23:52:08.525035+00:00 [info] Client requested closing the TURN session [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393, relay 185.28.22.166:50018]
+2025-08-27 23:52:08.525131+00:00 [info] Cannot respond to client: Connection closed [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393, relay 185.28.22.166:50018]
+2025-08-27 23:52:08.525145+00:00 [info] Connection reset by peer [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393]
+2025-08-27 23:52:08.525346+00:00 [info] Deleting TURN allocation [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393, relay 185.28.22.166:50018]
+2025-08-27 23:52:08.525552+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392]
+2025-08-27 23:52:08.525684+00:00 [info] Client requested closing the TURN session [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392, relay 185.28.22.166:49840]
+2025-08-27 23:52:08.525610+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session i6u5n6vw627w, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54393, relay 185.28.22.166:50018]
+2025-08-27 23:52:08.525994+00:00 [info] Connection reset by peer [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392]
+2025-08-27 23:52:08.526022+00:00 [info] Deleting TURN allocation [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392, relay 185.28.22.166:49840]
+2025-08-27 23:52:08.526099+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session aa69cofna212, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54392, relay 185.28.22.166:49840]
+2025-08-27 23:52:53.273618+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session s8w75x0phs3u, user 1756415893:terry, client 47.26.234.89:60888]
+2025-08-27 23:52:53.274041+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session s8w75x0phs3u, user 1756415893:terry, client 47.26.234.89:60888, relay 185.28.22.166:49681]
+2025-08-27 23:52:53.291289+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session oe0z93qfrity, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889]
+2025-08-27 23:52:53.292032+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [UDP, session oe0z93qfrity, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889, relay 185.28.22.166:49995]
+2025-08-27 23:52:53.366485+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session iiyjtglr1ngv, user 1756415893:terry, client 47.26.234.89:60888]
+2025-08-27 23:52:53.366619+00:00 [info] Client requested closing the TURN session [UDP, session s8w75x0phs3u, user 1756415893:terry, client 47.26.234.89:60888, relay 185.28.22.166:49681]
+2025-08-27 23:52:53.366853+00:00 [info] Deleting TURN allocation [UDP, session s8w75x0phs3u, user 1756415893:terry, client 47.26.234.89:60888, relay 185.28.22.166:49681]
+2025-08-27 23:52:53.366881+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session s8w75x0phs3u, user 1756415893:terry, client 47.26.234.89:60888, relay 185.28.22.166:49681]
+2025-08-27 23:52:53.374150+00:00 [info] Accepting long-term STUN/TURN authentication [UDP, session w248ese9krln, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889]
+2025-08-27 23:52:53.374249+00:00 [info] Client requested closing the TURN session [UDP, session oe0z93qfrity, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889, relay 185.28.22.166:49995]
+2025-08-27 23:52:53.374414+00:00 [info] Deleting TURN allocation [UDP, session oe0z93qfrity, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889, relay 185.28.22.166:49995]
+2025-08-27 23:52:53.374493+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [UDP, session oe0z93qfrity, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:60889, relay 185.28.22.166:49995]
+2025-08-27 23:53:11.164024+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409 -> [fd12:3456:789a::20:10]:5349 [TLS, session rsizwxpgdpr8]
+2025-08-27 23:53:11.176544+00:00 [info] Accepting connection: [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410 -> [fd12:3456:789a::20:10]:5349 [TLS, session xm5dmnm1zrsy]
+2025-08-27 23:53:11.302032+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409]
+2025-08-27 23:53:11.302483+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409, relay 185.28.22.166:49977]
+2025-08-27 23:53:11.340995+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410]
+2025-08-27 23:53:11.341413+00:00 [notice] Creating TURN allocation (lifetime: 600 seconds) [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410, relay 185.28.22.166:49984]
+2025-08-27 23:53:11.421683+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409]
+2025-08-27 23:53:11.421822+00:00 [info] Client requested closing the TURN session [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409, relay 185.28.22.166:49977]
+2025-08-27 23:53:11.422227+00:00 [info] Accepting long-term STUN/TURN authentication [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410]
+2025-08-27 23:53:11.422600+00:00 [info] Client requested closing the TURN session [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410, relay 185.28.22.166:49984]
+2025-08-27 23:53:11.422416+00:00 [info] Connection reset by peer [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409]
+2025-08-27 23:53:11.422508+00:00 [info] Deleting TURN allocation [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409, relay 185.28.22.166:49977]
+2025-08-27 23:53:11.422565+00:00 [info] Connection reset by peer [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410]
+2025-08-27 23:53:11.422828+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session rsizwxpgdpr8, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54409, relay 185.28.22.166:49977]
+2025-08-27 23:53:11.422713+00:00 [info] Cannot respond to client: Connection closed [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410, relay 185.28.22.166:49984]
+2025-08-27 23:53:11.422976+00:00 [info] Deleting TURN allocation [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410, relay 185.28.22.166:49984]
+2025-08-27 23:53:11.423063+00:00 [notice] Relayed 0 KiB (in 0 B / 0 packets, out 0 B / 0 packets), duration: 0 seconds [TLS, session xm5dmnm1zrsy, user 1756415893:terry, client [2600:6c4a:67f:aac0:3478:8886:f785:cdfd]:54410, relay 185.28.22.166:49984]

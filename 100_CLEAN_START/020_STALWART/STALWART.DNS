@@ -1,0 +1,37 @@
+@                  IN MX    10 mail.landingdev.xyz.
+202509e._domainkey IN TXT   "v=DKIM1; k=ed25519; h=sha256; p=WAODLlpfxvHQ+uovqk/pAeWsvsdcwSWuTNqQ242Hbx4="
+202509r._domainkey IN TXT   "v=DKIM1; k=rsa; h=sha256; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAut1+5W2fPo+vTis1CxIyKYw/t38K0nQumEstP+5V6UEshNIjt2G/FMa/Xh7vszFO/UMME2tnCLJHNcwGDYx7gwkwKeHojPxvOo5TtufcgPx+XkM/v2hrhe667YQjCHkZrOWj95dflcUvaEE0srsKy2hmfwol+tJUo9Ufs2aJseub+Ss4oq2KkzM" "44k+n9yCjLtuH9l2BzSbuYDri/0B6Bl6/kPzxxV82J8b/svmyE7UZ9+B1oEo/HHJbVwKoLROhUYcxc0up0lGFbgFcTO7FSYhRN+ERMh0x8EktdXw8iaafdza92OrDbJHoMjVYtMDVK0FnCN6AeX0gBQYj+hXXhQIDAQAB"
+mail               IN TXT   "v=spf1 a ra=postmaster -all"
+@                  IN TXT   "v=spf1 mx ra=postmaster -all"
+_jmap._tcp         IN SRV   0 1 443 mail.landingdev.xyz.
+_caldavs._tcp      IN SRV   0 1 443 mail.landingdev.xyz.
+_carddavs._tcp     IN SRV   0 1 443 mail.landingdev.xyz.
+_imaps._tcp        IN SRV   0 1 993 mail.landingdev.xyz.
+_imap._tcp         IN SRV   0 1 143 mail.landingdev.xyz.
+_pop3s._tcp        IN SRV   0 1 995 mail.landingdev.xyz.
+_pop3._tcp         IN SRV   0 1 110 mail.landingdev.xyz.
+_submissions._tcp  IN SRV   0 1 465 mail.landingdev.xyz.
+_submission._tcp   IN SRV   0 1 587 mail.landingdev.xyz.
+autoconfig         IN CNAME mail.landingdev.xyz.
+autodiscover       IN CNAME mail.landingdev.xyz.
+mta-sts            IN CNAME mail.landingdev.xyz.
+_mta-sts           IN TXT   "v=STSv1; id=4645709906801488801"
+_dmarc             IN TXT   "v=DMARC1; p=reject; rua=mailto:postmaster@landingdev.xyz; ruf=mailto:postmaster@landingdev.xyz"
+_smtp._tls         IN TXT   "v=TLSRPTv1; rua=mailto:postmaster@landingdev.xyz"
+_25._tcp           IN TLSA  3 0 1 1d32d3958bb5261245b2ebde2fc6c9c9509a5134302848728fa5b8459bb62a19
+_25._tcp           IN TLSA  3 0 2 e441b0bcba2e0d3d8eecbe371a2300576c97b663fef20d0aeb75f9bb87391cb0bdc8618b83ddfdb49df54fe9fc732c6e5f2d63e9a0bfad07a13ab5df202584b6
+_25._tcp           IN TLSA  3 1 1 e9440bd1e1d73c63bb35bb611a51e605a5b506098b2a854307a30a307878ebc7
+_25._tcp           IN TLSA  3 1 2 994194ec623c2054e07b80b11fb4000e2e73ed543b1d6b29626b7fa202f8de26c5542cce281eec7c5c11669b76a857ff110877b4fb5bce7b48424755da60c757
+_25._tcp           IN TLSA  2 0 1 aeb1fd7410e83bc96f5da3c6a7c2c1bb836d1fa5cb86e708515890e428a8770b
+_25._tcp           IN TLSA  2 0 2 e18f3d6ccbc578f025c3c7c29ed7bffe1b8eef5b1f839c17298dcf218303d2a63e305f6c1f489691774a18bad836035e5af2de1fc42a3a26cfe9e530f92e3855
+_25._tcp           IN TLSA  2 1 1 cbbc559b44d524d6a132bdac672744da3407f12aae5d5f722c5f6c7913871c75
+_25._tcp           IN TLSA  2 1 2 7d779dd26d37ca5a72fd05f1b815a06078c8e09777697c651fbe012c8d2894e048fcfe24160ee1562602240b6bef44e00f2b7340c84546d6110842bbdeb484a7
+
+_25._tcp.mail.landingdev.xyz.           IN TLSA  3 0 1 1d32d3958bb5261245b2ebde2fc6c9c9509a5134302848728fa5b8459bb62a19
+_25._tcp.mail.landingdev.xyz.           IN TLSA  3 0 2 e441b0bcba2e0d3d8eecbe371a2300576c97b663fef20d0aeb75f9bb87391cb0bdc8618b83ddfdb49df54fe9fc732c6e5f2d63e9a0bfad07a13ab5df202584b6
+_25._tcp.mail.landingdev.xyz.           IN TLSA  3 1 1 e9440bd1e1d73c63bb35bb611a51e605a5b506098b2a854307a30a307878ebc7
+_25._tcp.mail.landingdev.xyz.           IN TLSA  3 1 2 994194ec623c2054e07b80b11fb4000e2e73ed543b1d6b29626b7fa202f8de26c5542cce281eec7c5c11669b76a857ff110877b4fb5bce7b48424755da60c757
+_25._tcp.mail.landingdev.xyz.           IN TLSA  2 0 1 aeb1fd7410e83bc96f5da3c6a7c2c1bb836d1fa5cb86e708515890e428a8770b
+_25._tcp.mail.landingdev.xyz.           IN TLSA  2 0 2 e18f3d6ccbc578f025c3c7c29ed7bffe1b8eef5b1f839c17298dcf218303d2a63e305f6c1f489691774a18bad836035e5af2de1fc42a3a26cfe9e530f92e3855
+_25._tcp.mail.landingdev.xyz.           IN TLSA  2 1 1 cbbc559b44d524d6a132bdac672744da3407f12aae5d5f722c5f6c7913871c75
+_25._tcp.mail.landingdev.xyz.           IN TLSA  2 1 2 7d779dd26d37ca5a72fd05f1b815a06078c8e09777697c651fbe012c8d2894e048fcfe24160ee1562602240b6bef44e00f2b7340c84546d6110842bbdeb484a7

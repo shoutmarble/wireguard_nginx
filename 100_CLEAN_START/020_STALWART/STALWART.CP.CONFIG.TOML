@@ -1,0 +1,4 @@
+#  docker cp mail:/opt/stalwart/etc/config.toml local.config.toml
+#  docker cp local.config.toml mail:/opt/stalwart/etc/config.toml
+
+

@@ -1,0 +1,35 @@
+networks:
+  npm_net:
+    external: true
+    name: npm_net
+---
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+
+    container_name: code
+    hostname: code
+
+    networks:
+      npm_net:
+        ipv4_address: 10.10.6.10
+        ipv6_address: fd12:3456:789a::6:10
+
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - PASSWORD=d28n69RmfEFJt  # Set a password for access
+      # - HASHED_PASSWORD= #optional
+      # - SUDO_PASSWORD=password #optional
+      # - SUDO_PASSWORD_HASH= #optional
+      - PROXY_DOMAIN=code.landingdev.xyz #optional
+      # - DEFAULT_WORKSPACE=/config/workspace #optional
+      # - PWA_APPNAME=code-server #optional
+    volumes:
+      - ./config:/config
+    # ports:
+    #   - 8443:8443
+    restart: unless-stopped
+
+

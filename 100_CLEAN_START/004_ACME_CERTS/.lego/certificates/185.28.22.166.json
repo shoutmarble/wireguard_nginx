@@ -1,0 +1,5 @@
+{
+	"domain": "185.28.22.166",
+	"certUrl": "https://acme-staging-v02.api.letsencrypt.org/acme/cert/2cad00f6344efcf757ddbf9eb21230b66957",
+	"certStableUrl": "https://acme-staging-v02.api.letsencrypt.org/acme/cert/2cad00f6344efcf757ddbf9eb21230b66957"
+}

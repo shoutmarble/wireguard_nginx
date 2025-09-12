@@ -1,0 +1,9 @@
+{
+	"email": "terry.walsworth@outlook.com",
+	"registration": {
+		"body": {
+			"status": "valid"
+		},
+		"uri": "https://acme-staging-v02.api.letsencrypt.org/acme/acct/227489584"
+	}
+}

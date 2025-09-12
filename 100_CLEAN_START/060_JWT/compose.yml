@@ -1,0 +1,26 @@
+
+networks:
+  npm_net:
+    external: true
+    name: npm_net
+    
+
+services:
+  app:
+    image: ghcr.io/element-hq/lk-jwt-service:0.3.0
+    # image: ghcr.io/element-hq/lk-jwt-service:sha-ead6df4
+    container_name: jwt
+
+    hostname: jwt
+    domainname: landingdev.xyz
+        
+    networks:
+      npm_net:
+        ipv4_address: 10.10.60.10
+        ipv6_address: fd12:3456:789a::60:10
+    environment:
+      - LIVEKIT_JWT_PORT=8080
+      - LIVEKIT_URL="wss://livekit.landingdev.xyz"
+      - LIVEKIT_KEY="Nm7MFqEdn7dEkLW"
+      - LIVEKIT_SECRET="cpCc17rcrz9TpfG7b0xD2ImsPAMF2P8GP3aqBqlsNLNG"
+      - LIVEKIT_FULL_ACCESS_HOMESERVERS=landingdev.xyz

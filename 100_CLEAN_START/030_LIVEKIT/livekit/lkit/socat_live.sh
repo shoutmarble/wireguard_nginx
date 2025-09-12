@@ -1,0 +1,1 @@
+echo -e "GET /rtc?access_token=$lk_token HTTP/1.1\r\nHost: live.landingdev.xyz\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Key: dGhlIHNhbXBsZSBub25jZQ==\r\nSec-WebSocket-Version: 13\r\n\r\n" | socat - openssl:live.landingdev.xyz:443,verify=0

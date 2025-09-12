@@ -1,0 +1,18 @@
+
+networks:
+  npm_net:
+    external: true
+    name: npm_net
+    
+services:
+    element:
+        image: vectorim/element-web
+        container_name: element
+
+        networks:
+          npm_net:
+            ipv4_address: 10.10.50.10
+            ipv6_address: fd12:3456:789a::50:10
+
+        volumes:
+            - ./element.config.json:/app/config.json                

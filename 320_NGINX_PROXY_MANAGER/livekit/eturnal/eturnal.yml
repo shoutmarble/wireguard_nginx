@@ -1,0 +1,36 @@
+eturnal:
+  realm: "eturnal.landingdev.xyz"
+  secret: "my_secret_long_phrase"
+  credentials:
+    TERRY: TERRY
+    BILL: BILL
+  
+  relay_ipv4_addr: "185.28.22.166"
+  relay_ipv6_addr: "2a02:4780:10:e8ad::1"
+
+  relay_min_port: 49500
+  relay_max_port: 49800
+
+  listen:
+    - ip: "::"
+      port: 3478
+      transport: udp
+      enable_turn: true
+    - ip: "::"
+      port: 3478
+      transport: tcp
+      enable_turn: true
+    - ip: "::"
+      port: 5348
+      transport: tcp
+      enable_turn: true
+    - ip: "::"
+      port: 5349
+      transport: tls
+      enable_turn: true
+      
+  tls_crt_file: /opt/eturnal/tls/landingdev.xyz.pem
+  tls_key_file: /opt/eturnal/tls/landingdev.xyz.key
+    
+  log_dir: /var/log/eturnal
+  log_level: debug

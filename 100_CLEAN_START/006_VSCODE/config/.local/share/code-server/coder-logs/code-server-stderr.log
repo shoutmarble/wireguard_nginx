@@ -1,0 +1,65 @@
+File not found: /app/code-server/lib/vscode/extensions/emmet/dist/browser/emmetBrowserMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/emmet/dist/browser/emmetBrowserMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/emmet/dist/browser/emmetBrowserMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/extensions/git-base/dist/browser/extension.js
+File not found: /app/code-server/lib/vscode/extensions/merge-conflict/dist/browser/mergeConflictMain.js
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+[node.js fs] readdir with filetypes failed with error:  Error: EACCES: permission denied, scandir '/root/'
+    at async Object.readdir (node:internal/fs/promises:955:18)
+    at async dN (file:///app/code-server/lib/vscode/out/server-main.js:27:88318)
+    at async N5 (file:///app/code-server/lib/vscode/out/server-main.js:27:88247)
+    at async Object.ch (file:///app/code-server/lib/vscode/out/server-main.js:27:88106)
+    at async Nu.readdir (file:///app/code-server/lib/vscode/out/server-main.js:67:15795) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/root/'
+}
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda_bg.wasm
+File not found: /app/code-server/lib/vscode/node_modules/vsda/rust/web/vsda.js
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode'
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/settings.json'
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/tasks.json'
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/launch.json'
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/mcp.json'
+[02:01:23] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.cursor/mcp.json'
+[node.js fs] readdir with filetypes failed with error:  Error: EACCES: permission denied, scandir '/root'
+    at async Object.readdir (node:internal/fs/promises:955:18)
+    at async dN (file:///app/code-server/lib/vscode/out/server-main.js:27:88318)
+    at async N5 (file:///app/code-server/lib/vscode/out/server-main.js:27:88247)
+    at async Object.ch (file:///app/code-server/lib/vscode/out/server-main.js:27:88106)
+    at async Nu.readdir (file:///app/code-server/lib/vscode/out/server-main.js:67:15795) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/root'
+}
+[02:01:24] [File Watcher ('parcel')] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /root)
+[02:01:24] [File Watcher (universal)] Bad file descriptor
+[02:01:24] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/extensions'
+[node.js fs] readdir with filetypes failed with error:  Error: EACCES: permission denied, scandir '/root'
+    at async Object.readdir (node:internal/fs/promises:955:18)
+    at async dN (file:///app/code-server/lib/vscode/out/server-main.js:27:88318)
+    at async N5 (file:///app/code-server/lib/vscode/out/server-main.js:27:88247)
+    at async Object.ch (file:///app/code-server/lib/vscode/out/server-main.js:27:88106)
+    at async Nu.readdir (file:///app/code-server/lib/vscode/out/server-main.js:67:15795) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'scandir',
+  path: '/root'
+}
+a socket was left hanging
+a socket was left hanging

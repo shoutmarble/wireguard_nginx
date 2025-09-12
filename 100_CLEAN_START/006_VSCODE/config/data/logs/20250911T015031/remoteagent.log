@@ -1,0 +1,27 @@
+2025-09-11 01:50:31.764 [info] 
+
+
+
+
+2025-09-11 01:50:31.776 [info] Extension host agent started.
+2025-09-11 01:50:31.790 [info] Started initializing default profile extensions in extensions installation folder. file:///config/extensions
+2025-09-11 01:50:31.804 [info] Completed initializing default profile extensions in extensions installation folder. file:///config/extensions
+2025-09-11 02:00:50.085 [info] [10.10.10.10][1f62c3ee][ManagementConnection] New connection established.
+2025-09-11 02:00:51.289 [info] [10.10.10.10][084f819d][ExtensionHostConnection] New connection established.
+2025-09-11 02:00:51.297 [info] [10.10.10.10][084f819d][ExtensionHostConnection] <4638> Launched Extension Host Process.
+2025-09-11 02:01:22.519 [info] [10.10.10.10][1f62c3ee][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-09-11 02:01:22.564 [info] [10.10.10.10][084f819d][ExtensionHostConnection] <4638> Extension Host Process exited with code: 0, signal: null.
+2025-09-11 02:01:23.427 [info] [10.10.10.10][303e612d][ManagementConnection] New connection established.
+2025-09-11 02:01:23.755 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode'
+2025-09-11 02:01:23.756 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/settings.json'
+2025-09-11 02:01:23.756 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/tasks.json'
+2025-09-11 02:01:23.756 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/launch.json'
+2025-09-11 02:01:23.757 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/mcp.json'
+2025-09-11 02:01:23.999 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.cursor/mcp.json'
+2025-09-11 02:01:24.138 [error] [File Watcher ('parcel')] Unexpected error: Bad file descriptor (EUNKNOWN) (path: /root)
+2025-09-11 02:01:24.139 [error] [File Watcher (universal)] Bad file descriptor
+2025-09-11 02:01:24.473 [info] [10.10.10.10][1ed1de6a][ExtensionHostConnection] New connection established.
+2025-09-11 02:01:24.484 [info] [10.10.10.10][1ed1de6a][ExtensionHostConnection] <5344> Launched Extension Host Process.
+2025-09-11 02:01:24.590 [error] [File Watcher (node.js)] Error: EACCES: permission denied, stat '/root/.vscode/extensions'
+2025-09-11 03:03:16.678 [info] [10.10.10.10][303e612d][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-09-11 03:03:16.728 [info] [10.10.10.10][1ed1de6a][ExtensionHostConnection] <5344> Extension Host Process exited with code: 0, signal: null.

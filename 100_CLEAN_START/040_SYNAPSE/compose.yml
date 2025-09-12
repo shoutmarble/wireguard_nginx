@@ -1,0 +1,52 @@
+
+networks:
+  npm_net:
+    external: true
+    name: npm_net
+    
+volumes:
+    # synapse_data:
+    postgres_data:
+        
+services:
+    synapse:
+        image: matrixdotorg/synapse:latest
+        container_name: matrix
+        hostname: matrix
+        domainname: landingdev.xyz
+        volumes:
+            - ./synapse_data:/data:rw
+        environment:
+            - SYNAPSE_SERVER_NAME=matrix.landingdev.xyz
+            - SYNAPSE_REPORT_STATS=no
+            - SYNAPSE_CONFIG_DIR=/data
+            # contains the user/pw to postgres
+            - SYNAPSE_CONFIG_PATH=/data/homeserver.yml
+        depends_on:
+            - postgres
+        networks:
+          npm_net:
+            ipv4_address: 10.10.40.10
+            ipv6_address: fd12:3456:789a::40:10
+
+
+    postgres:
+        image: postgres:16
+        container_name: postgres
+        restart: unless-stopped
+        networks:
+          npm_net:
+            ipv4_address: 10.10.40.20
+            ipv6_address: fd12:3456:789a::40:20
+        environment:
+          - POSTGRES_USER=synapse
+          - POSTGRES_PASSWORD=synapse
+          - POSTGRES_DB=synapse
+          - POSTGRES_INITDB_ARGS=--encoding=UTF8 --lc-collate=C --lc-ctype=C
+        volumes:
+          - postgres_data:/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD-SHELL", "pg_isready -U synapse"]
+            interval: 5s
+            timeout: 5s
+            retries: 5

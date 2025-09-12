@@ -1,0 +1,896 @@
+2025/09/12 14:47:52 [notice] 326#326: signal process started
+2025/09/12 14:47:52 [notice] 1#1: using the "epoll" event method
+2025/09/12 14:47:52 [notice] 1#1: start worker processes
+2025/09/12 14:47:52 [notice] 1#1: start worker process 332
+2025/09/12 14:47:52 [notice] 1#1: start worker process 333
+2025/09/12 14:47:52 [notice] 1#1: start worker process 334
+2025/09/12 14:47:52 [notice] 1#1: start worker process 335
+2025/09/12 14:47:53 [notice] 1#1: signal 17 (SIGCHLD) received from 197
+2025/09/12 14:47:53 [notice] 1#1: worker process 197 exited with code 0
+2025/09/12 14:47:53 [notice] 1#1: worker process 198 exited with code 0
+2025/09/12 14:47:53 [notice] 1#1: worker process 199 exited with code 0
+2025/09/12 14:47:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 14:47:53 [notice] 1#1: signal 17 (SIGCHLD) received from 198
+2025/09/12 14:47:53 [notice] 1#1: signal 17 (SIGCHLD) received from 196
+2025/09/12 14:47:53 [notice] 1#1: worker process 196 exited with code 0
+2025/09/12 14:47:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 14:58:10 [notice] 490#490: signal process started
+2025/09/12 14:58:10 [notice] 1#1: signal 1 (SIGHUP) received from 490, reconfiguring
+2025/09/12 14:58:10 [notice] 1#1: reconfiguring
+2025/09/12 14:58:10 [notice] 1#1: using the "epoll" event method
+2025/09/12 14:58:10 [notice] 1#1: start worker processes
+2025/09/12 14:58:10 [notice] 1#1: start worker process 496
+2025/09/12 14:58:10 [notice] 1#1: start worker process 497
+2025/09/12 14:58:10 [notice] 1#1: start worker process 498
+2025/09/12 14:58:10 [notice] 1#1: start worker process 499
+2025/09/12 14:58:10 [notice] 335#335: gracefully shutting down
+2025/09/12 14:58:10 [notice] 334#334: gracefully shutting down
+2025/09/12 14:58:10 [notice] 333#333: gracefully shutting down
+2025/09/12 14:58:10 [notice] 332#332: gracefully shutting down
+2025/09/12 14:58:10 [notice] 335#335: exiting
+2025/09/12 14:58:10 [notice] 334#334: exiting
+2025/09/12 14:58:10 [notice] 333#333: exiting
+2025/09/12 14:58:10 [notice] 332#332: exiting
+2025/09/12 14:58:10 [notice] 335#335: exit
+2025/09/12 14:58:10 [notice] 332#332: exit
+2025/09/12 14:58:10 [notice] 334#334: exit
+2025/09/12 14:58:10 [notice] 333#333: exit
+2025/09/12 14:58:10 [notice] 1#1: signal 17 (SIGCHLD) received from 332
+2025/09/12 14:58:10 [notice] 1#1: worker process 332 exited with code 0
+2025/09/12 14:58:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 14:58:10 [notice] 1#1: signal 17 (SIGCHLD) received from 334
+2025/09/12 14:58:10 [notice] 1#1: worker process 334 exited with code 0
+2025/09/12 14:58:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 14:58:10 [notice] 1#1: signal 17 (SIGCHLD) received from 335
+2025/09/12 14:58:10 [notice] 1#1: worker process 335 exited with code 0
+2025/09/12 14:58:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 14:58:10 [notice] 1#1: signal 17 (SIGCHLD) received from 333
+2025/09/12 14:58:10 [notice] 1#1: worker process 333 exited with code 0
+2025/09/12 14:58:10 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:00:44 [notice] 541#541: signal process started
+2025/09/12 15:00:44 [notice] 1#1: signal 1 (SIGHUP) received from 541, reconfiguring
+2025/09/12 15:00:44 [notice] 1#1: reconfiguring
+2025/09/12 15:00:44 [notice] 1#1: using the "epoll" event method
+2025/09/12 15:00:44 [notice] 1#1: start worker processes
+2025/09/12 15:00:44 [notice] 1#1: start worker process 546
+2025/09/12 15:00:44 [notice] 1#1: start worker process 547
+2025/09/12 15:00:44 [notice] 1#1: start worker process 548
+2025/09/12 15:00:44 [notice] 1#1: start worker process 549
+2025/09/12 15:00:44 [notice] 496#496: gracefully shutting down
+2025/09/12 15:00:44 [notice] 499#499: gracefully shutting down
+2025/09/12 15:00:44 [notice] 498#498: gracefully shutting down
+2025/09/12 15:00:44 [notice] 496#496: exiting
+2025/09/12 15:00:44 [notice] 497#497: gracefully shutting down
+2025/09/12 15:00:44 [notice] 499#499: exiting
+2025/09/12 15:00:44 [notice] 498#498: exiting
+2025/09/12 15:00:44 [notice] 497#497: exiting
+2025/09/12 15:00:44 [notice] 499#499: exit
+2025/09/12 15:00:44 [notice] 496#496: exit
+2025/09/12 15:00:44 [notice] 498#498: exit
+2025/09/12 15:00:44 [notice] 497#497: exit
+2025/09/12 15:00:44 [notice] 1#1: signal 17 (SIGCHLD) received from 497
+2025/09/12 15:00:44 [notice] 1#1: worker process 497 exited with code 0
+2025/09/12 15:00:44 [notice] 1#1: worker process 498 exited with code 0
+2025/09/12 15:00:44 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:00:44 [notice] 1#1: signal 17 (SIGCHLD) received from 499
+2025/09/12 15:00:44 [notice] 1#1: worker process 499 exited with code 0
+2025/09/12 15:00:44 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:00:44 [notice] 1#1: signal 17 (SIGCHLD) received from 496
+2025/09/12 15:00:44 [notice] 1#1: worker process 496 exited with code 0
+2025/09/12 15:00:44 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:03:22 [error] 547#547: *70 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 2a02:4780:10:e8ad::1, server: localhost, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzU3ODMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4OTM4Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.RcmvcJfPcTPH7iVpPWttHmIiU0tDA6YKuAk2HyfNCQw HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 15:09:16 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 15:09:16 [notice] 549#549: gracefully shutting down
+2025/09/12 15:09:16 [notice] 547#547: gracefully shutting down
+2025/09/12 15:09:16 [notice] 549#549: exiting
+2025/09/12 15:09:16 [notice] 547#547: exiting
+2025/09/12 15:09:16 [notice] 546#546: gracefully shutting down
+2025/09/12 15:09:16 [notice] 546#546: exiting
+2025/09/12 15:09:16 [notice] 549#549: exit
+2025/09/12 15:09:16 [notice] 547#547: exit
+2025/09/12 15:09:16 [notice] 548#548: gracefully shutting down
+2025/09/12 15:09:16 [notice] 548#548: exiting
+2025/09/12 15:09:16 [notice] 546#546: exit
+2025/09/12 15:09:16 [notice] 548#548: exit
+2025/09/12 15:09:16 [notice] 1#1: signal 17 (SIGCHLD) received from 549
+2025/09/12 15:09:16 [notice] 1#1: worker process 549 exited with code 0
+2025/09/12 15:09:16 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:09:16 [notice] 1#1: signal 17 (SIGCHLD) received from 547
+2025/09/12 15:09:16 [notice] 1#1: worker process 546 exited with code 0
+2025/09/12 15:09:16 [notice] 1#1: worker process 547 exited with code 0
+2025/09/12 15:09:16 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 15:09:16 [notice] 1#1: signal 17 (SIGCHLD) received from 548
+2025/09/12 15:09:16 [notice] 1#1: worker process 548 exited with code 0
+2025/09/12 15:09:16 [notice] 1#1: exit
+2025/09/12 15:09:23 [notice] 1#1: using the "epoll" event method
+2025/09/12 15:09:23 [notice] 1#1: nginx/1.29.1
+2025/09/12 15:09:23 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 15:09:23 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 15:09:23 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 15:09:23 [notice] 1#1: start worker processes
+2025/09/12 15:09:23 [notice] 1#1: start worker process 29
+2025/09/12 15:09:23 [notice] 1#1: start worker process 30
+2025/09/12 15:09:23 [notice] 1#1: start worker process 31
+2025/09/12 15:09:23 [notice] 1#1: start worker process 32
+2025/09/12 15:51:48 [error] 29#29: *95 open() "/etc/nginx/html/.well-known/matrix/client" failed (2: No such file or directory), client: 47.26.234.89, server: live, request: "GET /.well-known/matrix/client HTTP/1.1", host: "matrix.landingdev.xyz"
+2025/09/12 15:51:48 [error] 29#29: *95 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 47.26.234.89, server: live, request: "GET /favicon.ico HTTP/1.1", host: "matrix.landingdev.xyz", referrer: "https://matrix.landingdev.xyz/.well-known/matrix/client"
+2025/09/12 16:14:28 [error] 29#29: *160 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.203.210.116, server: live, request: "GET / HTTP/1.1", host: "185.28.22.166:443"
+2025/09/12 16:17:42 [error] 29#29: *169 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 216.180.246.97, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "185.28.22.166"
+2025/09/12 16:18:07 [error] 29#29: *170 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.203.210.116, server: live, request: "GET / HTTP/1.1", host: "185.28.22.166:443"
+2025/09/12 16:26:05 [error] 29#29: *188 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.28.22.166, server: live, request: "POST / HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 16:26:52 [error] 29#29: *191 open() "/usr/share/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 37.60.141.158, server: localhost, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "185.28.22.166:80", referrer: "http://185.28.22.166:80/admin/login.asp"
+2025/09/12 16:28:22 [warn] 1138#1138: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /opt/nginx/http/livekit.conf:7
+2025/09/12 16:28:22 [notice] 1138#1138: signal process started
+2025/09/12 16:28:22 [notice] 1#1: signal 1 (SIGHUP) received from 1138, reconfiguring
+2025/09/12 16:28:22 [notice] 1#1: reconfiguring
+2025/09/12 16:28:22 [warn] 1#1: the "listen ... http2" directive is deprecated, use the "http2" directive instead in /opt/nginx/http/livekit.conf:7
+2025/09/12 16:28:22 [notice] 1#1: using the "epoll" event method
+2025/09/12 16:28:22 [notice] 1#1: start worker processes
+2025/09/12 16:28:22 [notice] 1#1: start worker process 1144
+2025/09/12 16:28:22 [notice] 1#1: start worker process 1145
+2025/09/12 16:28:22 [notice] 1#1: start worker process 1146
+2025/09/12 16:28:22 [notice] 1#1: start worker process 1147
+2025/09/12 16:28:22 [notice] 32#32: gracefully shutting down
+2025/09/12 16:28:22 [notice] 29#29: gracefully shutting down
+2025/09/12 16:28:22 [notice] 31#31: gracefully shutting down
+2025/09/12 16:28:22 [notice] 30#30: gracefully shutting down
+2025/09/12 16:28:22 [notice] 32#32: exiting
+2025/09/12 16:28:22 [notice] 29#29: exiting
+2025/09/12 16:28:22 [notice] 31#31: exiting
+2025/09/12 16:28:22 [notice] 30#30: exiting
+2025/09/12 16:28:22 [notice] 29#29: exit
+2025/09/12 16:28:22 [notice] 32#32: exit
+2025/09/12 16:28:22 [notice] 31#31: exit
+2025/09/12 16:28:22 [notice] 30#30: exit
+2025/09/12 16:28:22 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/09/12 16:28:22 [notice] 1#1: worker process 32 exited with code 0
+2025/09/12 16:28:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:22 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/09/12 16:28:22 [notice] 1#1: worker process 30 exited with code 0
+2025/09/12 16:28:22 [notice] 1#1: worker process 31 exited with code 0
+2025/09/12 16:28:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:22 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/09/12 16:28:22 [notice] 1#1: worker process 29 exited with code 0
+2025/09/12 16:28:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:42 [notice] 1161#1161: signal process started
+2025/09/12 16:28:42 [notice] 1#1: signal 1 (SIGHUP) received from 1161, reconfiguring
+2025/09/12 16:28:42 [notice] 1#1: reconfiguring
+2025/09/12 16:28:42 [notice] 1#1: using the "epoll" event method
+2025/09/12 16:28:42 [notice] 1#1: start worker processes
+2025/09/12 16:28:42 [notice] 1#1: start worker process 1167
+2025/09/12 16:28:42 [notice] 1#1: start worker process 1168
+2025/09/12 16:28:42 [notice] 1#1: start worker process 1169
+2025/09/12 16:28:42 [notice] 1#1: start worker process 1170
+2025/09/12 16:28:42 [notice] 1147#1147: gracefully shutting down
+2025/09/12 16:28:42 [notice] 1144#1144: gracefully shutting down
+2025/09/12 16:28:42 [notice] 1146#1146: gracefully shutting down
+2025/09/12 16:28:42 [notice] 1145#1145: gracefully shutting down
+2025/09/12 16:28:42 [notice] 1147#1147: exiting
+2025/09/12 16:28:42 [notice] 1144#1144: exiting
+2025/09/12 16:28:42 [notice] 1146#1146: exiting
+2025/09/12 16:28:42 [notice] 1145#1145: exiting
+2025/09/12 16:28:42 [notice] 1147#1147: exit
+2025/09/12 16:28:42 [notice] 1146#1146: exit
+2025/09/12 16:28:42 [notice] 1144#1144: exit
+2025/09/12 16:28:42 [notice] 1145#1145: exit
+2025/09/12 16:28:42 [notice] 1#1: signal 17 (SIGCHLD) received from 1145
+2025/09/12 16:28:42 [notice] 1#1: worker process 1145 exited with code 0
+2025/09/12 16:28:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:42 [notice] 1#1: signal 17 (SIGCHLD) received from 1146
+2025/09/12 16:28:42 [notice] 1#1: worker process 1146 exited with code 0
+2025/09/12 16:28:42 [notice] 1#1: worker process 1147 exited with code 0
+2025/09/12 16:28:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:42 [notice] 1#1: signal 17 (SIGCHLD) received from 1147
+2025/09/12 16:28:42 [notice] 1#1: worker process 1144 exited with code 0
+2025/09/12 16:28:42 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 16:28:49 [error] 1167#1167: *196 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 47.26.234.89, server: live.landingdev.xyz, request: "GET / HTTP/2.0", host: "live.landingdev.xyz"
+2025/09/12 16:29:04 [error] 1168#1168: *197 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 185.28.22.166, server: live.landingdev.xyz, request: "POST / HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 16:30:23 [error] 1169#1169: *201 connect() failed (111: Connection refused) while connecting to upstream, client: 185.28.22.166, server: live.landingdev.xyz, request: "POST /rtc HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc", host: "live.landingdev.xyz"
+2025/09/12 16:33:22 [error] 1170#1170: *209 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:22 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:23 [error] 1167#1167: *214 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:23 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:24 [error] 1167#1167: *217 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:24 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:26 [error] 1167#1167: *220 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:26 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:27 [error] 1167#1167: *223 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:27 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:28 [error] 1167#1167: *226 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:28 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:49 [error] 1167#1167: *230 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:49 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:50 [error] 1167#1167: *233 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:50 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:51 [error] 1167#1167: *236 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:51 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:53 [error] 1167#1167: *239 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:53 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:54 [error] 1167#1167: *242 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:54 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 16:33:55 [error] 1167#1167: *245 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://127.0.0.1:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 16:33:55 [error] 1167#1167: *211 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://127.0.0.1:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3NzIyNzMsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzY4NTg3Mywic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.sCADfWiKZXVjyJ7_kUA7udOYYflGQkAUnPGsRhQHvCE&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 17:10:28 [error] 1167#1167: *322 open() "/etc/nginx/html/.well-known/mta-sts.txt" failed (2: No such file or directory), client: 52.39.163.155, server: live.landingdev.xyz, request: "GET /.well-known/mta-sts.txt HTTP/1.1", host: "mta-sts.landingdev.xyz"
+2025/09/12 17:20:21 [error] 1168#1168: *344 open() "/usr/share/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.64.166, server: localhost, request: "GET /robots.txt HTTP/1.1", host: "185.28.22.166"
+2025/09/12 17:45:15 [error] 1167#1167: *395 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 35.195.241.97, server: live.landingdev.xyz, request: "GET / HTTP/1.1", host: "185.28.22.166"
+2025/09/12 17:46:49 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 17:46:49 [notice] 1167#1167: gracefully shutting down
+2025/09/12 17:46:49 [notice] 1168#1168: gracefully shutting down
+2025/09/12 17:46:49 [notice] 1168#1168: exiting
+2025/09/12 17:46:49 [notice] 1170#1170: gracefully shutting down
+2025/09/12 17:46:49 [notice] 1170#1170: exiting
+2025/09/12 17:46:49 [notice] 1167#1167: exiting
+2025/09/12 17:46:49 [notice] 1167#1167: exit
+2025/09/12 17:46:49 [notice] 1168#1168: exit
+2025/09/12 17:46:49 [notice] 1169#1169: gracefully shutting down
+2025/09/12 17:46:49 [notice] 1169#1169: exiting
+2025/09/12 17:46:49 [notice] 1169#1169: exit
+2025/09/12 17:46:49 [notice] 1170#1170: exit
+2025/09/12 17:46:49 [notice] 1#1: signal 17 (SIGCHLD) received from 1167
+2025/09/12 17:46:49 [notice] 1#1: worker process 1167 exited with code 0
+2025/09/12 17:46:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 17:46:49 [notice] 1#1: signal 17 (SIGCHLD) received from 1168
+2025/09/12 17:46:49 [notice] 1#1: worker process 1168 exited with code 0
+2025/09/12 17:46:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 17:46:49 [notice] 1#1: signal 17 (SIGCHLD) received from 1170
+2025/09/12 17:46:49 [notice] 1#1: worker process 1170 exited with code 0
+2025/09/12 17:46:49 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 17:46:49 [notice] 1#1: signal 17 (SIGCHLD) received from 1169
+2025/09/12 17:46:49 [notice] 1#1: worker process 1169 exited with code 0
+2025/09/12 17:46:49 [notice] 1#1: exit
+2025/09/12 17:58:18 [notice] 1#1: using the "epoll" event method
+2025/09/12 17:58:18 [notice] 1#1: nginx/1.29.1
+2025/09/12 17:58:18 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 17:58:18 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 17:58:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 17:58:18 [notice] 1#1: start worker processes
+2025/09/12 17:58:18 [notice] 1#1: start worker process 29
+2025/09/12 17:58:18 [notice] 1#1: start worker process 30
+2025/09/12 17:58:18 [notice] 1#1: start worker process 31
+2025/09/12 17:58:18 [notice] 1#1: start worker process 32
+2025/09/12 18:03:15 [notice] 116#116: signal process started
+2025/09/12 18:03:15 [notice] 1#1: signal 1 (SIGHUP) received from 116, reconfiguring
+2025/09/12 18:03:15 [notice] 1#1: reconfiguring
+2025/09/12 18:03:15 [notice] 1#1: using the "epoll" event method
+2025/09/12 18:03:15 [notice] 1#1: start worker processes
+2025/09/12 18:03:15 [notice] 1#1: start worker process 122
+2025/09/12 18:03:15 [notice] 1#1: start worker process 123
+2025/09/12 18:03:15 [notice] 1#1: start worker process 124
+2025/09/12 18:03:15 [notice] 1#1: start worker process 125
+2025/09/12 18:03:15 [notice] 29#29: gracefully shutting down
+2025/09/12 18:03:15 [notice] 29#29: exiting
+2025/09/12 18:03:15 [notice] 32#32: gracefully shutting down
+2025/09/12 18:03:15 [notice] 31#31: gracefully shutting down
+2025/09/12 18:03:15 [notice] 32#32: exiting
+2025/09/12 18:03:15 [notice] 31#31: exiting
+2025/09/12 18:03:15 [notice] 29#29: exit
+2025/09/12 18:03:15 [notice] 32#32: exit
+2025/09/12 18:03:15 [notice] 31#31: exit
+2025/09/12 18:03:15 [notice] 30#30: gracefully shutting down
+2025/09/12 18:03:15 [notice] 30#30: exiting
+2025/09/12 18:03:15 [notice] 30#30: exit
+2025/09/12 18:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/09/12 18:03:15 [notice] 1#1: worker process 29 exited with code 0
+2025/09/12 18:03:15 [notice] 1#1: worker process 31 exited with code 0
+2025/09/12 18:03:15 [notice] 1#1: worker process 32 exited with code 0
+2025/09/12 18:03:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 18:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/09/12 18:03:15 [notice] 1#1: worker process 30 exited with code 0
+2025/09/12 18:03:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 18:20:58 [notice] 379#379: signal process started
+2025/09/12 18:20:58 [notice] 1#1: signal 1 (SIGHUP) received from 379, reconfiguring
+2025/09/12 18:20:58 [notice] 1#1: reconfiguring
+2025/09/12 18:20:58 [notice] 1#1: using the "epoll" event method
+2025/09/12 18:20:58 [notice] 1#1: start worker processes
+2025/09/12 18:20:58 [notice] 1#1: start worker process 385
+2025/09/12 18:20:58 [notice] 1#1: start worker process 386
+2025/09/12 18:20:58 [notice] 1#1: start worker process 387
+2025/09/12 18:20:58 [notice] 1#1: start worker process 388
+2025/09/12 18:20:58 [notice] 125#125: gracefully shutting down
+2025/09/12 18:20:58 [notice] 123#123: gracefully shutting down
+2025/09/12 18:20:58 [notice] 124#124: gracefully shutting down
+2025/09/12 18:20:58 [notice] 122#122: gracefully shutting down
+2025/09/12 18:20:58 [notice] 125#125: exiting
+2025/09/12 18:20:58 [notice] 123#123: exiting
+2025/09/12 18:20:58 [notice] 124#124: exiting
+2025/09/12 18:20:58 [notice] 122#122: exiting
+2025/09/12 18:20:58 [notice] 122#122: exit
+2025/09/12 18:20:58 [notice] 123#123: exit
+2025/09/12 18:20:58 [notice] 124#124: exit
+2025/09/12 18:20:58 [notice] 125#125: exit
+2025/09/12 18:20:58 [notice] 1#1: signal 17 (SIGCHLD) received from 122
+2025/09/12 18:20:58 [notice] 1#1: worker process 122 exited with code 0
+2025/09/12 18:20:58 [notice] 1#1: worker process 123 exited with code 0
+2025/09/12 18:20:58 [notice] 1#1: worker process 125 exited with code 0
+2025/09/12 18:20:58 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 18:20:58 [notice] 1#1: signal 17 (SIGCHLD) received from 124
+2025/09/12 18:20:58 [notice] 1#1: worker process 124 exited with code 0
+2025/09/12 18:20:58 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 18:32:32 [error] 386#386: *106 open() "/etc/nginx/html/.env" failed (2: No such file or directory), client: 196.251.118.190, server: live.landingdev.xyz, request: "GET /.env HTTP/1.1", host: "185.28.22.166"
+2025/09/12 18:35:41 [error] 386#386: *117 open() "/etc/nginx/html/robots.txt" failed (2: No such file or directory), client: 66.249.74.162, server: live.landingdev.xyz, request: "GET /robots.txt HTTP/1.1", host: "mail.landingdev.xyz"
+2025/09/12 19:10:56 [error] 387#387: *138 open() "/etc/nginx/html/+CSCOE+/logon.html" failed (2: No such file or directory), client: 213.209.143.74, server: live.landingdev.xyz, request: "GET /+CSCOE+/logon.html HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:15:39 [error] 387#387: *139 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 38.91.106.56, server: live.landingdev.xyz, request: "GET / HTTP/1.1", host: "social.landingdev.xyz"
+2025/09/12 19:24:54 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 19:24:54 [notice] 385#385: gracefully shutting down
+2025/09/12 19:24:54 [notice] 388#388: gracefully shutting down
+2025/09/12 19:24:54 [notice] 387#387: gracefully shutting down
+2025/09/12 19:24:54 [notice] 385#385: exiting
+2025/09/12 19:24:54 [notice] 388#388: exiting
+2025/09/12 19:24:54 [notice] 387#387: exiting
+2025/09/12 19:24:54 [notice] 387#387: exit
+2025/09/12 19:24:54 [notice] 388#388: exit
+2025/09/12 19:24:54 [notice] 385#385: exit
+2025/09/12 19:24:54 [notice] 386#386: gracefully shutting down
+2025/09/12 19:24:54 [notice] 386#386: exiting
+2025/09/12 19:24:54 [notice] 386#386: exit
+2025/09/12 19:24:54 [notice] 1#1: signal 17 (SIGCHLD) received from 388
+2025/09/12 19:24:54 [notice] 1#1: worker process 388 exited with code 0
+2025/09/12 19:24:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:24:54 [notice] 1#1: signal 17 (SIGCHLD) received from 386
+2025/09/12 19:24:54 [notice] 1#1: worker process 385 exited with code 0
+2025/09/12 19:24:54 [notice] 1#1: worker process 386 exited with code 0
+2025/09/12 19:24:54 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:24:54 [notice] 1#1: signal 17 (SIGCHLD) received from 385
+2025/09/12 19:24:54 [notice] 1#1: signal 17 (SIGCHLD) received from 387
+2025/09/12 19:24:54 [notice] 1#1: worker process 387 exited with code 0
+2025/09/12 19:24:54 [notice] 1#1: exit
+2025/09/12 19:25:14 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:25:14 [notice] 1#1: nginx/1.29.1
+2025/09/12 19:25:14 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 19:25:14 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 19:25:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 19:25:14 [notice] 1#1: start worker processes
+2025/09/12 19:25:14 [notice] 1#1: start worker process 22
+2025/09/12 19:25:14 [notice] 1#1: start worker process 23
+2025/09/12 19:25:14 [notice] 1#1: start worker process 24
+2025/09/12 19:25:14 [notice] 1#1: start worker process 25
+2025/09/12 19:28:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 19:28:27 [notice] 22#22: gracefully shutting down
+2025/09/12 19:28:27 [notice] 22#22: exiting
+2025/09/12 19:28:27 [notice] 24#24: gracefully shutting down
+2025/09/12 19:28:27 [notice] 23#23: gracefully shutting down
+2025/09/12 19:28:27 [notice] 24#24: exiting
+2025/09/12 19:28:27 [notice] 23#23: exiting
+2025/09/12 19:28:27 [notice] 22#22: exit
+2025/09/12 19:28:27 [notice] 24#24: exit
+2025/09/12 19:28:27 [notice] 23#23: exit
+2025/09/12 19:28:27 [notice] 25#25: gracefully shutting down
+2025/09/12 19:28:27 [notice] 25#25: exiting
+2025/09/12 19:28:27 [notice] 25#25: exit
+2025/09/12 19:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/09/12 19:28:27 [notice] 1#1: worker process 23 exited with code 0
+2025/09/12 19:28:27 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/09/12 19:28:27 [notice] 1#1: worker process 22 exited with code 0
+2025/09/12 19:28:27 [notice] 1#1: worker process 24 exited with code 0
+2025/09/12 19:28:27 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/09/12 19:28:27 [notice] 1#1: worker process 25 exited with code 0
+2025/09/12 19:28:27 [notice] 1#1: exit
+2025/09/12 19:28:32 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:28:32 [notice] 1#1: nginx/1.29.1
+2025/09/12 19:28:32 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 19:28:32 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 19:28:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 19:28:32 [notice] 1#1: start worker processes
+2025/09/12 19:28:32 [notice] 1#1: start worker process 22
+2025/09/12 19:28:32 [notice] 1#1: start worker process 23
+2025/09/12 19:28:32 [notice] 1#1: start worker process 24
+2025/09/12 19:28:32 [notice] 1#1: start worker process 25
+2025/09/12 19:28:39 [notice] 39#39: signal process started
+2025/09/12 19:28:39 [notice] 1#1: signal 1 (SIGHUP) received from 39, reconfiguring
+2025/09/12 19:28:39 [notice] 1#1: reconfiguring
+2025/09/12 19:28:39 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:28:39 [notice] 1#1: start worker processes
+2025/09/12 19:28:39 [notice] 1#1: start worker process 45
+2025/09/12 19:28:39 [notice] 1#1: start worker process 46
+2025/09/12 19:28:39 [notice] 1#1: start worker process 47
+2025/09/12 19:28:39 [notice] 1#1: start worker process 48
+2025/09/12 19:28:39 [notice] 25#25: gracefully shutting down
+2025/09/12 19:28:39 [notice] 22#22: gracefully shutting down
+2025/09/12 19:28:39 [notice] 23#23: gracefully shutting down
+2025/09/12 19:28:39 [notice] 24#24: gracefully shutting down
+2025/09/12 19:28:39 [notice] 25#25: exiting
+2025/09/12 19:28:39 [notice] 23#23: exiting
+2025/09/12 19:28:39 [notice] 24#24: exiting
+2025/09/12 19:28:39 [notice] 22#22: exiting
+2025/09/12 19:28:39 [notice] 22#22: exit
+2025/09/12 19:28:39 [notice] 23#23: exit
+2025/09/12 19:28:39 [notice] 25#25: exit
+2025/09/12 19:28:39 [notice] 24#24: exit
+2025/09/12 19:28:39 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/09/12 19:28:39 [notice] 1#1: worker process 22 exited with code 0
+2025/09/12 19:28:39 [notice] 1#1: worker process 25 exited with code 0
+2025/09/12 19:28:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:28:39 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/09/12 19:28:39 [notice] 1#1: worker process 24 exited with code 0
+2025/09/12 19:28:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:28:39 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/09/12 19:28:39 [notice] 1#1: worker process 23 exited with code 0
+2025/09/12 19:28:39 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:29:38 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 19:29:38 [notice] 45#45: gracefully shutting down
+2025/09/12 19:29:38 [notice] 45#45: exiting
+2025/09/12 19:29:38 [notice] 45#45: exit
+2025/09/12 19:29:38 [notice] 47#47: gracefully shutting down
+2025/09/12 19:29:38 [notice] 47#47: exiting
+2025/09/12 19:29:38 [notice] 47#47: exit
+2025/09/12 19:29:38 [notice] 46#46: gracefully shutting down
+2025/09/12 19:29:38 [notice] 46#46: exiting
+2025/09/12 19:29:38 [notice] 46#46: exit
+2025/09/12 19:29:38 [notice] 48#48: gracefully shutting down
+2025/09/12 19:29:38 [notice] 48#48: exiting
+2025/09/12 19:29:38 [notice] 48#48: exit
+2025/09/12 19:29:38 [notice] 1#1: signal 17 (SIGCHLD) received from 45
+2025/09/12 19:29:38 [notice] 1#1: worker process 45 exited with code 0
+2025/09/12 19:29:38 [notice] 1#1: worker process 46 exited with code 0
+2025/09/12 19:29:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:29:38 [notice] 1#1: signal 17 (SIGCHLD) received from 47
+2025/09/12 19:29:38 [notice] 1#1: worker process 47 exited with code 0
+2025/09/12 19:29:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:29:38 [notice] 1#1: signal 17 (SIGCHLD) received from 48
+2025/09/12 19:29:38 [notice] 1#1: worker process 48 exited with code 0
+2025/09/12 19:29:38 [notice] 1#1: exit
+2025/09/12 19:30:55 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:30:55 [notice] 1#1: nginx/1.29.1
+2025/09/12 19:30:55 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 19:30:55 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 19:30:55 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 19:30:55 [notice] 1#1: start worker processes
+2025/09/12 19:30:55 [notice] 1#1: start worker process 29
+2025/09/12 19:30:55 [notice] 1#1: start worker process 30
+2025/09/12 19:30:55 [notice] 1#1: start worker process 31
+2025/09/12 19:30:55 [notice] 1#1: start worker process 32
+2025/09/12 19:31:53 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 19:31:53 [notice] 30#30: gracefully shutting down
+2025/09/12 19:31:53 [notice] 29#29: gracefully shutting down
+2025/09/12 19:31:53 [notice] 31#31: gracefully shutting down
+2025/09/12 19:31:53 [notice] 30#30: exiting
+2025/09/12 19:31:53 [notice] 29#29: exiting
+2025/09/12 19:31:53 [notice] 31#31: exiting
+2025/09/12 19:31:53 [notice] 30#30: exit
+2025/09/12 19:31:53 [notice] 31#31: exit
+2025/09/12 19:31:53 [notice] 29#29: exit
+2025/09/12 19:31:53 [notice] 32#32: gracefully shutting down
+2025/09/12 19:31:53 [notice] 32#32: exiting
+2025/09/12 19:31:53 [notice] 32#32: exit
+2025/09/12 19:31:53 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/09/12 19:31:53 [notice] 1#1: worker process 31 exited with code 0
+2025/09/12 19:31:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:31:53 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/09/12 19:31:53 [notice] 1#1: worker process 29 exited with code 0
+2025/09/12 19:31:53 [notice] 1#1: worker process 32 exited with code 0
+2025/09/12 19:31:53 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:31:53 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/09/12 19:31:53 [notice] 1#1: worker process 30 exited with code 0
+2025/09/12 19:31:53 [notice] 1#1: exit
+2025/09/12 19:31:57 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:31:57 [notice] 1#1: nginx/1.29.1
+2025/09/12 19:31:57 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 19:31:57 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 19:31:57 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 19:31:57 [notice] 1#1: start worker processes
+2025/09/12 19:31:57 [notice] 1#1: start worker process 29
+2025/09/12 19:31:57 [notice] 1#1: start worker process 30
+2025/09/12 19:31:57 [notice] 1#1: start worker process 31
+2025/09/12 19:31:57 [notice] 1#1: start worker process 32
+2025/09/12 19:33:44 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 19:33:44 [notice] 30#30: gracefully shutting down
+2025/09/12 19:33:44 [notice] 30#30: exiting
+2025/09/12 19:33:44 [notice] 30#30: exit
+2025/09/12 19:33:44 [notice] 32#32: gracefully shutting down
+2025/09/12 19:33:44 [notice] 29#29: gracefully shutting down
+2025/09/12 19:33:44 [notice] 32#32: exiting
+2025/09/12 19:33:44 [notice] 29#29: exiting
+2025/09/12 19:33:44 [notice] 32#32: exit
+2025/09/12 19:33:44 [notice] 29#29: exit
+2025/09/12 19:33:44 [notice] 31#31: gracefully shutting down
+2025/09/12 19:33:44 [notice] 31#31: exiting
+2025/09/12 19:33:44 [notice] 31#31: exit
+2025/09/12 19:33:45 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/09/12 19:33:45 [notice] 1#1: worker process 29 exited with code 0
+2025/09/12 19:33:45 [notice] 1#1: worker process 30 exited with code 0
+2025/09/12 19:33:45 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:33:45 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/09/12 19:33:45 [notice] 1#1: worker process 31 exited with code 0
+2025/09/12 19:33:45 [notice] 1#1: worker process 32 exited with code 0
+2025/09/12 19:33:45 [notice] 1#1: exit
+2025/09/12 19:35:46 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:35:46 [notice] 1#1: nginx/1.29.1
+2025/09/12 19:35:46 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 19:35:46 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 19:35:46 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 19:35:46 [notice] 1#1: start worker processes
+2025/09/12 19:35:46 [notice] 1#1: start worker process 29
+2025/09/12 19:35:46 [notice] 1#1: start worker process 30
+2025/09/12 19:35:46 [notice] 1#1: start worker process 31
+2025/09/12 19:35:46 [notice] 1#1: start worker process 32
+2025/09/12 19:36:02 [notice] 53#53: signal process started
+2025/09/12 19:36:02 [notice] 1#1: signal 1 (SIGHUP) received from 53, reconfiguring
+2025/09/12 19:36:02 [notice] 1#1: reconfiguring
+2025/09/12 19:36:02 [notice] 1#1: using the "epoll" event method
+2025/09/12 19:36:02 [notice] 1#1: start worker processes
+2025/09/12 19:36:02 [notice] 1#1: start worker process 59
+2025/09/12 19:36:02 [notice] 1#1: start worker process 60
+2025/09/12 19:36:02 [notice] 1#1: start worker process 61
+2025/09/12 19:36:02 [notice] 1#1: start worker process 62
+2025/09/12 19:36:02 [notice] 29#29: gracefully shutting down
+2025/09/12 19:36:02 [notice] 31#31: gracefully shutting down
+2025/09/12 19:36:02 [notice] 30#30: gracefully shutting down
+2025/09/12 19:36:02 [notice] 29#29: exiting
+2025/09/12 19:36:02 [notice] 31#31: exiting
+2025/09/12 19:36:02 [notice] 32#32: gracefully shutting down
+2025/09/12 19:36:02 [notice] 30#30: exiting
+2025/09/12 19:36:02 [notice] 32#32: exiting
+2025/09/12 19:36:02 [notice] 31#31: exit
+2025/09/12 19:36:02 [notice] 29#29: exit
+2025/09/12 19:36:02 [notice] 30#30: exit
+2025/09/12 19:36:02 [notice] 32#32: exit
+2025/09/12 19:36:02 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2025/09/12 19:36:02 [notice] 1#1: worker process 32 exited with code 0
+2025/09/12 19:36:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:36:02 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2025/09/12 19:36:02 [notice] 1#1: worker process 29 exited with code 0
+2025/09/12 19:36:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:36:02 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2025/09/12 19:36:02 [notice] 1#1: worker process 31 exited with code 0
+2025/09/12 19:36:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:36:02 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2025/09/12 19:36:02 [notice] 1#1: worker process 30 exited with code 0
+2025/09/12 19:36:02 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 19:43:56 [error] 59#59: *55 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 185.28.22.166, server: localhost, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTI1OTAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwNjE5MCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.j83MdV_4z_DiRjziiW4QP4qVSbXnOcPsrrHX4-rA9Us HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:45:04 [error] 60#60: *61 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 185.28.22.166, server: localhost, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3ODczMzEsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwMDkzMSwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.I7Dx_eTCE-rIMbRkSCaDYHZtWraxWVEJEo5KeV8TpEE HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:38 [error] 59#59: *78 open() "/usr/share/nginx/html/form.html" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /form.html HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:39 [error] 59#59: *79 open() "/usr/share/nginx/html/upl.php" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /upl.php HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:39 [error] 59#59: *80 open() "/usr/share/nginx/html/t4" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /t4 HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:40 [error] 59#59: *81 "/usr/share/nginx/html/geoip/index.html" is not found (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /geoip/ HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:40 [error] 59#59: *82 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:41 [error] 59#59: *83 open() "/usr/share/nginx/html/1.php" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /1.php HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:41 [error] 59#59: *84 open() "/usr/share/nginx/html/systembc/password.php" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /systembc/password.php HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:51:41 [error] 59#59: *85 open() "/usr/share/nginx/html/password.php" failed (2: No such file or directory), client: 64.227.172.236, server: localhost, request: "GET /password.php HTTP/1.1", host: "185.28.22.166"
+2025/09/12 19:56:05 [emerg] 351#351: invalid parameter "udp" in /opt/nginx/http/livekit.conf:4
+2025/09/12 19:56:55 [emerg] 371#371: invalid parameter "udp" in /opt/nginx/http/livekit.conf:4
+2025/09/12 19:58:27 [emerg] 405#405: invalid parameter "server_name" in /opt/nginx/http/livekit.conf:5
+2025/09/12 19:58:44 [emerg] 411#411: unknown "connection_upgrade" variable
+2025/09/12 19:58:46 [emerg] 417#417: unknown "connection_upgrade" variable
+2025/09/12 20:02:41 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 20:02:41 [notice] 59#59: gracefully shutting down
+2025/09/12 20:02:41 [notice] 60#60: gracefully shutting down
+2025/09/12 20:02:41 [notice] 62#62: gracefully shutting down
+2025/09/12 20:02:41 [notice] 61#61: gracefully shutting down
+2025/09/12 20:02:41 [notice] 59#59: exiting
+2025/09/12 20:02:41 [notice] 60#60: exiting
+2025/09/12 20:02:41 [notice] 62#62: exiting
+2025/09/12 20:02:41 [notice] 60#60: exit
+2025/09/12 20:02:41 [notice] 59#59: exit
+2025/09/12 20:02:41 [notice] 62#62: exit
+2025/09/12 20:02:41 [notice] 61#61: exiting
+2025/09/12 20:02:41 [notice] 61#61: exit
+2025/09/12 20:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 59
+2025/09/12 20:02:41 [notice] 1#1: worker process 59 exited with code 0
+2025/09/12 20:02:41 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:02:41 [notice] 1#1: signal 17 (SIGCHLD) received from 61
+2025/09/12 20:02:41 [notice] 1#1: worker process 61 exited with code 0
+2025/09/12 20:02:41 [notice] 1#1: worker process 60 exited with code 0
+2025/09/12 20:02:41 [notice] 1#1: worker process 62 exited with code 0
+2025/09/12 20:02:41 [notice] 1#1: exit
+2025/09/12 20:02:43 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:44 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:45 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:47 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:48 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:50 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:02:54 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:03:01 [emerg] 1#1: unknown "connection_upgrade" variable
+2025/09/12 20:03:14 [notice] 1#1: using the "epoll" event method
+2025/09/12 20:03:14 [notice] 1#1: nginx/1.29.1
+2025/09/12 20:03:14 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 20:03:14 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 20:03:14 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 20:03:14 [notice] 1#1: start worker processes
+2025/09/12 20:03:14 [notice] 1#1: start worker process 22
+2025/09/12 20:03:14 [notice] 1#1: start worker process 23
+2025/09/12 20:03:14 [notice] 1#1: start worker process 24
+2025/09/12 20:03:14 [notice] 1#1: start worker process 25
+2025/09/12 20:03:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 20:03:15 [notice] 23#23: gracefully shutting down
+2025/09/12 20:03:15 [notice] 23#23: exiting
+2025/09/12 20:03:15 [notice] 22#22: gracefully shutting down
+2025/09/12 20:03:15 [notice] 23#23: exit
+2025/09/12 20:03:15 [notice] 22#22: exiting
+2025/09/12 20:03:15 [notice] 24#24: gracefully shutting down
+2025/09/12 20:03:15 [notice] 24#24: exiting
+2025/09/12 20:03:15 [notice] 22#22: exit
+2025/09/12 20:03:15 [notice] 24#24: exit
+2025/09/12 20:03:15 [notice] 25#25: gracefully shutting down
+2025/09/12 20:03:15 [notice] 25#25: exiting
+2025/09/12 20:03:15 [notice] 25#25: exit
+2025/09/12 20:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/09/12 20:03:15 [notice] 1#1: worker process 23 exited with code 0
+2025/09/12 20:03:15 [notice] 1#1: worker process 24 exited with code 0
+2025/09/12 20:03:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/09/12 20:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/09/12 20:03:15 [notice] 1#1: worker process 25 exited with code 0
+2025/09/12 20:03:15 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:03:15 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/09/12 20:03:15 [notice] 1#1: worker process 22 exited with code 0
+2025/09/12 20:03:15 [notice] 1#1: exit
+2025/09/12 20:03:20 [notice] 1#1: using the "epoll" event method
+2025/09/12 20:03:20 [notice] 1#1: nginx/1.29.1
+2025/09/12 20:03:20 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 20:03:20 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 20:03:20 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 20:03:20 [notice] 1#1: start worker processes
+2025/09/12 20:03:20 [notice] 1#1: start worker process 22
+2025/09/12 20:03:20 [notice] 1#1: start worker process 23
+2025/09/12 20:03:20 [notice] 1#1: start worker process 24
+2025/09/12 20:03:20 [notice] 1#1: start worker process 25
+2025/09/12 20:08:54 [error] 23#23: *13 open() "/usr/share/nginx/html/boaform/admin/formLogin" failed (2: No such file or directory), client: 37.60.141.158, server: localhost, request: "POST /boaform/admin/formLogin HTTP/1.1", host: "185.28.22.166:80", referrer: "http://185.28.22.166:80/admin/login.asp"
+2025/09/12 20:15:02 [error] 23#23: *27 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 2a02:4780:10:e8ad::1, server: localhost, request: "GET /rtc HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 20:15:26 [error] 23#23: *29 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 2a02:4780:10:e8ad::1, server: localhost, request: "GET /rtc HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 20:15:53 [error] 23#23: *34 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 2a02:4780:10:e8ad::1, server: localhost, request: "GET /rtc HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 20:16:43 [notice] 224#224: signal process started
+2025/09/12 20:16:43 [notice] 1#1: signal 1 (SIGHUP) received from 224, reconfiguring
+2025/09/12 20:16:43 [notice] 1#1: reconfiguring
+2025/09/12 20:16:43 [notice] 1#1: using the "epoll" event method
+2025/09/12 20:16:43 [notice] 1#1: start worker processes
+2025/09/12 20:16:43 [notice] 1#1: start worker process 230
+2025/09/12 20:16:43 [notice] 1#1: start worker process 231
+2025/09/12 20:16:43 [notice] 1#1: start worker process 232
+2025/09/12 20:16:43 [notice] 1#1: start worker process 233
+2025/09/12 20:16:43 [notice] 25#25: gracefully shutting down
+2025/09/12 20:16:43 [notice] 23#23: gracefully shutting down
+2025/09/12 20:16:43 [notice] 22#22: gracefully shutting down
+2025/09/12 20:16:43 [notice] 25#25: exiting
+2025/09/12 20:16:43 [notice] 24#24: gracefully shutting down
+2025/09/12 20:16:43 [notice] 23#23: exiting
+2025/09/12 20:16:43 [notice] 22#22: exiting
+2025/09/12 20:16:43 [notice] 24#24: exiting
+2025/09/12 20:16:43 [notice] 22#22: exit
+2025/09/12 20:16:43 [notice] 23#23: exit
+2025/09/12 20:16:43 [notice] 25#25: exit
+2025/09/12 20:16:43 [notice] 24#24: exit
+2025/09/12 20:16:43 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/09/12 20:16:43 [notice] 1#1: worker process 22 exited with code 0
+2025/09/12 20:16:43 [notice] 1#1: worker process 23 exited with code 0
+2025/09/12 20:16:43 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:16:43 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/09/12 20:16:43 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/09/12 20:16:43 [notice] 1#1: worker process 24 exited with code 0
+2025/09/12 20:16:43 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:16:43 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/09/12 20:16:43 [notice] 1#1: worker process 25 exited with code 0
+2025/09/12 20:16:43 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:16:51 [error] 230#230: *37 open() "/usr/share/nginx/html/rtc" failed (2: No such file or directory), client: 2a02:4780:10:e8ad::1, server: localhost, request: "GET /rtc HTTP/1.1", host: "live.landingdev.xyz"
+2025/09/12 20:27:37 [notice] 573#573: signal process started
+2025/09/12 20:27:37 [notice] 1#1: signal 1 (SIGHUP) received from 573, reconfiguring
+2025/09/12 20:27:37 [notice] 1#1: reconfiguring
+2025/09/12 20:27:37 [notice] 1#1: using the "epoll" event method
+2025/09/12 20:27:37 [notice] 1#1: start worker processes
+2025/09/12 20:27:37 [notice] 1#1: start worker process 579
+2025/09/12 20:27:37 [notice] 1#1: start worker process 580
+2025/09/12 20:27:37 [notice] 1#1: start worker process 581
+2025/09/12 20:27:37 [notice] 1#1: start worker process 582
+2025/09/12 20:27:37 [notice] 231#231: gracefully shutting down
+2025/09/12 20:27:37 [notice] 233#233: gracefully shutting down
+2025/09/12 20:27:37 [notice] 232#232: gracefully shutting down
+2025/09/12 20:27:37 [notice] 231#231: exiting
+2025/09/12 20:27:37 [notice] 232#232: exiting
+2025/09/12 20:27:37 [notice] 233#233: exiting
+2025/09/12 20:27:37 [notice] 232#232: exit
+2025/09/12 20:27:37 [notice] 233#233: exit
+2025/09/12 20:27:37 [notice] 231#231: exit
+2025/09/12 20:27:37 [notice] 230#230: gracefully shutting down
+2025/09/12 20:27:37 [notice] 230#230: exiting
+2025/09/12 20:27:37 [notice] 230#230: exit
+2025/09/12 20:27:37 [notice] 1#1: signal 17 (SIGCHLD) received from 232
+2025/09/12 20:27:37 [notice] 1#1: worker process 232 exited with code 0
+2025/09/12 20:27:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:27:37 [notice] 1#1: signal 17 (SIGCHLD) received from 233
+2025/09/12 20:27:37 [notice] 1#1: worker process 233 exited with code 0
+2025/09/12 20:27:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:27:37 [notice] 1#1: signal 17 (SIGCHLD) received from 231
+2025/09/12 20:27:37 [notice] 1#1: worker process 231 exited with code 0
+2025/09/12 20:27:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:27:37 [notice] 1#1: signal 17 (SIGCHLD) received from 230
+2025/09/12 20:27:37 [notice] 1#1: worker process 230 exited with code 0
+2025/09/12 20:27:37 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 20:30:10 [error] 581#581: *112 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16&reconnect_reason=1 HTTP/1.1", upstream: "http://10.10.30.30:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16&reconnect_reason=1", host: "live.landingdev.xyz"
+2025/09/12 20:30:11 [error] 581#581: *114 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16&reconnect_reason=1 HTTP/2.0", upstream: "http://10.10.30.30:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16&reconnect_reason=1", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 20:30:11 [error] 581#581: *117 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://10.10.30.30:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 20:30:11 [error] 581#581: *114 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://10.10.30.30:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 20:30:14 [error] 581#581: *120 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://10.10.30.30:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 20:30:14 [error] 581#581: *114 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://10.10.30.30:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3MDk2MDQsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwia2luZCI6InN0YW5kYXJkIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwOTAwNCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.S15Ff3goCW2jLihFPTDfKZ81GdUUZJlv2zROad1aHGs&reconnect=1&sid=PA_gMVuvPDyGhQm&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 20:31:39 [error] 579#579: *140 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://10.10.30.30:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 20:31:40 [error] 579#579: *142 connect() failed (111: Connection refused) while connecting to upstream, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/2.0", upstream: "http://10.10.30.30:7880/rtc/validate?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz", referrer: "https://livekit.io/"
+2025/09/12 20:46:42 [error] 582#582: *260 recv() failed (104: Connection reset by peer) while proxying upgraded connection, client: 47.26.234.89, server: live.landingdev.xyz, request: "GET /rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16 HTTP/1.1", upstream: "http://10.10.30.30:7880/rtc?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTc3OTUzMzAsImlkZW50aXR5IjoidGVzdC11c2VyIiwiaXNzIjoiTm03TUZxRWRuN2RFa0xXIiwibmFtZSI6InRlc3QtdXNlciIsIm5iZiI6MTc1NzcwODkzMCwic3ViIjoidGVzdC11c2VyIiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.C9YKVUr4DxOYLmJYb5fNuCAIqUUN3eidXeI72oegHDY&auto_subscribe=1&sdk=js&version=2.15.6&protocol=16", host: "live.landingdev.xyz"
+2025/09/12 20:59:50 [error] 580#580: *308 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 111.224.220.235, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "185.28.22.166"
+2025/09/12 21:07:40 [emerg] 1152#1152: unknown "connection_upgrade" variable
+2025/09/12 21:08:02 [emerg] 1158#1158: unexpected end of file, expecting ";" or "}" in /opt/nginx/http/livekit.conf:36
+2025/09/12 21:08:24 [notice] 1177#1177: signal process started
+2025/09/12 21:08:24 [notice] 1#1: signal 1 (SIGHUP) received from 1177, reconfiguring
+2025/09/12 21:08:24 [notice] 1#1: reconfiguring
+2025/09/12 21:08:24 [notice] 1#1: using the "epoll" event method
+2025/09/12 21:08:24 [notice] 1#1: start worker processes
+2025/09/12 21:08:24 [notice] 1#1: start worker process 1183
+2025/09/12 21:08:24 [notice] 1#1: start worker process 1184
+2025/09/12 21:08:24 [notice] 1#1: start worker process 1185
+2025/09/12 21:08:24 [notice] 1#1: start worker process 1186
+2025/09/12 21:08:24 [notice] 582#582: gracefully shutting down
+2025/09/12 21:08:24 [notice] 579#579: gracefully shutting down
+2025/09/12 21:08:24 [notice] 580#580: gracefully shutting down
+2025/09/12 21:08:24 [notice] 581#581: gracefully shutting down
+2025/09/12 21:08:24 [notice] 582#582: exiting
+2025/09/12 21:08:24 [notice] 579#579: exiting
+2025/09/12 21:08:24 [notice] 580#580: exiting
+2025/09/12 21:08:24 [notice] 581#581: exiting
+2025/09/12 21:08:24 [notice] 582#582: exit
+2025/09/12 21:08:24 [notice] 581#581: exit
+2025/09/12 21:08:24 [notice] 580#580: exit
+2025/09/12 21:08:24 [notice] 579#579: exit
+2025/09/12 21:08:24 [notice] 1#1: signal 17 (SIGCHLD) received from 580
+2025/09/12 21:08:24 [notice] 1#1: worker process 580 exited with code 0
+2025/09/12 21:08:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:08:24 [notice] 1#1: signal 17 (SIGCHLD) received from 581
+2025/09/12 21:08:24 [notice] 1#1: worker process 579 exited with code 0
+2025/09/12 21:08:24 [notice] 1#1: worker process 581 exited with code 0
+2025/09/12 21:08:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:08:24 [notice] 1#1: signal 17 (SIGCHLD) received from 582
+2025/09/12 21:08:24 [notice] 1#1: worker process 582 exited with code 0
+2025/09/12 21:08:24 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:10:29 [notice] 1215#1215: signal process started
+2025/09/12 21:10:29 [notice] 1#1: signal 1 (SIGHUP) received from 1215, reconfiguring
+2025/09/12 21:10:29 [notice] 1#1: reconfiguring
+2025/09/12 21:10:29 [notice] 1#1: using the "epoll" event method
+2025/09/12 21:10:29 [notice] 1#1: start worker processes
+2025/09/12 21:10:29 [notice] 1#1: start worker process 1221
+2025/09/12 21:10:29 [notice] 1#1: start worker process 1222
+2025/09/12 21:10:29 [notice] 1#1: start worker process 1223
+2025/09/12 21:10:29 [notice] 1#1: start worker process 1224
+2025/09/12 21:10:29 [notice] 1185#1185: gracefully shutting down
+2025/09/12 21:10:29 [notice] 1183#1183: gracefully shutting down
+2025/09/12 21:10:29 [notice] 1183#1183: exiting
+2025/09/12 21:10:29 [notice] 1185#1185: exiting
+2025/09/12 21:10:29 [notice] 1184#1184: gracefully shutting down
+2025/09/12 21:10:29 [notice] 1184#1184: exiting
+2025/09/12 21:10:29 [notice] 1183#1183: exit
+2025/09/12 21:10:29 [notice] 1185#1185: exit
+2025/09/12 21:10:29 [notice] 1184#1184: exit
+2025/09/12 21:10:29 [notice] 1186#1186: gracefully shutting down
+2025/09/12 21:10:29 [notice] 1186#1186: exiting
+2025/09/12 21:10:29 [notice] 1186#1186: exit
+2025/09/12 21:10:29 [notice] 1#1: signal 17 (SIGCHLD) received from 1184
+2025/09/12 21:10:29 [notice] 1#1: worker process 1184 exited with code 0
+2025/09/12 21:10:29 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:10:29 [notice] 1#1: signal 17 (SIGCHLD) received from 1183
+2025/09/12 21:10:29 [notice] 1#1: worker process 1183 exited with code 0
+2025/09/12 21:10:29 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:10:29 [notice] 1#1: signal 17 (SIGCHLD) received from 1185
+2025/09/12 21:10:29 [notice] 1#1: worker process 1185 exited with code 0
+2025/09/12 21:10:29 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:10:29 [notice] 1#1: signal 17 (SIGCHLD) received from 1186
+2025/09/12 21:10:29 [notice] 1#1: worker process 1186 exited with code 0
+2025/09/12 21:10:29 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:12:00 [notice] 1261#1261: signal process started
+2025/09/12 21:12:00 [notice] 1#1: signal 1 (SIGHUP) received from 1261, reconfiguring
+2025/09/12 21:12:00 [notice] 1#1: reconfiguring
+2025/09/12 21:12:00 [notice] 1#1: using the "epoll" event method
+2025/09/12 21:12:00 [notice] 1#1: start worker processes
+2025/09/12 21:12:00 [notice] 1#1: start worker process 1267
+2025/09/12 21:12:00 [notice] 1#1: start worker process 1268
+2025/09/12 21:12:00 [notice] 1#1: start worker process 1269
+2025/09/12 21:12:00 [notice] 1#1: start worker process 1270
+2025/09/12 21:12:01 [notice] 1224#1224: gracefully shutting down
+2025/09/12 21:12:01 [notice] 1223#1223: gracefully shutting down
+2025/09/12 21:12:01 [notice] 1221#1221: gracefully shutting down
+2025/09/12 21:12:01 [notice] 1222#1222: gracefully shutting down
+2025/09/12 21:12:01 [notice] 1221#1221: exiting
+2025/09/12 21:12:01 [notice] 1223#1223: exiting
+2025/09/12 21:12:01 [notice] 1224#1224: exiting
+2025/09/12 21:12:01 [notice] 1222#1222: exiting
+2025/09/12 21:12:01 [notice] 1223#1223: exit
+2025/09/12 21:12:01 [notice] 1221#1221: exit
+2025/09/12 21:12:01 [notice] 1222#1222: exit
+2025/09/12 21:12:01 [notice] 1224#1224: exit
+2025/09/12 21:12:01 [notice] 1#1: signal 17 (SIGCHLD) received from 1222
+2025/09/12 21:12:01 [notice] 1#1: worker process 1222 exited with code 0
+2025/09/12 21:12:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:12:01 [notice] 1#1: signal 17 (SIGCHLD) received from 1221
+2025/09/12 21:12:01 [notice] 1#1: worker process 1221 exited with code 0
+2025/09/12 21:12:01 [notice] 1#1: worker process 1224 exited with code 0
+2025/09/12 21:12:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:12:01 [notice] 1#1: signal 17 (SIGCHLD) received from 1223
+2025/09/12 21:12:01 [notice] 1#1: worker process 1223 exited with code 0
+2025/09/12 21:12:01 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:15:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 21:15:22 [notice] 1267#1267: gracefully shutting down
+2025/09/12 21:15:22 [notice] 1269#1269: gracefully shutting down
+2025/09/12 21:15:22 [notice] 1267#1267: exiting
+2025/09/12 21:15:22 [notice] 1269#1269: exiting
+2025/09/12 21:15:22 [notice] 1267#1267: exit
+2025/09/12 21:15:22 [notice] 1269#1269: exit
+2025/09/12 21:15:22 [notice] 1268#1268: gracefully shutting down
+2025/09/12 21:15:22 [notice] 1268#1268: exiting
+2025/09/12 21:15:22 [notice] 1268#1268: exit
+2025/09/12 21:15:22 [notice] 1270#1270: gracefully shutting down
+2025/09/12 21:15:22 [notice] 1270#1270: exiting
+2025/09/12 21:15:22 [notice] 1270#1270: exit
+2025/09/12 21:15:22 [notice] 1#1: signal 17 (SIGCHLD) received from 1270
+2025/09/12 21:15:22 [notice] 1#1: worker process 1270 exited with code 0
+2025/09/12 21:15:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:15:22 [notice] 1#1: signal 17 (SIGCHLD) received from 1267
+2025/09/12 21:15:22 [notice] 1#1: worker process 1267 exited with code 0
+2025/09/12 21:15:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:15:22 [notice] 1#1: signal 17 (SIGCHLD) received from 1268
+2025/09/12 21:15:22 [notice] 1#1: worker process 1268 exited with code 0
+2025/09/12 21:15:22 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:15:22 [notice] 1#1: signal 17 (SIGCHLD) received from 1269
+2025/09/12 21:15:22 [notice] 1#1: worker process 1269 exited with code 0
+2025/09/12 21:15:22 [notice] 1#1: exit
+2025/09/12 21:15:34 [notice] 1#1: using the "epoll" event method
+2025/09/12 21:15:34 [notice] 1#1: nginx/1.29.1
+2025/09/12 21:15:34 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14+deb12u1) 
+2025/09/12 21:15:34 [notice] 1#1: OS: Linux 6.14.0-29-generic
+2025/09/12 21:15:34 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1073741816:1073741816
+2025/09/12 21:15:34 [notice] 1#1: start worker processes
+2025/09/12 21:15:34 [notice] 1#1: start worker process 22
+2025/09/12 21:15:34 [notice] 1#1: start worker process 23
+2025/09/12 21:15:34 [notice] 1#1: start worker process 24
+2025/09/12 21:15:34 [notice] 1#1: start worker process 25
+2025/09/12 21:20:33 [notice] 102#102: signal process started
+2025/09/12 21:20:33 [notice] 1#1: signal 1 (SIGHUP) received from 102, reconfiguring
+2025/09/12 21:20:33 [notice] 1#1: reconfiguring
+2025/09/12 21:20:33 [notice] 1#1: using the "epoll" event method
+2025/09/12 21:20:33 [notice] 1#1: start worker processes
+2025/09/12 21:20:33 [notice] 1#1: start worker process 108
+2025/09/12 21:20:33 [notice] 1#1: start worker process 109
+2025/09/12 21:20:33 [notice] 1#1: start worker process 110
+2025/09/12 21:20:33 [notice] 1#1: start worker process 111
+2025/09/12 21:20:33 [notice] 25#25: gracefully shutting down
+2025/09/12 21:20:33 [notice] 22#22: gracefully shutting down
+2025/09/12 21:20:33 [notice] 24#24: gracefully shutting down
+2025/09/12 21:20:33 [notice] 25#25: exiting
+2025/09/12 21:20:33 [notice] 22#22: exiting
+2025/09/12 21:20:33 [notice] 24#24: exiting
+2025/09/12 21:20:33 [notice] 23#23: gracefully shutting down
+2025/09/12 21:20:33 [notice] 25#25: exit
+2025/09/12 21:20:33 [notice] 22#22: exit
+2025/09/12 21:20:33 [notice] 24#24: exit
+2025/09/12 21:20:33 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2025/09/12 21:20:33 [notice] 1#1: worker process 22 exited with code 0
+2025/09/12 21:20:33 [notice] 1#1: worker process 25 exited with code 0
+2025/09/12 21:20:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:20:33 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2025/09/12 21:20:33 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2025/09/12 21:20:33 [notice] 1#1: worker process 24 exited with code 0
+2025/09/12 21:20:33 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:20:38 [notice] 23#23: exiting
+2025/09/12 21:20:38 [notice] 23#23: exit
+2025/09/12 21:20:38 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2025/09/12 21:20:38 [notice] 1#1: worker process 23 exited with code 0
+2025/09/12 21:20:38 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:28:27 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2025/09/12 21:28:27 [notice] 109#109: gracefully shutting down
+2025/09/12 21:28:27 [notice] 108#108: gracefully shutting down
+2025/09/12 21:28:27 [notice] 109#109: exiting
+2025/09/12 21:28:27 [notice] 108#108: exiting
+2025/09/12 21:28:27 [notice] 108#108: exit
+2025/09/12 21:28:27 [notice] 109#109: exit
+2025/09/12 21:28:27 [notice] 111#111: gracefully shutting down
+2025/09/12 21:28:27 [notice] 111#111: exiting
+2025/09/12 21:28:27 [notice] 111#111: exit
+2025/09/12 21:28:27 [notice] 110#110: gracefully shutting down
+2025/09/12 21:28:27 [notice] 110#110: exiting
+2025/09/12 21:28:27 [notice] 110#110: exit
+2025/09/12 21:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 108
+2025/09/12 21:28:27 [notice] 1#1: worker process 108 exited with code 0
+2025/09/12 21:28:27 [notice] 1#1: worker process 109 exited with code 0
+2025/09/12 21:28:27 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 109
+2025/09/12 21:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 110
+2025/09/12 21:28:27 [notice] 1#1: worker process 110 exited with code 0
+2025/09/12 21:28:27 [notice] 1#1: signal 29 (SIGIO) received
+2025/09/12 21:28:27 [notice] 1#1: signal 17 (SIGCHLD) received from 111
+2025/09/12 21:28:27 [notice] 1#1: worker process 111 exited with code 0
+2025/09/12 21:28:27 [notice] 1#1: exit

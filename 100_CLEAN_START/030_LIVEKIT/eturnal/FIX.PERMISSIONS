@@ -1,0 +1,14 @@
+
+
+chown 9000:9000 eturnal.yml
+
+cp -fr ~/004_ACME_CERTS/ACME.185.28.22.166 .
+chown -R 9000:9000 ACME.185.28.22.166
+chmod 700 ACME.185.28.22.166
+chmod 600 ./ACME.185.28.22.166/*
+
+mkdir ./log_dir
+mkdir ./run_dir
+
+chown -R 9000:9000 log_dir run_dir
+chmod -R 744 log_dir run_dir
