@@ -1,0 +1,51 @@
+volumes:
+  stalwart-data:
+
+networks:
+  net:
+    external: true
+
+services:
+  stalwart:
+    image: stalwartlabs/stalwart:latest
+
+    container_name: mail
+    hostname: mail
+    domainname: landingdev.xyz
+
+    restart: unless-stopped
+
+    ports:
+      # - "8080:8080"
+      # - "443:443"
+      
+      - "587:587"
+      - "143:143"
+      - "4190:4190"
+      - "110:110"
+      - "995:995"
+
+      - "25:25"
+      - "465:465"
+      - "993:993"
+
+    networks:
+      net:
+        ipv4_address: 10.10.30.10
+        ipv6_address: fd12:3456:789a::30:10
+
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - stalwart-data:/opt/stalwart
+      # - ./ZEROSSL.CERTIFICATES:/data/certs:ro
+      - ./ZEROSSL.CERTIFICATES:/opt/stalwart/certs/:ro
+    labels:
+      - traefik.enable=true
+
+      # HTTP router for webmail/admin
+      - traefik.http.routers.mailserver.rule=Host(`mail.landingdev.xyz`) || Host(`autodiscover.landingdev.xyz`) || Host(`autoconfig.landingdev.xyz`) || Host(`mta-sts.landingdev.xyz`)
+      - traefik.http.routers.mailserver.entrypoints=websecure
+      - traefik.http.routers.mailserver.service=mailserver
+      - traefik.http.routers.mailserver.tls=true
+      - traefik.http.services.mailserver.loadbalancer.server.port=8080
+

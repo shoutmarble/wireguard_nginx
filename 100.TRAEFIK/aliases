@@ -1,0 +1,2 @@
+alias dps='docker ps --format "{{.Names}} ({{.Image}}): {{.Status}}\n{{.Ports}}" | tr "," "\n"'
+

@@ -1,0 +1,90 @@
+
+
+.
+├── .lego
+│   ├── accounts
+│   │   └── acme-v02.api.letsencrypt.org
+│   │       └── terry.walsworth.88@gmail.com
+│   │           ├── account.json
+│   │           └── keys
+│   │               └── terry.walsworth.88@gmail.com.key
+│   └── certificates
+│       ├── landingdev.xyz.crt
+│       ├── landingdev.xyz.issuer.crt
+│       ├── landingdev.xyz.json
+│       ├── landingdev.xyz.key
+│       └── landingdev.xyz.pem
+├── DOCKER.INSTALL.sh
+├── EDIT.INSTALL.sh
+├── LEGO.CERT.INSTALL
+├── LEGO.INSTALL.sh
+└── lego.v4
+    ├── CHANGELOG.md
+    ├── LICENSE
+    └── lego
+    
+    
+
+# STEP 1:
+# RUN "get-lego.sh" to install "lego"
+# 
+# STEP 2:
+# RUN
+./lego -a --pem --email "xxxxxxxxx@gmail.com" --domains "landingdev.xyz" --domains "*.landingdev.xyz" --dns manual run
+
+# STEP 3:
+# https://toolbox.googleapps.com/apps/dig/#TXT/
+# 
+# verify _acme-challenge.landingdev.xyz.
+# https://toolbox.googleapps.com/apps/dig/#TXT/
+
+########################################
+# EXAMPLE ##############################
+########################################
+# root@srv456397:~/100_INSTALL# ./lego.v4/lego -a --pem --email "terry.walsworth.88@gmail.com" --domains "landingdev.xyz" --domains "*.landingdev.xyz" --dns manual run
+# 2025/08/23 05:38:12 No key found for account terry.walsworth.88@gmail.com. Generating a P256 key.
+# 2025/08/23 05:38:12 Saved key to /root/100_INSTALL/.lego/accounts/acme-v02.api.letsencrypt.org/terry.walsworth.88@gmail.com/keys/terry.walsworth.88@gmail.com.key
+# 2025/08/23 05:38:13 [INFO] acme: Registering account for terry.walsworth.88@gmail.com
+# !!!! HEADS UP !!!!
+# 
+# Your account credentials have been saved in your
+# configuration directory at "/root/100_INSTALL/.lego/accounts".
+# 
+# You should make a secure backup of this folder now. This
+# configuration directory will also contain certificates and
+# private keys obtained from the ACME server so making regular
+# backups of this folder is ideal.
+# 2025/08/23 05:38:13 [INFO] [landingdev.xyz, *.landingdev.xyz] acme: Obtaining bundled SAN certificate
+# 2025/08/23 05:38:13 [INFO] [*.landingdev.xyz] AuthURL: https://acme-v02.api.letsencrypt.org/acme/authz/2613460427/572978696467
+# 2025/08/23 05:38:13 [INFO] [landingdev.xyz] AuthURL: https://acme-v02.api.letsencrypt.org/acme/authz/2613460427/572978696477
+# 2025/08/23 05:38:13 [INFO] [*.landingdev.xyz] acme: use dns-01 solver
+# 2025/08/23 05:38:13 [INFO] [landingdev.xyz] acme: Could not find solver for: tls-alpn-01
+# 2025/08/23 05:38:13 [INFO] [landingdev.xyz] acme: Could not find solver for: http-01
+# 2025/08/23 05:38:13 [INFO] [landingdev.xyz] acme: use dns-01 solver
+# 2025/08/23 05:38:13 [INFO] [*.landingdev.xyz] acme: Preparing to solve DNS-01
+# lego: Please create the following TXT record in your landingdev.xyz. zone:
+# _acme-challenge.landingdev.xyz. 120 IN TXT "fiaZB-AunOarefV_8LusqMNvZGivvuHQrevs92Kyu9U"
+# lego: Press 'Enter' when you are done
+# 
+# 2025/08/23 05:39:55 [INFO] [*.landingdev.xyz] acme: Trying to solve DNS-01
+# 2025/08/23 05:39:55 [INFO] [*.landingdev.xyz] acme: Checking DNS record propagation. [nameservers=127.0.0.53:53]
+# 2025/08/23 05:39:57 [INFO] Wait for propagation [timeout: 1m0s, interval: 2s]
+# 2025/08/23 05:40:04 [INFO] [*.landingdev.xyz] The server validated our request
+# 2025/08/23 05:40:04 [INFO] [*.landingdev.xyz] acme: Cleaning DNS-01 challenge
+# lego: You can now remove this TXT record from your landingdev.xyz. zone:
+# _acme-challenge.landingdev.xyz. 120 IN TXT "..."
+# 2025/08/23 05:40:04 [INFO] sequence: wait for 1m0s
+# 2025/08/23 05:41:04 [INFO] [landingdev.xyz] acme: Preparing to solve DNS-01
+# lego: Please create the following TXT record in your landingdev.xyz. zone:
+# _acme-challenge.landingdev.xyz. 120 IN TXT "4xUQUYgAXOtV1l40Mgtqsqy_5S6RmrQxKgggObm8wjU"
+# lego: Press 'Enter' when you are done
+# 
+# 2025/08/23 05:42:03 [INFO] [landingdev.xyz] acme: Trying to solve DNS-01
+# 2025/08/23 05:42:03 [INFO] [landingdev.xyz] acme: Checking DNS record propagation. [nameservers=127.0.0.53:53]
+# 2025/08/23 05:42:05 [INFO] Wait for propagation [timeout: 1m0s, interval: 2s]
+# 2025/08/23 05:42:08 [INFO] [landingdev.xyz] The server validated our request
+# 2025/08/23 05:42:08 [INFO] [landingdev.xyz] acme: Cleaning DNS-01 challenge
+# lego: You can now remove this TXT record from your landingdev.xyz. zone:
+# _acme-challenge.landingdev.xyz. 120 IN TXT "..."
+# 2025/08/23 05:42:08 [INFO] [landingdev.xyz, *.landingdev.xyz] acme: Validations succeeded; requesting certificates
+# 2025/08/23 05:42:09 [INFO] [landingdev.xyz] Server responded with a certificate.

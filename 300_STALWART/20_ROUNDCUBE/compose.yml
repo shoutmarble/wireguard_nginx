@@ -1,0 +1,36 @@
+networks:
+  net:
+    external: true
+
+services:
+  roundcubemail:
+    image: roundcube/roundcubemail:latest
+    container_name: roundcube
+
+    networks:
+      net:
+        ipv4_address: 10.10.30.20
+        ipv6_address: fd12:3456:789a::30:20
+        
+    volumes:
+      - ./www:/var/www/html
+      - ./config.inc.php.domain:/var/www/html/config/config.inc.php
+    environment:
+      - ROUNDCUBEMAIL_DEFAULT_HOST=ssl://mail.landingdev.xyz
+      - ROUNDCUBEMAIL_DEFAULT_PORT=993
+      # - ROUNDCUBEMAIL_SMTP_SERVER=tls://mail.landingdev.xyz
+      # - ROUNDCUBEMAIL_SMTP_PORT=587
+      - ROUNDCUBEMAIL_SMTP_SERVER=ssl://mail.landingdev.xyz
+      - ROUNDCUBEMAIL_SMTP_PORT=465
+      
+      - ROUNDCUBEMAIL_UPLOAD_MAX_FILESIZE=20M
+      - ROUNDCUBEMAIL_FORCE_HTTPS=true
+      - ROUNDCUBEMAIL_ASSET_URL=https://webmail.landingdev.xyz
+      - ROUNDCUBEMAIL_SKIN=elastic
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.web.rule=Host(`webmail.landingdev.xyz`)
+      - traefik.http.routers.web.entrypoints=websecure
+      - traefik.http.routers.web.tls=true
+      - traefik.http.services.web.loadbalancer.server.port=80
+      

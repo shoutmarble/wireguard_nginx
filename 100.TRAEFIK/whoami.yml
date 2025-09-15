@@ -1,0 +1,22 @@
+networks:
+  net:
+    external: true
+
+services:
+  whoami:
+    image: traefik/whoami
+
+    container_name: whoami
+    hostname: who
+    domainname: landingdev.xyz
+
+    networks:
+      net:
+        ipv4_address: 10.10.10.20
+        ipv6_address: fd12:3456:789a::10:20
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.whoami.rule=Host(`who.landingdev.xyz`)
+      - traefik.http.routers.whoami.entrypoints=websecure
+      - traefik.http.routers.whoami.tls=true
+      - traefik.http.services.whoami.loadbalancer.server.port=80

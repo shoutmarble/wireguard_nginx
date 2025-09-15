@@ -1,0 +1,60 @@
+networks:
+  net:
+    external: true
+
+services:
+  traefik:
+    image: traefik:v3.5
+    container_name: traefik
+    ports:
+      - "80:80"
+      - "443:443" # PASSTHROUGH, PROXY PROTOCOL
+      # TRAEFIK DASHBOARD
+      - "9090:9090"
+      # NODEBB
+      - "4567:4567"
+      # STALWART
+      - "8080:8080"
+      # - "25:25"   # SMTP, PROXY PROTOCOL
+      # - "465:465" # SMTPS SUBMISSION, PASSTHROUGH, PROXY PROTOCOL 
+      # - "993:993" # IMAPTLS, PASSTHROUGH, PROXY PROTOCOL
+    networks:
+      net:
+        ipv4_address: 10.10.10.10
+        ipv6_address: fd12:3456:789a::10:10
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./dynamic_traefik.yml:/dynamic_traefik.yml"
+      - "./ZEROSSL.CERTIFICATES:/opt/certs"
+    command:
+      - "--api=true"
+      - "--api.dashboard=true"
+      - "--api.insecure=false"
+
+      - "--providers.docker.network=traefik"
+      - "--providers.docker.exposedByDefault=false"
+      - "--providers.file.filename=/dynamic_traefik.yml"
+
+      - "--log.level=DEBUG"
+      - "--accesslog=true"
+
+      # Entrypoints for TCP services
+      - "--entrypoints.dashboard.address=:9090"
+
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+
+      # MATRIX
+      - "--entrypoints.matrix.address=:6167"
+
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`dashboard.landingdev.xyz`)"
+      - "traefik.http.routers.dashboard.entrypoints=dashboard"
+      - "traefik.http.routers.dashboard.service=api@internal"
+      - "traefik.http.routers.dashboard.middlewares=myauth"
+      - "traefik.http.routers.dashboard.tls=true"
+      - "traefik.http.middlewares.myauth.basicauth.users=test:$$apr1$$K8IlLB.Q$0ihPxdwxV/Q5YyhUojtHW0"
