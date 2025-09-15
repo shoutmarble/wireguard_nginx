@@ -13,23 +13,19 @@ services:
             - "9090:9090"
             # NODEBB
             - "4567:4567"
-            # LIVEKIT
-            - "7880:7880"
-            - "7881:7881"
-            - "7882:7882/udp"
             # STALWART
             - "8080:8080"
             - "25:25"   # SMTP, PROXY PROTOCOL
             - "465:465" # SMTPS SUBMISSION, PASSTHROUGH, PROXY PROTOCOL 
             - "993:993" # IMAPTLS, PASSTHROUGH, PROXY PROTOCOL
         networks:
-            traefik:
-                ipv4_address: 172.20.0.10
-                ipv6_address: 2a02:4780:10:e8ad::10
+          npm_net:
+            ipv4_address: 10.10.10.10
+            ipv6_address: fd12:3456:789a::10:10
         volumes:
             - "/var/run/docker.sock:/var/run/docker.sock"
-            - "./certs:/certs"
             - "./dynamic_traefik.yml:/dynamic_traefik.yml"
+            - "./ZEROSSL_CERTIFICATES:/certs"
         command:
             - "--api=true"
             - "--api.dashboard=true"
