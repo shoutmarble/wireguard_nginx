@@ -37,7 +37,7 @@ client = "https://matrix.landingdev.xyz"
 
 [global.media]
 backend = "filesystem"
-path = "/srv/matrix-media"
+path = "/opt/matrix/media/"
 
 [global.media.directory_structure]
 depth = 4
