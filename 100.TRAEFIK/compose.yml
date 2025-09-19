@@ -12,7 +12,7 @@ services:
       # TRAEFIK DASHBOARD
       - "9090:9090"
       # NODEBB
-      - "4567:4567"
+      # - "4567:4567"
       # STALWART
       - "8080:8080"
       # - "25:25"   # SMTP, PROXY PROTOCOL
@@ -31,7 +31,7 @@ services:
       - "--api.dashboard=true"
       - "--api.insecure=false"
 
-      - "--providers.docker.network=traefik"
+      - "--providers.docker.network=net"
       - "--providers.docker.exposedByDefault=false"
       - "--providers.file.filename=/dynamic_traefik.yml"
 
@@ -46,9 +46,6 @@ services:
       
       - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
       - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
-
-      # MATRIX
-      - "--entrypoints.matrix.address=:6167"
 
     labels:
       - "traefik.enable=true"

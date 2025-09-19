@@ -1,0 +1,71 @@
+# UPDATE THE DEFAULT CONFIG.JS
+# docker cp cryptpad:/cryptpad/config/config.js local.config.js
+# docker cp local.config.js cryptpad:/cryptpad/config/config.js
+
+mkdir -p data/{blob,block,data,files} customize onlyoffice-dist onlyoffice-conf
+sudo chown -R 4001:4001 data customize onlyoffice-dist onlyoffice-conf
+
+git clone --bare https://github.com/cryptpad/onlyoffice-builds.git
+wget https://raw.githubusercontent.com/cryptpad/cryptpad/refs/heads/staging/install-onlyoffice.sh
+
+cp ./install-onlyoffice.sh onlyoffice-builds.git
+cd onlyoffice-builds.git
+./install-onlyoffice.sh
+
+wget https://github.com/cryptpad/onlyoffice-x2t-wasm/releases/download/v8.3.0%2B0/x2t.zip
+ 
+apt install unzip
+wget https://github.com/cryptpad/onlyoffice-x2t-wasm/releases/download/v8.3.0%2B0/x2t.zip
+unzip x2t.zip -d x2t
+rm x2t.zip
+
+
+# LOCAL.CONFIG.JS
+module.exports = {
+    httpUnsafeOrigin: 'https://crypt.landingdev.xyz',
+    httpSafeOrigin: 'https://cryptpad.landingdev.xyz',
+
+    httpAddress: '0.0.0.0',
+    httpPort: 3000,
+    websocketPort: 3003,
+    inactiveTime: 90,
+    archiveRetentionTime: 15,
+    accountRetentionTime: 365,
+    adminKeys: [],
+    filePath: './datastore/',
+    archivePath: './data/archive',
+    pinPath: './data/pins',
+    taskPath: './data/tasks',
+    blockPath: './block',
+    blobPath: './blob',
+    blobStagingPath: './data/blobstage',
+    decreePath: './data/decrees',
+    logPath: './data/logs',
+    logFeedback: false,
+    installMethod: 'docker',
+    logToStdout: true,
+    logLevel: 'debug',
+    verbose: false,
+};
+
+
+# COMPOSE.YML
+   labels:
+      - "traefik.enable=true"
+
+      - traefik.http.routers.docs.entrypoints=web
+      - traefik.http.routers.docs.rule=Host(`crypt.landingdev.xyz`) || Host(`cryptpad.landingdev.xyz`)
+      - traefik.http.middlewares.docs-https-redirect.redirectscheme.scheme=https
+      - traefik.http.routers.docs.middlewares=docs-https-redirect
+      - traefik.http.routers.docs-secure.entrypoints=websecure
+      - traefik.http.routers.docs-secure.rule=Host(`crypt.landingdev.xyz`) || Host(`cryptpad.landingdev.xyz`)
+      - traefik.http.routers.docs-secure.tls=true
+      - traefik.http.routers.docs-secure.tls.certresolver=myresolver
+      - traefik.http.routers.docs-secure.service=docs
+      - traefik.http.services.docs.loadbalancer.server.port=3000
+      - traefik.docker.network=traefik_proxy
+      - traefik.http.middlewares.security-headers.headers.stsseconds=63072000
+      - traefik.http.middlewares.security-headers.headers.stsincludesubdomains=true
+      - traefik.http.middlewares.security-headers.headers.stspreload=true
+      - traefik.http.middlewares.security-headers.headers.forcestsheader=true
+      - traefik.http.routers.docs-secure.middlewares=security-headers

@@ -1,0 +1,11 @@
+
+# DOCKER
+alias dps='clear; docker ps --format "\n{{.Names}} ({{.Image}}): {{.Status}}\n{{.Ports}}\n" | tr "," " "'
+alias up="docker compose up -d --build"
+alias stop="docker compose stop"
+alias down='docker stop $(docker ps -q)'
+alias prune='docker system prune -a --volumes --force'
+
+
+# STALWART
+alias mailb="docker exec -it mail bash"

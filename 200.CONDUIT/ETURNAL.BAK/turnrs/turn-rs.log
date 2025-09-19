@@ -1,0 +1,33 @@
+2025-09-17T18:39:38.355Z INFO  [turn_server::server::udp] turn server listening: bind=0.0.0.0:3478, external=185.28.22.166:3478, transport=UDP
+2025-09-17T18:39:38.355Z INFO  [turn_server::server::tcp] turn server listening: bind=0.0.0.0:3478, external=185.28.22.166:3478, transport=TCP
+2025-09-17T18:39:38.355Z INFO  [turn_server::api] api server listening=0.0.0.0:3000
+2025-09-17T18:42:18.783Z INFO  [turn_server::server::tcp] tcp socket accept: addr=185.28.22.166:59668, interface=0.0.0.0:3478
+2025-09-17T18:42:18.786Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=185.28.22.166:59668, interface=0.0.0.0:3478
+2025-09-17T18:42:43.835Z INFO  [turn_server::server::tcp] tcp socket accept: addr=47.26.234.89:64417, interface=0.0.0.0:3478
+2025-09-17T18:42:43.963Z INFO  [turn_server::observer] closed: address=47.26.234.89:64417, interface=185.28.22.166:3478, username="TERRY"
+2025-09-17T18:42:43.964Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=47.26.234.89:64417, interface=0.0.0.0:3478
+2025-09-17T18:42:58.176Z INFO  [turn_server::server::tcp] tcp socket accept: addr=47.26.234.89:64419, interface=0.0.0.0:3478
+2025-09-17T18:42:58.336Z INFO  [turn_server::observer] closed: address=47.26.234.89:64419, interface=185.28.22.166:3478, username="TERRY"
+2025-09-17T18:42:58.336Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=47.26.234.89:64419, interface=0.0.0.0:3478
+2025-09-17T18:43:03.406Z INFO  [turn_server::server::tcp] tcp socket accept: addr=47.26.234.89:64420, interface=0.0.0.0:3478
+2025-09-17T18:43:03.538Z INFO  [turn_server::observer] closed: address=47.26.234.89:64420, interface=185.28.22.166:3478, username="TERRY"
+2025-09-17T18:43:03.538Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=47.26.234.89:64420, interface=0.0.0.0:3478
+2025-09-17T18:43:26.690Z INFO  [turn_server::server::tcp] tcp socket accept: addr=47.26.234.89:64423, interface=0.0.0.0:3478
+2025-09-17T18:43:26.702Z INFO  [turn_server::observer] allocate: address=47.26.234.89:62402, interface=185.28.22.166:3478, username="test", port=56000
+2025-09-17T18:43:26.757Z INFO  [turn_server::observer] allocate: address=47.26.234.89:64423, interface=185.28.22.166:3478, username="test", port=50496
+2025-09-17T18:43:26.820Z INFO  [turn_server::observer] closed: address=47.26.234.89:62402, interface=185.28.22.166:3478, username="test"
+2025-09-17T18:43:26.820Z INFO  [turn_server::observer] refresh: address=47.26.234.89:62402, interface=185.28.22.166:3478, username="test", lifetime=0
+2025-09-17T18:43:26.822Z INFO  [turn_server::observer] closed: address=47.26.234.89:64423, interface=185.28.22.166:3478, username="test"
+2025-09-17T18:43:26.822Z INFO  [turn_server::observer] refresh: address=47.26.234.89:64423, interface=185.28.22.166:3478, username="test", lifetime=0
+2025-09-17T18:43:26.822Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=47.26.234.89:64423, interface=0.0.0.0:3478
+2025-09-17T18:43:45.737Z INFO  [turn_server::observer] allocate: address=47.26.234.89:52343, interface=185.28.22.166:3478, username="test", port=64128
+2025-09-17T18:43:45.743Z INFO  [turn_server::server::tcp] tcp socket accept: addr=47.26.234.89:64427, interface=0.0.0.0:3478
+2025-09-17T18:43:45.823Z INFO  [turn_server::observer] allocate: address=47.26.234.89:64427, interface=185.28.22.166:3478, username="test", port=52288
+2025-09-17T18:43:45.902Z INFO  [turn_server::observer] closed: address=47.26.234.89:64427, interface=185.28.22.166:3478, username="test"
+2025-09-17T18:43:45.902Z INFO  [turn_server::observer] refresh: address=47.26.234.89:64427, interface=185.28.22.166:3478, username="test", lifetime=0
+2025-09-17T18:43:45.902Z INFO  [turn_server::server::tcp] tcp socket disconnect: addr=47.26.234.89:64427, interface=0.0.0.0:3478
+2025-09-17T18:43:45.904Z INFO  [turn_server::observer] closed: address=47.26.234.89:52343, interface=185.28.22.166:3478, username="test"
+2025-09-17T18:43:45.905Z INFO  [turn_server::observer] refresh: address=47.26.234.89:52343, interface=185.28.22.166:3478, username="test", lifetime=0
+2025-09-17T18:52:43.471Z INFO  [turn_server::observer] closed: address=47.26.234.89:55106, interface=185.28.22.166:3478, username="TERRY"
+2025-09-17T18:52:57.473Z INFO  [turn_server::observer] closed: address=47.26.234.89:53611, interface=185.28.22.166:3478, username="TERRY"
+2025-09-17T18:53:03.474Z INFO  [turn_server::observer] closed: address=47.26.234.89:59910, interface=185.28.22.166:3478, username="TERRY"

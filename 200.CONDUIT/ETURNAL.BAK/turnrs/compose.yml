@@ -1,0 +1,30 @@
+networks:
+  net:
+    external: true
+
+services:
+
+  turnrs:
+    image: ghcr.io/mycrl/turn-server:v3.4.0
+
+    container_name: turn
+    hostname: turn
+
+    restart: unless-stopped
+
+    networks:
+        net:
+            ipv4_address: 10.10.20.50
+            ipv6_address: fd12:3456:789a::20:50
+        
+    ### networking options
+    ports:
+     - "3478:3478/tcp"    # STUN/TURN non-TLS
+     - "3478:3478/udp"    # STUN/TURN non-TLS
+     # - 49500-49800:49500-49800/udp # TURN relay range
+
+    volumes:
+      - ./config.toml:/etc/turn-server/config.toml:ro
+      - ./ZEROSSL.185.28.22.166:/opt/eturnal/tls:ro
+      # - ./ZEROSSL.CERTIFICATES:/opt/eturnal/tls:ro
+

@@ -2,22 +2,43 @@
 server_name = "matrix.landingdev.xyz"
 database_backend = "rocksdb"
 database_path = "/var/lib/matrix-conduit/"
+
+address = "0.0.0.0"
 port = 6167
+
 max_request_size = 20000000
 
 allow_registration = true
+allow_encryption = true
 
 registration_token = "hzXhBoczX17pZk5HaYepCyhB4jkQm2D61jMjYEEzbM9yrAGfZRaEy1kweiTzANEu"
-CONDUIT_TURN_URIS: '["turn:185.28.22.166?transport=udp", "turn:185.28.22.166?transport=tcp"]'
-CONDUIT_TURN_SECRET: "hzXhBoczX17pZk5HaYepCyhB4jkQm2D61jMjYEEzbM9yrAGfZRaEy1kweiTzANEu"
+
+jwt_secret = "hzXhBoczX17pZk5HaYepCyhB4jkQm2D61jMjYEEzbM9yrAGfZRaEy1kweiTzANEu"
+turn_username = "TERRY"
+turn_password = "TERRY"
+turn_uris = ["turn:185.28.22.166?transport=udp", "turn:185.28.22.166?transport=tcp"]
+turn_secret =  "hzXhBoczX17pZk5HaYepCyhB4jkQm2D61jMjYEEzbM9yrAGfZRaEy1kweiTzANEu"
+turn_ttl = 86400
 
 allow_check_for_updates = true
 allow_federation = true
+
 enable_lightning_bolt = true
-trusted_servers = ["matrix.org"]
+trusted_servers = ["matrix.org", "matrix.landingdev.xyz"]
 max_concurrent_requests = 50
-address = "0.0.0.0"
+
+# [global.tls]
+# certs = "/opt/certs/landingdev.xyz.pem"
+# key = "/opt/certs/landingdev.xyz.key"
 
 [global.well_known]
 server = "matrix.landingdev.xyz:443"
 client = "https://matrix.landingdev.xyz"
+
+[global.media]
+backend = "filesystem"
+path = "/srv/matrix-media"
+
+[global.media.directory_structure]
+depth = 4
+length = 2

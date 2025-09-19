@@ -1,0 +1,25 @@
+[turn]
+realm = "turn.landingdev.xyz"
+
+[[turn.interfaces]]
+transport = "udp"
+bind = "0.0.0.0:3478"
+external = "185.28.22.166:3478"
+
+[[turn.interfaces]]
+transport = "tcp"
+bind = "0.0.0.0:3478"
+external = "185.28.22.166:3478"
+
+[api]
+bind = "0.0.0.0:3000"
+
+[log]
+level = "debug"
+
+[auth]
+static_auth_secret = "hzXhBoczX17pZk5HaYepCyhB4jkQm2D61jMjYEEzbM9yrAGfZRaEy1kweiTzANEu"
+
+[auth.static_credentials]
+TERRY = "TERRY"
+test = "test"
