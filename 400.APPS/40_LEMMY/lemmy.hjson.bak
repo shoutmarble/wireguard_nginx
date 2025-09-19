@@ -1,0 +1,20 @@
+{
+  "hostname": "lemmy.landingdev.xyz",
+  "database": {
+    "host": "postgres",
+    "port": 5432,
+    "database": "lemmy",
+    "user": "lemmy",
+    "password": "5RHdAY2TxMLXrYRfIBtx",
+    "pool_size": 10
+  },
+  "pictrs": {
+    "url": "http://pictrs:8080",
+    "api_key": "5RHdAY2TxMLXrYRfIBtx"
+  },
+  "email": {
+    "smtp_server": "postfix:25",
+    "smtp_from_address": "no-reply@lemmy.landingdev.xyz",
+    "tls_type": "none"
+  }
+}

@@ -1,0 +1,60 @@
+  
+networks:
+  net:
+    external: true
+
+services:
+  cryptpad:
+    image: cryptpad/cryptpad:latest
+
+    container_name: cryptpad
+    hostname: cryptpad
+    domainname: landingdev.xyz
+
+    volumes:
+      - ./data/blob:/cryptpad/blob
+      - ./data/block:/cryptpad/block
+      - ./customize:/cryptpad/customize
+      - ./data/data:/cryptpad/data
+      - ./data/files:/cryptpad/datastore
+      - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
+      - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
+
+      - ./local.config.js:/cryptpad/config/config.js
+
+    environment:
+      - CPAD_MAIN_DOMAIN=https://crypt.landingdev.xyz
+      
+      - CPAD_SANDBOX_DOMAIN=https://cryptpad.landingdev.xyz
+
+      - CPAD_INSTALL_ONLYOFFICE=yes
+
+      - CPAD_CONF=/cryptpad/config/config.js
+
+    networks:
+      net:
+        ipv4_address: 10.10.40.117
+        ipv6_address: fd12:3456:789a::40:117
+      
+    restart: always
+
+    labels:
+      - "traefik.enable=true"
+  
+      - traefik.http.routers.docs.entrypoints=web
+      - traefik.http.routers.docs.rule=Host(`crypt.landingdev.xyz`) || Host(`cryptpad.landingdev.xyz`)
+      - traefik.http.middlewares.docs-https-redirect.redirectscheme.scheme=https
+      - traefik.http.routers.docs.middlewares=docs-https-redirect
+      - traefik.http.routers.docs-secure.entrypoints=websecure
+      - traefik.http.routers.docs-secure.rule=Host(`crypt.landingdev.xyz`) || Host(`cryptpad.landingdev.xyz`)
+      - traefik.http.routers.docs-secure.tls=true
+      - traefik.http.routers.docs-secure.tls.certresolver=myresolver
+      - traefik.http.routers.docs-secure.service=docs
+      - traefik.http.services.docs.loadbalancer.server.port=3000
+      - traefik.docker.network=traefik_proxy
+      - traefik.http.middlewares.security-headers.headers.stsseconds=63072000
+      - traefik.http.middlewares.security-headers.headers.stsincludesubdomains=true
+      - traefik.http.middlewares.security-headers.headers.stspreload=true
+      - traefik.http.middlewares.security-headers.headers.forcestsheader=true
+      - traefik.http.routers.docs-secure.middlewares=security-headers
+      

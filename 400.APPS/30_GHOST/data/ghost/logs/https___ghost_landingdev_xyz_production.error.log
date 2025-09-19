@@ -1,0 +1,2 @@
+{"name":"Log","hostname":"b26ebf8bfbc8","pid":1,"level":50,"version":"6.0.9","msg":"Could not get webhook secret for ActivityPub FetchError: invalid json response body at https://ghost.landingdev.xyz/.ghost/activitypub/v1/site/ reason: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON","time":"2025-09-19T16:02:31.566Z","v":0}
+{"name":"Log","hostname":"b26ebf8bfbc8","pid":1,"level":50,"version":"6.0.9","msg":"No webhook secret found - cannot initialise","time":"2025-09-19T16:02:31.566Z","v":0}

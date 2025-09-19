@@ -1,0 +1,52 @@
+volumes:
+  drupal_data:
+  db_data:
+
+
+networks:
+  net:
+    external: true
+
+services:
+  drupal:
+    image: drupal:10.4.8-apache-trixie
+    container_name: drupal
+
+    networks:
+      net:
+        ipv4_address: 10.10.50.10
+        ipv6_address: fd12:3456:789a::50:10
+
+    volumes:
+      - drupal_data:/var/www/html
+    environment:
+      - DRUPAL_DATABASE_HOST=db
+      - DRUPAL_DATABASE_NAME=drupal
+      - DRUPAL_DATABASE_USER=drupal
+      - DRUPAL_DATABASE_PASSWORD=drupal
+    depends_on:
+      - db
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.drupal.rule=Host(`drupal.landingdev.xyz`)"
+      - "traefik.http.routers.drupal.entrypoints=websecure"
+      - "traefik.http.routers.drupal.tls=true"
+      - "traefik.http.services.drupal.loadbalancer.server.port=80"
+  
+  db:
+    image: mariadb:latest
+
+    container_name: db
+
+    networks:
+      net:
+        ipv4_address: 10.10.50.20
+        ipv6_address: fd12:3456:789a::50:20
+
+    environment:
+      - MYSQL_DATABASE=drupal
+      - MYSQL_USER=drupal
+      - MYSQL_PASSWORD=drupal
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - db_data:/var/lib/mysql
