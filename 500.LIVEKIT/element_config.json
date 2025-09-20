@@ -10,9 +10,7 @@
   },
   "voip": {
     "turnServer": {
-      "uris": ["turn:185.28.22.166?transport=udp", "turn:185.28.22.166?transport=tcp"],
-      "username": "TERRY",
-      "password": "TERRY",
+      "uris": ["turn:turn.landingdev.xyz?transport=udp", "turn:turn.landingdev.xyz?transport=tcp"],
       "ttl": 86400
     }
   }

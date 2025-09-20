@@ -5,7 +5,97 @@ networks:
     external: true
 
 services:
+  chat:
+    image: vectorim/element-web:latest
+    container_name: chat
 
+    networks:
+      net:
+        ipv4_address: 10.10.120.60
+        ipv6_address: fd12:3456:789a::120:60
+
+    restart: unless-stopped
+
+    volumes:
+      - ./element_config.json:/app/config.json
+
+    depends_on:
+      synapse:
+        condition: service_healthy
+
+    labels:
+        - traefik.enable=true
+        - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`)
+        - traefik.http.routers.chat.entrypoints=websecure
+        - traefik.http.routers.chat.tls=true
+        - traefik.http.services.chat.loadbalancer.server.port=80
+
+
+  synapse:
+    image: docker.io/matrixdotorg/synapse:latest
+
+    container_name: matrix
+    
+    restart: unless-stopped
+    volumes:
+      - ./SYN/synapse:/data:rw
+
+    environment:
+      SYNAPSE_CONFIG_DIR: /data
+      SYNAPSE_CONFIG_PATH: /data/homeserver.yaml
+
+    networks:
+        net:
+            ipv4_address: 10.10.120.50
+            ipv6_address: fd12:3456:789a::120:50
+
+    labels:
+        - traefik.enable=true
+        - traefik.http.routers.matrix.rule=Host(`matrix.landingdev.xyz`)
+        - traefik.http.routers.matrix.entrypoints=websecure
+        - traefik.http.routers.matrix.tls=true
+        - traefik.http.services.matrix.loadbalancer.server.port=8008
+      
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8008/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+    depends_on:
+      synapse_db:
+        condition: service_healthy
+
+  synapse_db:
+    image: docker.io/postgres:latest
+
+    container_name: synapse_db
+    hostname: synapse_db
+    
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=synapse
+      - POSTGRES_PASSWORD=synapse
+      - POSTGRES_DB=synapse
+      - POSTGRES_INITDB_ARGS=--encoding='UTF8' --lc-collate='C' --lc-ctype='C'
+    volumes:
+      - ./syn-pg-data:/var/lib/postgresql/data
+
+    networks:
+        net:
+            ipv4_address: 10.10.120.40
+            ipv6_address: fd12:3456:789a::120:40
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U synapse -d synapse"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    depends_on:
+      livekit:
+        condition: service_healthy
+      
   livekit:
     image: livekit/livekit-server:latest
     container_name: livekit
@@ -29,6 +119,16 @@ services:
       - ./livekit.yaml:/etc/livekit.yaml
       - ./ZEROSSL.185.28.22.166:/opt/certs/ip
       - ./ZEROSSL.CERTIFICATES:/opt/certs/name
+
+    healthcheck:
+      test: ["CMD", "sh", "-c", "wget --no-verbose --tries=5 --spider http://localhost:7880 || kill 1"]
+      interval: 20s
+      timeout: 1s
+      retries: 5
+    depends_on:
+      redis:
+        condition: service_healthy
+     
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.livekit.rule=Host(`livekit.landingdev.xyz`)"
@@ -55,3 +155,9 @@ services:
     volumes:
       - ./redis.conf:/etc/redis.conf
       - ./redis.acl:/opt/redis/redis.acl
+
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 3

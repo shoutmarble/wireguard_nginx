@@ -1,0 +1,5 @@
+
+echo "yes" | docker exec -i matrix register_new_matrix_user -a -u terry -p terry -c /data/homeserver.yaml https://matrix.landingdev.xyz
+echo "yes" | docker exec -i matrix register_new_matrix_user -u bill -p bill -c /data/homeserver.yaml https://matrix.landingdev.xyz
+echo "yes" | docker exec -i matrix register_new_matrix_user -u mac -p mac -c /data/homeserver.yaml https://matrix.landingdev.xyz
+echo "yes" | docker exec -i matrix register_new_matrix_user -u brian -p brian -c /data/homeserver.yaml https://matrix.landingdev.xyz

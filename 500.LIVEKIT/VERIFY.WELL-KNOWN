@@ -1,0 +1,10 @@
+# https://chat.landingdev.xyz/.well-known/matrix/client
+# https://matrix.landingdev.xyz/.well-known/matrix/server
+
+echo "curl -s -L https://chat.landingdev.xyz/.well-known/matrix/client"
+curl -s -L https://chat.landingdev.xyz/.well-known/matrix/client
+
+echo -e "\n\n"
+
+echo "curl -s -L https://matrix.landingdev.xyz/.well-known/matrix/server"
+curl -s -L https://matrix.landingdev.xyz/.well-known/matrix/server

@@ -1,0 +1,7 @@
+# docker run --entrypoint python matrixdotorg/synapse -m synapse.app.homeserver --help
+
+docker run -it --rm \
+  -v ./synapse:/data \
+  -e SYNAPSE_SERVER_NAME=matrix.landingdev.xyz\
+  -e SYNAPSE_REPORT_STATS=yes \
+  matrixdotorg/synapse:latest generate
