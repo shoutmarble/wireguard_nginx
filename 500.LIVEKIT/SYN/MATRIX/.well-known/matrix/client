@@ -1,0 +1,17 @@
+{
+  "default_server_config": {
+    "m.homeserver": {
+      "base_url": "https://matrix.landingdev.xyz"
+    }
+  },
+  "features": {
+    "feature_video_rooms": true,
+    "feature_group_calls": true
+  },
+  "voip": {
+    "turnServer": {
+      "uris": ["turn:turn.landingdev.xyz?transport=udp", "turn:turn.landingdev.xyz?transport=tcp"],
+      "ttl": 86400
+    }
+  }
+}

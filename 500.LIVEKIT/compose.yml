@@ -5,6 +5,65 @@ networks:
     external: true
 
 services:
+
+  jwt:
+    image: ghcr.io/element-hq/lk-jwt-service:latest
+
+    container_name: jwt
+    hostname: jwt
+
+    networks:
+      net:
+        ipv4_address: 10.10.120.80
+        ipv6_address: fd12:3456:789a::120:80
+    environment:
+      - LIVEKIT_URL=https://livekit.landingdev.xyz/
+      - LIVEKIT_KEY=APIjzYc2uVaQpV7
+      - LIVEKIT_SECRET=bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
+      - LIVEKIT_JWT_PORT=8080
+      - LIVEKIT_FULL_ACCESS_HOMESERVERS=livekit.landingdev.xyz
+    restart: unless-stopped
+    labels:
+        - traefik.enable=true
+        - traefik.http.routers.jwt.rule=Host(`jwt.landingdev.xyz`)
+        - traefik.http.routers.jwt.entrypoints=websecure
+        - traefik.http.routers.jwt.tls=true
+        - traefik.http.services.jwt.loadbalancer.server.port=8080
+
+
+  wellknown:
+    image: nginx:latest
+
+    container_name: wellknown
+
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./SYN/MATRIX/:/usr/share/nginx/html/:ro
+
+    restart: unless-stopped
+
+    networks:
+      net:
+        ipv4_address: 10.10.120.70
+        ipv6_address: fd12:3456:789a::120:70
+
+    labels:
+      - traefik.enable=true
+      
+      - "traefik.http.routers.matrix-client-secure.rule=Host(`chat.landingdev.xyz`) && Path(`/.well-known/matrix/client`)"
+      - "traefik.http.routers.matrix-client-secure.entrypoints=websecure"
+      - "traefik.http.routers.matrix-client-secure.tls=true"
+      - "traefik.http.routers.matrix-client-secure.service=matrix-client-service"
+      
+      - "traefik.http.routers.matrix-server-secure.rule=Host(`matrix.landingdev.xyz`) && Path(`/.well-known/matrix/server`)"
+      - "traefik.http.routers.matrix-server-secure.entrypoints=websecure"
+      - "traefik.http.routers.matrix-server-secure.tls=true"
+      - "traefik.http.routers.matrix-server-secure.service=matrix-server-service"
+
+      # Define services (point to Nginx container port)
+      - "traefik.http.services.matrix-client-service.loadbalancer.server.port=80"
+      - "traefik.http.services.matrix-server-service.loadbalancer.server.port=80"
+          
   chat:
     image: vectorim/element-web:latest
     container_name: chat
@@ -25,7 +84,7 @@ services:
 
     labels:
         - traefik.enable=true
-        - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`)
+        - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`) && !PathPrefix(`/.well-known/matrix`)
         - traefik.http.routers.chat.entrypoints=websecure
         - traefik.http.routers.chat.tls=true
         - traefik.http.services.chat.loadbalancer.server.port=80
@@ -51,7 +110,7 @@ services:
 
     labels:
         - traefik.enable=true
-        - traefik.http.routers.matrix.rule=Host(`matrix.landingdev.xyz`)
+        - traefik.http.routers.matrix.rule=Host(`matrix.landingdev.xyz`) && !PathPrefix(`/.well-known/matrix`)
         - traefik.http.routers.matrix.entrypoints=websecure
         - traefik.http.routers.matrix.tls=true
         - traefik.http.services.matrix.loadbalancer.server.port=8008
