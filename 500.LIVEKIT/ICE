@@ -1,0 +1,8 @@
+# keys:
+#     APIjzYc2uVaQpV7: bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
+secret="bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA"
+username="livekit:$(date +%s -d '+24 hours')"
+password=$(echo -n $username | openssl dgst -sha1 -hmac $secret | awk '{print $2}')
+
+echo "USERNAME:  $username"
+echo "PASSWORD:  $password"

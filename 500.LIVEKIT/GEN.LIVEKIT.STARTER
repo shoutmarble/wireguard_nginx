@@ -1,0 +1,45 @@
+docker pull livekit/generate
+docker run --rm -it -v$PWD:/output livekit/generate
+
+# root@srv456397:~/500.LIVEKIT# ./GEN.LIVEKIT.STARTER
+# Using default tag: latest
+# latest: Pulling from livekit/generate
+# 661ff4d9561e: Pull complete
+# 5ca8b5953bf4: Pull complete
+# Digest: sha256:80ad0904b148c6642ee3c1db91468eb27386eb3419028227dc36452e6dfb88e2
+# Status: Downloaded newer image for livekit/generate:latest
+# docker.io/livekit/generate:latest
+# Generating config for production LiveKit deployment
+# This deployment will utilize docker-compose and Caddy. It'll set up a secure LiveKit installation with built-in TURN/TLS
+# SSL Certificates for HTTPS and TURN/TLS will be generated automatically via LetsEncrypt or ZeroSSL.
+# 
+# ✔ LiveKit Server only
+# Primary domain name (i.e. livekit.myhost.com): livekit.landingdev.xyz
+# TURN domain name (i.e. livekit-turn.myhost.com): turn.landingdev.xyz
+# ✔ Let's Encrypt (no account required)
+# ✔ latest
+# ✔ no - (we'll bundle Redis)
+# ✔ Skip
+# Your production config files are generated in directory: livekit.landingdev.xyz
+# 
+# Please point update DNS for the following domains to the IP address of your server.
+#  * livekit.landingdev.xyz
+#  * turn.landingdev.xyz
+# Once started, Caddy will automatically acquire TLS certificates for the domains.
+# 
+# You can copy the folder to your server and run: "docker-compose up"
+# 
+# Please ensure the following ports are accessible on the server
+#  * 443 - primary HTTPS and TURN/TLS
+#  * 80 - for TLS issuance
+#  * 7881 - for WebRTC over TCP
+#  * 3478/UDP - for TURN/UDP
+#  * 50000-60000/UDP - for WebRTC over UDP
+# 
+# Server URL: wss://livekit.landingdev.xyz
+# API Key: APIjzYc2uVaQpV7
+# API Secret: bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
+# 
+# Here's a test token generated with your keys: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3OTQzMTA4NjAsImlzcyI6IkFQSWp6WWMydVZhUXBWNyIsIm5hbWUiOiJUZXN0IFVzZXIiLCJuYmYiOjE3NTgzMTA4NjAsInN1YiI6InRlc3QtdXNlciIsInZpZGVvIjp7InJvb20iOiJteS1maXJzdC1yb29tIiwicm9vbUpvaW4iOnRydWV9fQ.gU5eDdiuYllN3PKqMBHSKUL7ZApX1PXvP00a-uikMLw
+# 
+# An access token identifies the participant as well as the room it's connecting to

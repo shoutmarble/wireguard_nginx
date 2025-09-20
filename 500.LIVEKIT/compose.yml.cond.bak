@@ -1,0 +1,83 @@
+networks:
+  net:
+    external: true
+
+volumes:
+  db:
+
+services:
+  homeserver:
+    image: matrixconduit/matrix-conduit:latest
+    container_name: matrix
+    
+    restart: unless-stopped
+
+    volumes:
+      - db:/var/lib/matrix-conduit/
+      - ./conduit.toml:/opt/conduit.toml
+      - ./ZEROSSL.CERTIFICATES:/opt/certs
+
+    networks:
+      net:
+        ipv4_address: 10.10.20.10
+        ipv6_address: fd12:3456:789a::20:10
+        
+    environment:
+      CONDUIT_CONFIG: '/opt/conduit.toml'
+
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.matrix.rule=Host(`matrix.landingdev.xyz`)
+      - traefik.http.routers.matrix.entrypoints=websecure
+      - traefik.http.routers.matrix.tls=true
+      - traefik.http.services.matrix.loadbalancer.server.port=6167
+
+  chat:
+    image: vectorim/element-web:latest
+    container_name: chat
+
+    networks:
+      net:
+        ipv4_address: 10.10.20.20
+        ipv6_address: fd12:3456:789a::20:20
+
+    restart: unless-stopped
+
+    volumes:
+      - ./element_config.json:/app/config.json
+      
+    depends_on:
+      - homeserver
+      
+    labels:
+        - traefik.enable=true
+        - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`)
+        - traefik.http.routers.chat.entrypoints=websecure
+        - traefik.http.routers.chat.tls=true
+        - traefik.http.services.chat.loadbalancer.server.port=80
+
+
+  turnrs:
+    image: ghcr.io/mycrl/turn-server:v3.4.0
+
+    container_name: turn
+    hostname: turn
+
+    restart: unless-stopped
+
+    networks:
+        net:
+            ipv4_address: 10.10.20.30
+            ipv6_address: fd12:3456:789a::20:30
+
+    ### networking options
+    ports:
+     - "3478:3478/tcp"    # STUN/TURN non-TLS
+     - "3478:3478/udp"    # STUN/TURN non-TLS
+     # - 49500-49800:49500-49800/udp # TURN relay range
+
+    volumes:
+      - ./turn.rs.config.toml:/etc/turn-server/config.toml:ro
+      - ./ZEROSSL.185.28.22.166:/opt/eturnal/tls:ro
+      # - ./ZEROSSL.CERTIFICATES:/opt/eturnal/tls:ro
+      

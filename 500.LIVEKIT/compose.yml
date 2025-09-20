@@ -1,0 +1,57 @@
+
+
+networks:
+  net:
+    external: true
+
+services:
+
+  livekit:
+    image: livekit/livekit-server:latest
+    container_name: livekit
+    
+    command: --config /etc/livekit.yaml
+    restart: unless-stopped
+
+    ports:
+      - "3478:3478/udp"
+      - "3478:3478/tcp"
+      - "49500-49800:49500-49800/udp"
+      - "7881:7881"
+      - "7882:7882/udp"
+
+    networks:
+        net:
+            ipv4_address: 10.10.120.20
+            ipv6_address: fd12:3456:789a::120:20
+
+    volumes:
+      - ./livekit.yaml:/etc/livekit.yaml
+      - ./ZEROSSL.185.28.22.166:/opt/certs/ip
+      - ./ZEROSSL.CERTIFICATES:/opt/certs/name
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.livekit.rule=Host(`livekit.landingdev.xyz`)"
+      - "traefik.http.routers.livekit.entrypoints=websecure"
+      - "traefik.http.routers.livekit.tls=true"
+
+      - "traefik.http.routers.livekit.tls.certresolver=mytls"
+      - "traefik.http.routers.livekit.service=livekit"
+      
+      - "traefik.http.services.livekit.loadbalancer.server.port=7880"
+
+  redis:
+    image: redis:7-alpine
+    container_name: lk_redis
+
+    command: redis-server /etc/redis.conf
+    restart: unless-stopped
+
+    networks:
+        net:
+            ipv4_address: 10.10.120.30
+            ipv6_address: fd12:3456:789a::120:30
+
+    volumes:
+      - ./redis.conf:/etc/redis.conf
+      - ./redis.acl:/opt/redis/redis.acl

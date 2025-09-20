@@ -1,0 +1,7 @@
+redis-cli -u redis://livekit:livekit@lk_redis:6379/0
+ping
+SUBSCRIBE test_channel
+
+redis-cli -u redis://livekit:livekit@lk_redis:6379/0
+ping
+PUBLISH test_channel "Hello from livekit!"

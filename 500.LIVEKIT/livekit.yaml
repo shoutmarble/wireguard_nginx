@@ -1,0 +1,39 @@
+port: 7880
+bind_addresses:
+    - "0.0.0.0"
+rtc:
+    tcp_port: 7881
+    port_range_start: 49500
+    port_range_end: 49800
+    use_external_ip: true
+    enable_loopback_candidate: false
+
+    stun_servers:
+      - stun2.l.google.com:19302
+      - stun3.l.google.com:19302
+
+redis:
+    address: lk_redis:6379
+    username: "livekit"
+    password: "livekit"
+    db: 0
+    use_tls: false
+
+turn:
+    enabled: true
+    
+    domain: 10.10.120.20
+    # domain: 185.28.22.166
+    # domain: turn.landingdev.xyz
+
+    tls_port: 443
+    udp_port: 3478
+    external_tls: false
+    
+    cert_file: /opt/certs/ip/certificate.pem
+    key_file: /opt/certs/ip/private.key
+    # cert_file: /opt/certs/name/landingdev.xyz.pem
+    # key_file: /opt/certs/name/landingdev.xyz.key
+
+keys:
+    APIjzYc2uVaQpV7: bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
