@@ -1,11 +1,12 @@
 {
+  "m.server": "matrix.landingdev.xyz:443",
   "m.homeserver": {
-    "base_url": "https://chat.landingdev.xyz"
+    "base_url": "https://matrix.landingdev.xyz"
   },
   "org.matrix.msc4143.rtc_foci": [
     {
       "type": "livekit",
-      "livekit_service_url": "https://livekit.landingdev.xyz/livekit/jwt"
+      "livekit_service_url": "https://livekit.landingdev.xyz"
     }
   ]
 }

@@ -21,8 +21,13 @@ services:
       - LIVEKIT_KEY=APIjzYc2uVaQpV7
       - LIVEKIT_SECRET=bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
       - LIVEKIT_JWT_PORT=8080
-      - LIVEKIT_FULL_ACCESS_HOMESERVERS=livekit.landingdev.xyz
+      - LIVEKIT_FULL_ACCESS_HOMESERVERS=*
+      # - LIVEKIT_FULL_ACCESS_HOMESERVERS=livekit.landingdev.xyz
     restart: unless-stopped
+    depends_on:
+      wellknown:
+        condition: service_healthy
+
     labels:
         - traefik.enable=true
         - traefik.http.routers.jwt.rule=Host(`jwt.landingdev.xyz`)
@@ -47,6 +52,14 @@ services:
         ipv4_address: 10.10.120.70
         ipv6_address: fd12:3456:789a::120:70
 
+    depends_on:
+      chat:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/.well-known/matrix/client"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     labels:
       - traefik.enable=true
       
@@ -76,20 +89,27 @@ services:
     restart: unless-stopped
 
     volumes:
-      - ./element_config.json:/app/config.json
+      - ./SYN/MATRIX/.well-known/matrix/client:/app/config.json
 
     depends_on:
       synapse:
         condition: service_healthy
 
     labels:
-        - traefik.enable=true
-        - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`) && !PathPrefix(`/.well-known/matrix`)
-        - traefik.http.routers.chat.entrypoints=websecure
-        - traefik.http.routers.chat.tls=true
-        - traefik.http.services.chat.loadbalancer.server.port=80
+      - traefik.enable=true
+      - traefik.http.routers.chat.rule=Host(`chat.landingdev.xyz`) && !PathPrefix(`/.well-known/matrix`)
+      - traefik.http.routers.chat.entrypoints=websecure
+      - traefik.http.routers.chat.tls=true
+      - traefik.http.services.chat.loadbalancer.server.port=80
 
-
+      - traefik.http.middlewares.chat-security.headers.frameDeny=false
+      - traefik.http.middlewares.chat-security.headers.customFrameOptionsValue=SAMEORIGIN
+      - traefik.http.middlewares.chat-security.headers.contentTypeNosniff=true
+      - traefik.http.middlewares.chat-security.headers.customResponseHeaders.X-XSS-Protection=1; mode=block
+      - traefik.http.middlewares.chat-security.headers.customResponseHeaders.Content-Security-Policy=frame-ancestors 'self'
+      - traefik.http.routers.chat.middlewares=chat-security
+      
+      
   synapse:
     image: docker.io/matrixdotorg/synapse:latest
 
@@ -109,12 +129,22 @@ services:
             ipv6_address: fd12:3456:789a::120:50
 
     labels:
-        - traefik.enable=true
-        - traefik.http.routers.matrix.rule=Host(`matrix.landingdev.xyz`) && !PathPrefix(`/.well-known/matrix`)
-        - traefik.http.routers.matrix.entrypoints=websecure
-        - traefik.http.routers.matrix.tls=true
-        - traefik.http.services.matrix.loadbalancer.server.port=8008
+      - traefik.enable=true
+
+      - traefik.http.routers.matrix-client.rule=Host(`matrix.landingdev.xyz`)
+      # - traefik.http.routers.matrix-client.rule=Host(`matrix.landingdev.xyz`) && (PathPrefix(`/_matrix/client/`) || PathPrefix(`/_matrix/static/`) || PathPrefix(`/_matrix/health`))
+      - traefik.http.routers.matrix-client.entrypoints=websecure
+      - traefik.http.routers.matrix-client.tls=true
+      - traefik.http.services.matrix-client.loadbalancer.server.port=8008
+
+      # - traefik.http.routers.matrix-federation.rule=Host(`matrix.landingdev.xyz`) && (PathPrefix(`/_matrix/federation/`) || PathPrefix(`/_matrix/key/`) || PathPrefix(`/_matrix/media/`))
+      # - traefik.http.routers.matrix-federation.entrypoints=websecure
+      # - traefik.http.routers.matrix-federation.tls=true
+      # - traefik.http.services.matrix-federation.loadbalancer.server.port=8448
+
+
       
+          
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8008/health"]
       interval: 15s
