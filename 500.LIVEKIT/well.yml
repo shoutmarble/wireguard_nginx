@@ -1,36 +1,6 @@
 networks:
   net:
     external: true
-<<<<<<< HEAD
-services:
-  matrix_wellknown:
-    image: nginx:latest
-    container_name: matrix_wellknown
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./SYN/MATRIX/:/usr/share/nginx/html/:ro
-    restart: unless-stopped
-    networks:
-      net:
-        ipv4_address: 10.10.120.70
-        ipv6_address: fd12:3456:789a::120:70
-    labels:
-      - traefik.enable=true
-
-      - "traefik.http.routers.matrix-client-secure.entrypoints=websecure"
-      - "traefik.http.routers.matrix-client-secure.rule=Host(`chat.landingdev.xyz`) && Path(`/.well-known/matrix/client`)"
-      - "traefik.http.routers.matrix-client-secure.tls=true"
-      - "traefik.http.routers.matrix-client-secure.service=matrix-client-service"
-
-      - "traefik.http.routers.matrix-server-secure.entrypoints=websecure"
-      - "traefik.http.routers.matrix-server-secure.rule=Host(`matrix.landingdev.xyz`) && Path(`/.well-known/matrix/server`)"
-      - "traefik.http.routers.matrix-server-secure.tls=true"
-      - "traefik.http.routers.matrix-server-secure.service=matrix-server-service"
-
-      # Define services (point to Nginx container port)
-      - "traefik.http.services.matrix-client-service.loadbalancer.server.port=80"
-      - "traefik.http.services.matrix-server-service.loadbalancer.server.port=80"
-=======
 
 services:
   wellknown:
@@ -77,4 +47,3 @@ services:
       - "traefik.http.routers.matrixrtc.tls=true"
       - "traefik.http.routers.matrixrtc.service=matrixrtc-service"
       - "traefik.http.services.matrixrtc-service.loadbalancer.server.port=80"
->>>>>>> 8c35cc6 (Initial commit)
