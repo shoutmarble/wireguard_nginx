@@ -6,40 +6,10 @@ networks:
 
 services:
 
-  jwt:
-    image: ghcr.io/element-hq/lk-jwt-service:latest
-
-    container_name: jwt
-    hostname: jwt
-
-    networks:
-      net:
-        ipv4_address: 10.10.120.80
-        ipv6_address: fd12:3456:789a::120:80
-    environment:
-      - LIVEKIT_URL=https://livekit.landingdev.xyz/
-      - LIVEKIT_KEY=APIjzYc2uVaQpV7
-      - LIVEKIT_SECRET=bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
-      - LIVEKIT_JWT_PORT=8080
-      - LIVEKIT_FULL_ACCESS_HOMESERVERS=*
-      # - LIVEKIT_FULL_ACCESS_HOMESERVERS=livekit.landingdev.xyz
-    restart: unless-stopped
-    depends_on:
-      wellknown:
-        condition: service_healthy
-
-    labels:
-        - traefik.enable=true
-        - traefik.http.routers.jwt.rule=Host(`jwt.landingdev.xyz`)
-        - traefik.http.routers.jwt.entrypoints=websecure
-        - traefik.http.routers.jwt.tls=true
-        - traefik.http.services.jwt.loadbalancer.server.port=8080
-
-
-  wellknown:
+  matrixrtc:
     image: nginx:latest
 
-    container_name: wellknown
+    container_name: matrixrtc
 
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
@@ -49,33 +19,78 @@ services:
 
     networks:
       net:
-        ipv4_address: 10.10.120.70
-        ipv6_address: fd12:3456:789a::120:70
+        ipv4_address: 10.10.120.100
+        ipv6_address: fd12:3456:789a::120:100
 
     depends_on:
-      chat:
-        condition: service_healthy
+      - jwt
+        # condition: service_healthy
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost/.well-known/matrix/client"]
       interval: 30s
       timeout: 10s
       retries: 3
     labels:
-      - traefik.enable=true
-      
-      - "traefik.http.routers.matrix-client-secure.rule=Host(`chat.landingdev.xyz`) && Path(`/.well-known/matrix/client`)"
-      - "traefik.http.routers.matrix-client-secure.entrypoints=websecure"
-      - "traefik.http.routers.matrix-client-secure.tls=true"
-      - "traefik.http.routers.matrix-client-secure.service=matrix-client-service"
-      
-      - "traefik.http.routers.matrix-server-secure.rule=Host(`matrix.landingdev.xyz`) && Path(`/.well-known/matrix/server`)"
-      - "traefik.http.routers.matrix-server-secure.entrypoints=websecure"
-      - "traefik.http.routers.matrix-server-secure.tls=true"
-      - "traefik.http.routers.matrix-server-secure.service=matrix-server-service"
+      - "traefik.enable=true"
 
-      # Define services (point to Nginx container port)
-      - "traefik.http.services.matrix-client-service.loadbalancer.server.port=80"
-      - "traefik.http.services.matrix-server-service.loadbalancer.server.port=80"
+      # CORS HEADERS
+      - "traefik.http.middlewares.cors.headers.customresponseheaders.Access-Control-Allow-Origin=*"
+      - "traefik.http.middlewares.cors.headers.customresponseheaders.Access-Control-Allow-Methods=GET,POST,OPTIONS"
+      - "traefik.http.middlewares.cors.headers.customresponseheaders.Access-Control-Allow-Headers=*"
+
+      # WELLKNOWN
+      - "traefik.http.routers.well-known.rule=Host(`landingdev.xyz`)  && ( (PathPrefix(`/.well-known/matrix/server`)) || (PathPrefix(`/.well-known/matrix/client`)) )"      
+      - "traefik.http.routers.well-known.middlewares=cors"
+      - "traefik.http.routers.well-known.entrypoints=websecure"
+      - "traefik.http.routers.well-known.tls=true"
+      - "traefik.http.routers.well-known.service=wellknown-service"
+
+      # Middleware to allow WebSocket upgrade
+      - "traefik.http.middlewares.websocket-headers.headers.customRequestHeaders.Connection=Upgrade"
+      - "traefik.http.middlewares.websocket-headers.headers.customRequestHeaders.Upgrade=websocket"
+
+      # MATRIXRTC JWT
+      - "traefik.http.routers.matrix_jwt_rtc.rule=Host(`matrixrtc.landingdev.xyz`) && ( PathPrefix(`/sfu`) || PathPrefix(`/healthz`) )"
+      - "traefik.http.routers.matrix_jwt_rtc.middlewares=cors"
+      - "traefik.http.routers.matrix_jwt_rtc.entrypoints=websecure"
+      - "traefik.http.routers.matrix_jwt_rtc.tls=true"
+      - "traefik.http.routers.matrix_jwt_rtc.service=matrix_jwt-service"
+
+      # MATRIXRTC LIVEKIT
+      - "traefik.http.routers.matrix_lk_rtc.rule=Host(`matrixrtc.landingdev.xyz`) && ( PathPrefix(`/livekit`) )"
+      - "traefik.http.routers.matrix_lk_rtc.middlewares=cors"
+      - "traefik.http.routers.matrix_lk_rtc.entrypoints=websecure"
+      - "traefik.http.routers.matrix_lk_rtc.tls=true"
+      - "traefik.http.routers.matrix_lk_rtc.service=matrix_lk-service"
+
+      # Service configuration
+      - "traefik.http.services.wellknown-service.loadbalancer.server.port=80"
+      - "traefik.http.services.matrix_jwt-service.loadbalancer.server.port=80"
+      - "traefik.http.services.matrix_lk-service.loadbalancer.server.port=80"
+
+  jwt:
+    image: ghcr.io/element-hq/lk-jwt-service:latest
+
+    container_name: jwt
+    hostname: jwt
+
+    networks:
+      net:
+        ipv4_address: 10.10.120.90
+        ipv6_address: fd12:3456:789a::120:90
+    environment:
+      - LIVEKIT_URL=https://matrixrtc.landingdev.xyz/livekit/sfu
+      - LIVEKIT_KEY=APIjzYc2uVaQpV7
+      - LIVEKIT_SECRET=bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
+      - LIVEKIT_JWT_PORT=8080
+      - LIVEKIT_FULL_ACCESS_HOMESERVERS=*
+    restart: unless-stopped
+    depends_on:
+      synapse:
+        condition: service_healthy
+      livekit:
+        condition: service_healthy
+
           
   chat:
     image: vectorim/element-web:latest
@@ -83,8 +98,8 @@ services:
 
     networks:
       net:
-        ipv4_address: 10.10.120.60
-        ipv6_address: fd12:3456:789a::120:60
+        ipv4_address: 10.10.120.70
+        ipv6_address: fd12:3456:789a::120:70
 
     restart: unless-stopped
 
@@ -131,19 +146,13 @@ services:
     labels:
       - traefik.enable=true
 
-      - traefik.http.routers.matrix-client.rule=Host(`matrix.landingdev.xyz`)
-      # - traefik.http.routers.matrix-client.rule=Host(`matrix.landingdev.xyz`) && (PathPrefix(`/_matrix/client/`) || PathPrefix(`/_matrix/static/`) || PathPrefix(`/_matrix/health`))
-      - traefik.http.routers.matrix-client.entrypoints=websecure
-      - traefik.http.routers.matrix-client.tls=true
-      - traefik.http.services.matrix-client.loadbalancer.server.port=8008
+      # - traefik.http.routers.synapse.rule=Host(`matrix.landingdev.xyz`) && PathPrefix(`/_matrix`)
+      - traefik.http.routers.synapse.rule=Host(`matrix.landingdev.xyz`)
+      - traefik.http.routers.synapse.entrypoints=websecure
+      - traefik.http.routers.synapse.tls=true
+      - traefik.http.routers.synapse.service=synapse-service
+      - traefik.http.services.synapse-service.loadbalancer.server.port=8008
 
-      # - traefik.http.routers.matrix-federation.rule=Host(`matrix.landingdev.xyz`) && (PathPrefix(`/_matrix/federation/`) || PathPrefix(`/_matrix/key/`) || PathPrefix(`/_matrix/media/`))
-      # - traefik.http.routers.matrix-federation.entrypoints=websecure
-      # - traefik.http.routers.matrix-federation.tls=true
-      # - traefik.http.services.matrix-federation.loadbalancer.server.port=8448
-
-
-      
           
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8008/health"]

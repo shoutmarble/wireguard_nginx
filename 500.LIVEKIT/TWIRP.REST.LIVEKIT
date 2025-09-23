@@ -1,0 +1,79 @@
+###############
+
+myjson=$( \
+curl -X POST https://matrix.landingdev.xyz/_matrix/client/v3/login \
+-H "Content-Type: application/json" \
+-d '{
+  "type": "m.login.password",
+  "identifier": {
+    "type": "m.id.user",
+    "user": "terry"
+  },
+  "password": "terry"
+}'
+)
+
+
+echo $myjson | jq .
+
+
+{
+  "user_id": "@terry:landingdev.xyz",
+  "access_token": "syt_dGVycnk_XAQZOlnzvatQjYkpzSIu_1DToeU",
+  "home_server": "landingdev.xyz",
+  "device_id": "DVZCGRDNCC",
+  "well_known": {
+    "m.homeserver": {
+      "base_url": "https://matrix.landingdev.xyz/"
+    }
+  }
+}
+###############
+# DOESN'T WORK YET
+curl -X POST http://10.10.120.90:8080/sfu/get \
+  -H "Authorization: Bearer syt_dGVycnk_XAQZOlnzvatQjYkpzSIu_1DToeU" \
+  -H "Content-Type: application/json" \
+  -d '{"apiKey":"APIjzYc2uVaQpV7","room":"test-room","participant":"test"}'  
+  
+############### LIVEKIT TWIRP 10.10.120.20:8080 LIST ACTIVE ROOMS LIVEKIT  
+
+### PYTHON
+❯ cat BEAR.py
+import jwt
+import time
+
+api_key = "APIjzYc2uVaQpV7"
+api_secret = "bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA"
+payload = {
+    "iss": api_key,
+    "sub": "api_user",
+    "aud": "livekit",
+    "exp": int(time.time()) + 3600,  # 1 hour from now
+    "nbf": int(time.time()),
+    "video": {"roomList": True}
+}
+token = jwt.encode(payload, api_secret, algorithm="HS256")
+print(f"Bearer {token}")
+###
+
+curl -L -X POST http://10.10.120.20:7880/twirp/livekit.RoomService/ListRooms \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTg1ODYyMDUsImlkZW50aXR5IjoiQHRlcnJ5OmxhbmRpbmdkZXYueHl6IiwiaXNzIjoiQVBJanpZYzJ1VmFRcFY3IiwibmFtZSI6IkB0ZXJyeTpsYW5kaW5nZGV2Lnh5eiIsIm5iZiI6MTc1ODQ5OTgwNSwic3ViIjoiQHRlcnJ5OmxhbmRpbmdkZXYueHl6IiwidmlkZW8iOnsicm9vbSI6InRlc3Qtcm9vbSIsInJvb21Kb2luIjp0cnVlfX0.4k0nf8YV3730ES-Ired9V9lg6gI0yqAmrdaAxY9VYoI" \
+	-H 'Content-Type: application/json' \
+	-d '{ "names": ["<room-name>"] }'
+	
+curl -L -X POST http://10.10.120.20:7880/twirp/livekit.RoomService/ListRooms \
+	-H "Authorization: Bearer <TESST>" \
+	-H 'Content-Type: application/json' \
+	-d '{ "names": ["<room-name>"] }'
+	
+curl -L -X POST http://10.10.120.20:7880/twirp/livekit.RoomService/ListRooms \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUElqelljMnVWYVFwVjciLCJzdWIiOiJhcGlfdXNlciIsImF1ZCI6ImxpdmVraXQiLCJleHAiOjE3NTg1MDQyMzcsIm5iZiI6MTc1ODUwMDYzNywidmlkZW8iOnsicm9vbUxpc3QiOnRydWV9fQ.E6KqZCcvWOEXQ2FT8WrUdjEpmQoPndNkDgbJTcr0GmI" \
+	-H 'Content-Type: application/json' \
+	-d '{ "names": ["<room-name>"] }'	
+	
+curl -X POST https://livekit.landingdev.xyz/twirp/livekit.RoomService/ListRooms \
+	-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUElqelljMnVWYVFwVjciLCJzdWIiOiJhcGlfdXNlciIsImF1ZCI6ImxpdmVraXQiLCJleHAiOjE3NTg1MDQyMzcsIm5iZiI6MTc1ODUwMDYzNywidmlkZW8iOnsicm9vbUxpc3QiOnRydWV9fQ.E6KqZCcvWOEXQ2FT8WrUdjEpmQoPndNkDgbJTcr0GmI" \
+	-H 'Content-Type: application/json' \
+	-d '{ "names": ["<room-name>"] }'
+		
+########################

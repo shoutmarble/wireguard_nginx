@@ -1,10 +1,12 @@
-server_name: "matrix.landingdev.xyz"
-public_baseurl: "https://matrix.landingdev.xyz/"
+server_name: "landingdev.xyz"
+public_baseurl: "https://matrix.landingdev.xyz"
+
+serve_server_wellknown: false
 
 web_client: false
 
 pid_file: /data/homeserver.pid
-
+    
 listeners:
   - port: 8008
     tls: false
@@ -13,24 +15,12 @@ listeners:
     resources:
       - names: [client, federation]
         compress: false
-  # - port: 8448
-  #   bind_addresses: ['0.0.0.0']
-  #   type: http
-  #   tls: false
-  #   x_forwarded: true
-  #   resources:
-  #     - names: [federation]
 
 federation_domain_whitelist: null
 federation:
   enabled: true
 
-jwt_config:
-  enabled: true
-  secret: bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA
-  issuer: "https://jwt.landingdev.xyz"  # Matches your JWT service
-  audience: "https://livekit.landingdev.xyz"  # LiveKit server
-  algorithm: "HS256"  # Common for LiveKit JWTs
+
 
 # database:
 #   name: sqlite3
@@ -55,8 +45,12 @@ macaroon_secret_key: "3*rwdETB=MJzg1z8Fz1At5,@n97Vic;=eo^+&OyDXeoUYf-^bg"
 form_secret: "dg-_suo_;ww-K^y:-w2_:toujxdb9_NseRjE&fkmDCDs_Esg0H"
 signing_key_path: "/data/matrix.landingdev.xyz.signing.key"
 trusted_key_servers:
-  - server_name: "matrix.org"
+  - server_name: "matrix.landingdev.xyz"
 
+rc_login:
+  burst_count: 10
+  window_ms: 10000
+  
 experimental_features:
   msc4143_enabled: true
   msc3266_enabled: true
@@ -64,6 +58,14 @@ experimental_features:
   msc4140_enabled: true
   msc4195_enabled: true
 
+
+default_user_experimental_features:
+  msc4143_enabled: true
+  msc3266_enabled: true
+  msc4222_enabled: true
+  msc4140_enabled: true
+  msc4195_enabled: true
+  
 max_event_delay_duration: 24h
 
 rc_message:

@@ -1,16 +1,14 @@
 {
-    "default_server_name": "matrix.landingdev.xyz",
-    "default_server_config": {
-        "m.homeserver": {
-            "base_url": "https://chat.landingdev.xyz"
-        },
-        "org.matrix.msc4143.rtc_foci": [
-            {
-                "type": "livekit",
-                "livekit_service_url": "https://jwt.landingdev.xyz/livekit/jwt"
-            }
-        ]
+    "m.homeserver": {
+        "base_url": "https://matrix.landingdev.xyz"
     },
+    "org.matrix.msc4143.rtc_foci": [
+        {
+            "type": "livekit",
+            "livekit_service_url": "https://matrixrtc.landingdev.xyz/"
+        }
+    ],
+    "default_server_name": "matrix.landingdev.xyz",
     "brand": "Element",
     "uisi_autorageshake_app": "element-auto-uisi",
     "show_labs_settings": true,
@@ -29,7 +27,7 @@
         "feature_group_calls": true,
         "feature_element_call_video_rooms": true
     },
-    "element_call": {
-        "url": "https://call.element.io"
+		"org.matrix.msc3575.proxy": {
+        "url": "https://chat.landingdev.xyz"
     }
 }
