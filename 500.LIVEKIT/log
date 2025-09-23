@@ -1,2 +1,0 @@
-Starting synapse with args -m synapse.app.homeserver --config-path /data/homeserver.yaml
-Starting synapse with args -m synapse.app.homeserver --config-path /data/homeserver.yaml

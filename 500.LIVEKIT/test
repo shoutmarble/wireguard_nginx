@@ -1,6 +1,0 @@
-lk token create \
-  --api-key APIjzYc2uVaQpV7 \
-  --api-secret bCogvMuTNxKXAMpMDkIGdsCfoMa8NQTfplFBk6ieSXqA \
-  --grant roomList=true \
-  --identity test \
-  --valid-for 24h
