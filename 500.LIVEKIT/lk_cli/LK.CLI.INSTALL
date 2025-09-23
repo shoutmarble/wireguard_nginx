@@ -1,6 +1,0 @@
-
-
-curl -sSL https://get.livekit.io/cli | bash
-
-# INSTALL LK 
-# lk is installed to /usr/local/bin
